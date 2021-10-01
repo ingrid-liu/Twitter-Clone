@@ -134,13 +134,13 @@ grid-row {
 .grid-col-third-page {
     width: 33%;
     float: left;
-    color: white;
+    /*color: white;*/
 
 }
 .grid-col-two-thirds-page {
     width: 67%;
     float: left;
-    color: white;
+    /*color: white;*/
 }
 .grid-col-left-sidebar {
     width: 20%;
@@ -153,6 +153,9 @@ grid-row {
 .grid-col-right-sidebar {
     width: 20%;
     float: left;
-    color: white;
+    /*color: white;*/
 
+}
+.fg-color-white {
+    color white;
 }
