@@ -155,6 +155,10 @@ color: white;
     float: left;
 }
 
+.bg-color-blue {
+    color: white;
+}
+
 .float-right {
     float: right;
     height: 100px;
@@ -177,10 +181,13 @@ color: white;
 .grid-col-third-page {
     width: 33%;
     float: left;
+    color: white;
+
 }
 .grid-col-two-thirds-page {
     width: 67%;
     float: left;
+    color: white;
 }
 .grid-col-left-sidebar {
     width: 20%;
@@ -193,6 +200,8 @@ color: white;
 .grid-col-right-sidebar {
     width: 20%;
     float: left;
+    color: white;
+
 }
 
 

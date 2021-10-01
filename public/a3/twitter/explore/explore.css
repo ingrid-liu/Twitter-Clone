@@ -2,6 +2,7 @@ body {
     background-color: black;
     padding-top: 10px;
     padding-left: 10px;
+    font-family: Menlo;
 }
 
 /*.wd-explore-A-search {*/
@@ -9,47 +10,105 @@ body {
 /*    padding-left: 50px;*/
 /*}*/
 
+.wd-explore-A-search {
+    width: 90%;
+}
+
 .wd-explore-A-search-icon {
     position: relative;
-    left: 31px;
-    top: 4px;
+    left: 40px;
+    top: 5px;
 }
-.wd-explore-A-search {
+.wd-explore-A-search-input {
     background-color: darkgray;
     color: white;
     border-radius: 16px;
     height: 22px;
-    width: 35%;
+    /*width: 60%;*/
+    width: 620px;
 }
 
 .wd-explore-A-settings-icon {
-    margin-right: 12px;
+    /*margin-right: 12px;*/
+    padding-left: 15px;
     position: relative;
-    top:4px;
+    top:7px;
+
 }
 
+.wd-explore-B-tags {
+    width: 100%;
+}
+
+
 .wd-explore-B-tags-1 {
+    margin-left: 20px;
     color:dodgerblue;
-    width:10%;
+    /*width: 10%;*/
+    width:120px;
     float:left;
 }
 
+/*todo why this way doesn't work?*/
 /*.wd-explore-B-tags-2 .wd-explore-B-tags-3 .wd-explore-B-tags-4*/
 /*.wd-explore-B-tags-5 .wd-explore-B-tags-6 {*/
 /*    color: whitesmoke;*/
-/*    width:15%;*/
+/*    !*width:15%;*!*/
+/*    width:120px;*/
 /*    float:left;*/
 /*}*/
 
-
 .wd-explore-B-tags-2 {
     color: whitesmoke;
-    width:10%;
+    width:120px;
     float:left;
 }
 
 .wd-explore-B-tags-3 {
     color: whitesmoke;
-    width:10%;
+    width:120px;
     float:left;
+}
+
+.wd-explore-B-tags-4 {
+    color: whitesmoke;
+    width:120px;
+    float:left;
+}
+
+.wd-explore-B-tags-5 {
+    color: whitesmoke;
+    width:120px;
+    float:left;
+}
+
+.wd-explore-B-tags-6 {
+    color: whitesmoke;
+    width:120px;
+    float:left;
+}
+
+
+h2 {
+    color: whitesmoke;
+}
+
+.border {
+    border-width: 100px;
+    position: center;
+    margin-right: 120px;
+    margin-top: 100px;
+}
+
+.border-thin { border-width: 1px; }
+.border-solid { border-style: solid; }
+.border-grey { border-color: dimgrey; }
+
+
+h1 {
+    color: whitesmoke;
+}
+
+tr td li {
+    color: whitesmoke;
 }
