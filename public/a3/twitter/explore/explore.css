@@ -20,14 +20,14 @@ a {
 .wd-rounded-corners-all-around {
     border-radius: 16px;
 }
+
+
 .wd-float-right {
     float: right;
 }
 .wd-float-done {
     clear: both;
 }
-
-/*//////////////////////////////////*/
 
 .wd-search {
     padding-top: 5px;
@@ -66,8 +66,10 @@ a {
 .wd-tags {}
 .wd-tag-style {
     /*width: 100%;*/
+    color: rgb(110, 118, 125);
     font-size: 15px;
     padding: 16px;
+    font-weight: bolder;
     ////////////////////////
     /* Stretch out??????? */
     /*text-align-all: center;*/
@@ -82,14 +84,14 @@ a {
 }
 .wd-tag-unselected {
     /*color: whitesmoke;*/
-    color: rgb(110, 118, 125);
+    /*color: rgb(110, 118, 125);*/
 }
 
 .wd-topic{
-    color: pink;
-    size: 30px;
     padding-top: 12px;
     padding-bottom: 12px;
+
+    padding-right: 16px;
 }
 .wd-topic-title {
     color: darkgray;
@@ -115,29 +117,15 @@ a {
     font-size: 12px;
 }
 
-/*p {*/
-/*    color: rgb(110, 118, 125);*/
-/*    size: 13px;*/
-/*}*/
-/*h3 {*/
-/*    color:darkgray;*/
-/*}*/
-/*h4 {*/
-/*    color:darkgray;*/
-/*}*/
-
 .wd-topic-pic {
-    /*position: relative;*/
-    /*left: 40px;*/
-    /*top: 5px;*/
-    /*right: 16px;*/
     height: 100px;
     width: 100px;
 }
-.wd-topic-pic {
-    height: 100px;
-    padding-right: 16px;
-}
+/*.wd-topic-pic {*/
+/*    height: 100px;*/
+/*    padding-right: 16px;*/
+/*}*/
+
 
 
 
