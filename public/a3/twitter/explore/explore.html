@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--    <link href="explore.css" rel="stylesheet"/>-->
     <link href="explore.css" rel="stylesheet"/>
+<!--    <link href="explore.css" rel="stylesheet"/>-->
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
     <meta charset="UTF-8">
@@ -10,94 +10,106 @@
 </head>
 <body>
 
-    <div class="wd-explore-A-search">
-        <!--todo 1 how to put icon inside the search engine-->
+    <div class="wd-wireframe">
+        <div class="wd-divider wd-search">
+            <!--todo 1 how to put icon inside the search engine-->
 
-        <img class="wd-explore-A-search-icon"
-             src="icon/search3.png"
-             height="16px"
-             width="16px"/>
+            <img class="wd-search-icon"
+                 src="icon/search3.png"/>
 
-        <input class="wd-explore-A-search-input"
-               type="text"
-               placeholder="           Search Twitter"
-               value=""/>
-<!--               width="500px"-->
-<!--               height="20px"-->
-        />
-        <!--todo 2 let my input area extend longer-->
+            <input  class="wd-search-input wd-rounded-corners-all-around"
+                    id="search-bar"
+                    type="text"
+                    placeholder="          Search Twitter"
+                    name="search">
 
-        <img class="wd-explore-A-settings-icon"
-             src="icon/setting2.png"
-             height="20px"
-             width="20px"/>
-    </div>
+            <a href="explore-settings.html">
+                <span class="wd-setting-gear wd-float-right">
+                    <img class="wd-search-setting-icon" src="icon/setting2.png"/>
+                </span>
+            </a>
+            <!-- <a href="explore-settings.html"><span class="wd-setting=gear wd-float-right">&#9881;</span> </a>-->
+             <div class="wd-float-done"></div>
 
-    <div class="wd-explore-B-tags">
-        <div class="wd-explore-B-tags-1">
-            <h4>For you</h4>
         </div>
 
-        <div class="wd-explore-B-tags-2">
-            <h4>Trending</h4>
-        </div>
-
-        <div class="wd-explore-B-tags-3">
-            <h4>COVID-10</h4>
-        </div>
-
-        <div class="wd-explore-B-tags-4">
-            <h4>News</h4>
-        </div>
-
-        <div class="wd-explore-B-tags-5">
-            <h4>Sports</h4>
-        </div>
-
-        <div class="wd-explore-B-tags-6">
-            <h4>Entertainment</h4>
+        <div class="wd-divider wd-tags">
+            <a href="foryou.html"><span class="wd-tag-style wd-tag-selected">For you</span></a>
+            <a href="trending.html"><span class="wd-tag-style wd-tag-unselected">Trending</span></a>
+            <a href="covid19.html"><span class="wd-tag-style wd-tag-unselected">COVID-19</span></a>
+            <a href="news.html"><span class="wd-tag-style wd-tag-unselected">News</span></a>
+            <a href="sport.html"><span class="wd-tag-style wd-tag-unselected">Sports</span></a>
         </div>
 
     </div>
 
-
-
-    <div class="grid-row">
-        <div class="grid-col-half-page bg-color-yellow">
-            <h3>Left half</h3>
-        </div>
-        <div class="grid-col-half-page bg-color-blue fg-color-white">
-            <h3>Right half</h3>
-        </div>
-
-
-    </div>
-    <div class="grid-row">
-        <div class="grid-col-third-page bg-color-green fg-color-white">
-            <h3>Left third</h3>
-        </div>
-        <div class="grid-col-two-thirds-page bg-color-red fg-color-white">
-            <h3>Right two thirds</h3>
-        </div>
-    </div>
-    <div class="grid-row">
-        <div class="grid-col-left-sidebar bg-color-yellow">
-            <h3>Side bar</h3>
-            <p>This is the left sidebar</p>
-        </div>
-        <div class="grid-col-main-content bg-color-blue fg-color-white">
-            <h3>Main content</h3>
-            <p>This is the main content. This is the main content. This is the main content. </p>
-        </div>
-        <div class="grid-col-right-sidebar bg-color-green fg-color-white">
-            <h3>Side bar</h3>
-            <p>This is the right sidebar</p>
+    <div class="wd-divider">
+        <div class="wd-wireframe">
+            <br>
         </div>
     </div>
 
 
 
+    <div class=" wd-divider">
+        <div class="wd-wireframe wd-topic">
+            <a href="trending-science.html" class="wd-topic-tag">Trending in Science</a><br>
+            <a href="Starship.html" class="wd-topic-title">Starship</a><br>
+            <a href="tweets-starship.html" class="wd-topic-tweets">55.5K Tweets</a>
+        </div>
 
+        <div class="wd-wireframe wd-topic">
+            <a href="trending-sports.html" class="wd-topic-tag">Sports·Trending</a><br>
+            <a href="joerogan.html" class="wd-topic-title">Joe Rogan</a><br>
+            <a href="tweets-joerogan.html" class="wd-topic-tweets">5,218 Tweets</a>
+        </div>
+
+
+        <div class="wd-wireframe wd-topic">
+            <a href="news-cnn123.html">
+                <span>
+                    <img class="wd-topic-pic wd-rounded-corners-all-around wd-float-right" src="pic/cnnnews.jpeg"/>
+                </span>
+            </a>
+            <a href="media-newyorktimes.html"><span class="wd-topic-media">The New York Times</span></a><span class="wd-time-stamp"> · Yesterday</span><br>
+            <a href="news-cnn123.html"><span class="wd-topic-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</span></a>
+
+            <div class="wd-float-done"></div>
+        </div>
+
+
+        <div class="wd-wireframe wd-topic">
+            <a href="news-covid19updates123.html">
+                <span>
+                    <img class="wd-topic-pic wd-rounded-corners-all-around wd-float-right" src="pic/covid19updates123.png"/>
+                </span>
+            </a>
+            <a href="trending-covid19.html" class="wd-topic-tag">COVID-10·LIVE</a><br>
+            <a href="news-covid19updates123.html" class="wd-topic-title">COVID-19: News updates for Massachusetts</a>
+
+            <div class="wd-float-done"></div>
+        </div>
+
+        <div class="wd-wireframe wd-topic">
+            <a href="news-bloomberg123.htm">
+                <span>
+                    <img class="wd-topic-pic wd-rounded-corners-all-around wd-float-right" src="pic/bloomberg123.jpeg"/>
+                </span>
+            </a>
+            <a href="media-bloomberg.html" class="wd-topic-media">Bloomberg Opinion</a><span class="wd-time-stamp"> · Yesterday</span><br>
+            <a href="news-bloomberg123.html" class="wd-topic-title">Thinking about getting a booster? Read this first.</a>
+
+            <div class="wd-float-done"></div>
+        </div>
+
+
+        <div class="wd-wireframe wd-topic">
+            <a href="trending-us.html" class="wd-topic-tag">Trending in United States</a><br>
+            <a href="wonderbread.html" class="wd-topic-title">Wonder Bread</a><br>
+            <a href="tweets-starship.html" class="wd-topic-tweets">1,259 Tweets</a>
+        </div>
+
+    </div>
 
 
 

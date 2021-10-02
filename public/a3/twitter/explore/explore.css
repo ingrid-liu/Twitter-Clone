@@ -1,161 +1,143 @@
 body {
     background-color: black;
-    padding-top: 10px;
-    padding-left: 10px;
     font-family: Menlo;
+
 }
 
-/*.wd-explore-A-search {*/
-/*    padding-top: 50px;*/
-/*    padding-left: 50px;*/
-/*}*/
-
-.wd-explore-A-search {
-    width: 90%;
+.wd-divider {
 }
 
-.wd-explore-A-search-icon {
+.wd-wireframe {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: None;
+}
+.wd-rounded-corners-all-around {
+    border-radius: 16px;
+}
+.wd-float-right {
+    float: right;
+}
+.wd-float-done {
+    clear: both;
+}
+
+/*//////////////////////////////////*/
+
+.wd-search {
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+.wd-float-right{}
+.wd-float-done {}
+
+.wd-search-icon {
     position: relative;
     left: 40px;
     top: 5px;
+    height: 16px;
+    width: 16px;
 }
-.wd-explore-A-search-input {
+.wd-search-input {
     background-color: darkgray;
-    color: white;
-    border-radius: 16px;
-    height: 22px;
     /*width: 60%;*/
-    width: 620px;
+    height: 26px;
+    width: 80%;
 }
-
-.wd-explore-A-settings-icon {
+.wd-setting-gear {
+    padding-right: 12px;
+}
+.wd-search-setting-icon {
     /*margin-right: 12px;*/
     padding-left: 15px;
     position: relative;
     top:7px;
-
-}
-
-.wd-explore-B-tags {
-    width: 100%;
+    height:20px;
+    width: 20px;
 }
 
 
-.wd-explore-B-tags-1 {
-    margin-left: 20px;
-    color:dodgerblue;
-    /*width: 10%;*/
-    width:120px;
-    float:left;
+.wd-tags {}
+.wd-tag-style {
+    /*width: 100%;*/
+    font-size: 15px;
+    padding: 16px;
+    ////////////////////////
+    /* Stretch out??????? */
+    /*text-align-all: center;*/
 }
 
-/*todo why this way doesn't work?*/
-/*.wd-explore-B-tags-2 .wd-explore-B-tags-3 .wd-explore-B-tags-4*/
-/*.wd-explore-B-tags-5 .wd-explore-B-tags-6 {*/
-/*    color: whitesmoke;*/
-/*    !*width:15%;*!*/
-/*    width:120px;*/
-/*    float:left;*/
+.wd-tag-selected {
+    color: rgb(29,161,242);
+    text-decoration: underline;
+    /*border-bottom-color: dodgerblue;*/
+    ////////////////////////
+    /* not ideal effect ???? */
+}
+.wd-tag-unselected {
+    /*color: whitesmoke;*/
+    color: rgb(110, 118, 125);
+}
+
+.wd-topic{
+    color: pink;
+    size: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.wd-topic-title {
+    color: darkgray;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.wd-topic-tag {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+.wd-topic-tweets {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-topic-media {
+    color: darkgray;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.wd-time-stamp {
+    color: rgb(110, 118, 125);
+    font-size: 12px;
+}
+
+/*p {*/
+/*    color: rgb(110, 118, 125);*/
+/*    size: 13px;*/
+/*}*/
+/*h3 {*/
+/*    color:darkgray;*/
+/*}*/
+/*h4 {*/
+/*    color:darkgray;*/
 /*}*/
 
-.wd-explore-B-tags-2 {
-    color: whitesmoke;
-    width:120px;
-    float:left;
+.wd-topic-pic {
+    /*position: relative;*/
+    /*left: 40px;*/
+    /*top: 5px;*/
+    /*right: 16px;*/
+    height: 100px;
+    width: 100px;
 }
-
-.wd-explore-B-tags-3 {
-    color: whitesmoke;
-    width:120px;
-    float:left;
-}
-
-.wd-explore-B-tags-4 {
-    color: whitesmoke;
-    width:120px;
-    float:left;
-}
-
-.wd-explore-B-tags-5 {
-    color: whitesmoke;
-    width:120px;
-    float:left;
-}
-
-.wd-explore-B-tags-6 {
-    color: whitesmoke;
-    width:120px;
-    float:left;
-}
-
-/*.border {*/
-/*    border-width: 100px;*/
-/*    position: center;*/
-/*    margin-right: 120px;*/
-/*    margin-top: 100px;*/
-/*}*/
-
-/*.border-thin { border-width: 1px; }*/
-/*.border-solid { border-style: solid; }*/
-/*.border-grey { border-color: dimgrey; }*/
-
-
-
-
-h2 {
-    color: whitesmoke;
-}
-
-h3 {
-    color: whitesmoke;
-}
-
-p {
-    color: whitesmoke;
+.wd-topic-pic {
+    height: 100px;
+    padding-right: 16px;
 }
 
 
 
-
-grid-row {
-    color: white;
-}
-
-/*Grid layout*/
-.grid-row {
-    clear: both;
-}
-
-.grid-col-half-page {
-    width: 50%;
-    float: left;
-}
-
-.grid-col-third-page {
-    width: 33%;
-    float: left;
-    /*color: white;*/
-
-}
-.grid-col-two-thirds-page {
-    width: 67%;
-    float: left;
-    /*color: white;*/
-}
-.grid-col-left-sidebar {
-    width: 20%;
-    float: left;
-}
-.grid-col-main-content {
-    width: 60%;
-    float: left;
-}
-.grid-col-right-sidebar {
-    width: 20%;
-    float: left;
-    /*color: white;*/
-
-}
-.fg-color-white {
-    color white;
-}
