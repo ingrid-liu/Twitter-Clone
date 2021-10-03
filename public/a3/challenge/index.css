@@ -171,46 +171,87 @@
 }
 
 
-@media (min-width: 0px) and (max-width: 600px) {
+/*@media (min-width: 0px) and (max-width: 600px) {*/
+/*    body {*/
+/*        background-color: yellow;*/
+/*    }*/
+/*    .media-query {*/
+/*        background-color: red;*/
+/*        color: white;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 600px) and (max-width: 1200px) {*/
+/*    body {*/
+/*        background-color: blue;*/
+/*        color: white;*/
+/*    }*/
+/*    .media-query {*/
+/*        background-color: yellow;*/
+/*        color: black;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 1200px) and (max-width: 1800px) {*/
+/*    body {*/
+/*        background-color: red;*/
+/*        color: white;*/
+/*    }*/
+/*    .media-query {*/
+/*        background-color: blue;*/
+/*        color: white;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1800px) {*/
+/*    body {*/
+/*        background-color: white;*/
+/*        color: pink;*/
+/*    }*/
+/*    .media-query {*/
+/*        background-color: purple;*/
+/*        color: mediumpurple;*/
+/*    }*/
+/*}*/
+
+@media (min-width: 0px) and (max-width: 800px) {
+    h3 {
+        color: orange;
+    }
     body {
-        background-color: yellow;
+        background-color: deeppink;
+        color: white;
     }
     .media-query {
-        background-color: red;
+        background-color: black;
         color: white;
     }
 }
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 1200px) {
+    h3 {
+        color: pink;
+    }
     body {
-        background-color: blue;
-        color: white;
+        background-color: lightgoldenrodyellow;
+        color: saddlebrown;
     }
     .media-query {
-        background-color: yellow;
+        background-color: rebeccapurple;
+        color: white;
+    }
+}
+@media (min-width: 1200px) {
+    h3 {
         color: black;
     }
-}
-@media (min-width: 1200px) and (max-width: 1800px) {
     body {
-        background-color: red;
-        color: white;
+        background-color: white;
+        color: black;
     }
     .media-query {
-        background-color: blue;
+        background-color: deeppink;
         color: white;
     }
 }
 
-@media (min-width: 1800px) {
-    body {
-        background-color: white;
-        color: pink;
-    }
-    .media-query {
-        background-color: purple;
-        color: mediumpurple;
-    }
-}
 
 
 
