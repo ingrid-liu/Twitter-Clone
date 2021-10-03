@@ -5,6 +5,7 @@ body {
 }
 
 .wd-divider {
+    padding-left: 30px;
 }
 
 .wd-wireframe {
@@ -12,6 +13,7 @@ body {
     border-style: solid;
     border-color: rgb(47, 51, 54);
     padding-left: 16px;
+
 }
 
 a {
@@ -62,8 +64,16 @@ a {
     width: 20px;
 }
 
+/*.wd-empty-div {*/
+/*    border-top-style: dashed;*/
+/*}*/
 
-.wd-tags {}
+.wd-tags {
+    padding-top: 12px;
+    /*display: flex;*/
+    padding-bottom: 6px;
+
+}
 .wd-tag-style {
     /*width: 100%;*/
     color: rgb(110, 118, 125);
@@ -77,10 +87,12 @@ a {
 
 .wd-tag-selected {
     color: rgb(29,161,242);
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    border-bottom-style: solid;
     /*border-bottom-color: dodgerblue;*/
     ////////////////////////
     /* not ideal effect ???? */
+
 }
 .wd-tag-unselected {
     /*color: whitesmoke;*/
@@ -125,6 +137,8 @@ a {
 /*    height: 100px;*/
 /*    padding-right: 16px;*/
 /*}*/
+
+
 
 
 

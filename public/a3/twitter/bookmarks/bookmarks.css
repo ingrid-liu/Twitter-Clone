@@ -1,0 +1,39 @@
+body {
+    background: black;
+    font-family: Menlo;
+    color: #bedcfe;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: #bedcfe;
+}
+
+
+
+
+.wd-divider {
+    padding: 12px;
+    max-width: 500px;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.wd-wireframe {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding-left: 16px;
+}
+
+a {
+    text-decoration: None;
+}
+
+
+
