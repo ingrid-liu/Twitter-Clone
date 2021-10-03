@@ -1,10 +1,10 @@
 body {
     background: black;
-    font-family: Menlo;
-    color: #bedcfe;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
+    font-family: Arial;
+    /*color: #bedcfe;*/
+    /*margin: 0px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
 }
 
 
@@ -31,6 +31,7 @@ a {
     border-style: solid;
     border-color: rgb(47, 51, 54);
     padding-left: 16px;
+    padding-top: 12px;
 }
 
 /*我的*/
@@ -45,15 +46,29 @@ a {
 /*    padding-left: 16px;*/
 /*}*/
 
-
-
-
-
-
-
-a {
-    text-decoration: None;
+.wd-bookmarks {
+    padding-left: 16px;
+    padding-bottom: 12px;
+    border-bottom-style: hidden;
 }
-p {
-    color: pink;
+.wd-bookmarks-title {
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bolder;
 }
+.wd-bookmarks-user {
+    color: lightgray;
+    font-size: 13px;
+}
+
+
+
+
+
+/*a {*/
+/*    text-decoration: None;*/
+/*}*/
+/*p {*/
+/*    color: pink;*/
+/*}*/
