@@ -13,14 +13,16 @@ a {
     color: #bedcfe;
 }
 
+.fa {
+    color: white;
+}
 
-
-
+/*TA的*/
 .wd-divider {
     padding: 12px;
-    max-width: 500px;
-    border-width: 1px;
-    border-style: solid;
+    /*max-width: 500px;*/
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
 
 }
 
@@ -31,9 +33,27 @@ a {
     padding-left: 16px;
 }
 
+/*我的*/
+/*.wd-divider {*/
+/*    padding-left: 30px;*/
+/*}*/
+
+/*.wd-wireframe {*/
+/*    border-width: 1px;*/
+/*    border-style: solid;*/
+/*    border-color: rgb(47, 51, 54);*/
+/*    padding-left: 16px;*/
+/*}*/
+
+
+
+
+
+
+
 a {
     text-decoration: None;
 }
-
-
-
+p {
+    color: pink;
+}

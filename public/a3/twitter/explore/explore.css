@@ -1,7 +1,8 @@
 body {
     background-color: black;
     font-family: Menlo;
-
+    justify-content: center;
+    margin: 10px;
 }
 
 .wd-divider {
