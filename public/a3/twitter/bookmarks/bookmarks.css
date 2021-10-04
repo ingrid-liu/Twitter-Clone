@@ -16,6 +16,7 @@ a {
     color: #bedcfe;
 }
 
+
 .fa {
     color: white;
 }
@@ -127,9 +128,10 @@ a {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(47, 51, 54);
-    padding-left: 16px;
-    padding-top: 12px;
     margin-bottom: 20px;
+
+    width: 504px;
+    height: 350px;
 
 }
 
@@ -141,59 +143,22 @@ a {
 .wd-rounded-corners-all-around {
     border-radius: 16px;
 }
-/*--------------------------------------------------------*/
 
+.wd-rounded-up-rounded {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 
-
-a {
-    text-decoration: None;
 }
 
-
-
-
-
-
-
-.wd-topic{
-    padding-top: 12px;
-    padding-bottom: 12px;
-
-    padding-right: 16px;
-}
-.wd-topic-title {
-    color: darkgray;
-    font-size: 20px;
-    font-weight: bolder;
-}
-.wd-topic-tag {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-}
-.wd-topic-tweets {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-}
-
-.wd-topic-media {
-    color: darkgray;
-    font-size: 13px;
-    font-weight: bolder;
-}
-.wd-time-stamp {
-    color: rgb(110, 118, 125);
+.wd-bookmarks-image-caption-title {
+    color: white;
     font-size: 12px;
 }
 
-.wd-topic-pic {
-    height: 100px;
-    width: 100px;
+.wd-bookmarks-image-caption-content {
+    color: lightgray;
+    font-size: 12px;
 }
-/*.wd-topic-pic {*/
-/*    height: 100px;*/
-/*    padding-right: 16px;*/
-/*}*/
-
 
 
 
