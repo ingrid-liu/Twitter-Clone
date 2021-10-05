@@ -151,15 +151,35 @@ a {
 }
 
 .wd-bookmarks-image-caption-title {
+    padding-left: 12px;
     color: white;
     font-size: 12px;
 }
 
 .wd-bookmarks-image-caption-content {
+    padding-left: 12px;
+
     color: lightgray;
     font-size: 12px;
 }
 
+.wd-bookmarks-action-button {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.wd-bookmarks-action-icon {
+    width: 12px;
+}
+.wd-bookmarks-action-numbers {
+    padding-left: 10px;
+    padding-right: 20%;
+}
+
+.wd-bookmarks-action-button {
+    width: 504px;
+}
 
 
 
