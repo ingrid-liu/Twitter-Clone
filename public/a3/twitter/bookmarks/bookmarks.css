@@ -167,14 +167,20 @@ a {
     padding-bottom: 10px;
     padding-left: 10px;
     font-size: 12px;
+    color: rgb(47, 51, 54);
 }
 
 .wd-bookmarks-action-icon {
     width: 12px;
+    color: darkgrey;
 }
 .wd-bookmarks-action-numbers {
     padding-left: 10px;
     padding-right: 20%;
+}
+
+.wd-bookmarks-action-numbers-like {
+    color: red;
 }
 
 .wd-bookmarks-action-button {
@@ -182,5 +188,8 @@ a {
 }
 
 
-
+.fa fa-heart {
+    color: red;
+    size: 20px;
+}
 
