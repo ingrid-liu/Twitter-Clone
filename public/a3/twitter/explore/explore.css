@@ -46,12 +46,15 @@ a {
     top: 5px;
     height: 16px;
     width: 16px;
+
 }
 .wd-search-input {
     background-color: darkgray;
+    border-style: none;
     /*width: 60%;*/
     height: 26px;
     width: 80%;
+    padding-left: 35px;
 }
 .wd-setting-gear {
     padding-right: 12px;
