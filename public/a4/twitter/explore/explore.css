@@ -1,31 +1,41 @@
-
+.body {
+    background-color: black;
+}
 .wd-wireframe {
     border-width: 1px;
     border-style: solid;
     border-color: lightgrey;
     padding: 50px;
     margin: 20px;
+}
 
+.wd-wireframe-nav {
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    /*padding: 50px;*/
+    /*margin: 20px;*/
+    margin-top: 8px;
 }
 
 .wd-navigation-words {
     padding-left: 12px;
 }
 
-.wd-fa-stack {
-    font-size: 16px;
-}
-
 
 .wd-remove-left-margin {
     position: relative;
     left: -13px;
+    bottom:1px;
 }
 
 .wd-remove-left-margin-extra {
     position: relative;
     left: -30px;
 
+}
+.wd-fa-more-shrink {
+    font-size:0.7em;
 }
 
 .wd-rounded-corners-all-around-little {
@@ -34,3 +44,115 @@
 .wd-who-to-follow-authenticated {
     padding-left: 4px;
 }
+
+.wd-title-bold {
+    font-weight: bolder;
+}
+.wd-who-to-follow-user-name {
+    font-weight: bolder;
+}
+
+
+.wd-bookmarks-avatar {
+    height: 48px;
+    width: 48px;
+}
+.wd-rounded-pic {
+    border-radius: 50%;
+}
+
+.wd-nav-tweet-img {
+    width: 100%;
+}
+
+.wd-tweet-img-caption {
+    color: white;
+    position: relative;
+    bottom: 55px;
+    left: 10px;
+}
+.wd-tweet-img-caption-shrink-frame{
+    padding-bottom: -55px;
+}
+
+.wd-tweet-img-title {
+    color: white;
+}
+
+.a {
+    text-decoration: None;
+}
+
+.wd-search-cog {
+    size: 25px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 18px;
+}
+.wd-search {
+    padding-bottom: 8px;
+}
+
+
+.wd-search-input {
+
+}
+
+.wd-search-cog {
+    padding-left: 16px;
+    position: relative;
+    top: 5px;
+    font-size: 1.6em;
+}
+
+.wd-who-to-follow-user-avatar {
+    padding-right: 12px;
+}
+
+
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+    position: relative;
+    top:5px;
+}
+.wd-float-done {
+    clear: both;
+}
+
+.wd-who-to-follow-padding {
+    padding-top: 10px;
+
+}
+
+.wd-who-to-follow-padding-bottom {
+    /*padding-bottom: -5px;*/
+    /*position: relative;*/
+    /*bottom: -5px;*/
+    margin-bottom: -5px;
+}
+
+.wd-who-to-follow-button {
+    border-radius: 20px;
+}
+
+.wd-float-right {
+    float: right;
+}
+.wd-float-done {
+    clear: both;
+}
+
+.wd-who-to-follow-button-word {
+    color: white;
+}
+
+a {
+    text-decoration: None;
+}
+

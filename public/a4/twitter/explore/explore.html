@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="explore.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
     <meta charset="UTF-8">
     <title>A4-Explore</title>
 </head>
@@ -11,8 +11,8 @@
 
 <div class="wd-wireframe">
     <div class="row">
-        <div class="col-lg-1 col-xl-2 col-xxl-3">
 
+        <div class="col-2">
             <ul class="list-group ">
                 <li class="list-group-item"><i class="fab fa-twitter"></i></li>
                 <li class="list-group-item"><i class="fa fa-home"></i><span class="wd-navigation-words">Home</span></li>
@@ -33,24 +33,83 @@
 <!--                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>-->
 <!--                    </span>-->
                     <span class="fa-stack fa-1x wd-remove-left-margin">
-                        <i class="fas fa-circle fa-stack-1x wd-remove-left-margin"></i>
-                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse wd-remove-left-margin"></i>
+                        <i class="fas fa-circle fa-stack-1x "></i>
+                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse wd-fa-more-shrink"></i>
                     </span>
                     <span class="wd-navigation-words wd-remove-left-margin-extra">More</span>
                 </li>
             </ul>
-
-
         </div>
 
-        <div class="col-lg-8 col-xl-7 col-xxl-6">
-            <h2>main content</h2>
-            <h2><a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a></h2>
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">For You</a>
-                        </li>
-                        <li class="nav-item">
+
+
+<!--        <div class="col-2">-->
+<!--            <ul class="nav nav-pills ">-->
+<!--                <li class="nav nav-item">-->
+<!--                    <a class="nav-link active" href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                </li>-->
+
+<!--                <li class="nav nav-item">-->
+<!--                    <a class="nav-link" href="#"><i class="fab fa-home">Home</i></a>-->
+<!--                </li>-->
+
+<!--                <li class="nav nav-item">-->
+<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Explore</span></i></a>-->
+<!--                </li>-->
+
+<!--                <li class="nav nav-item">-->
+<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Messages</span></i></a>-->
+<!--                </li>-->
+
+<!--                <li class="nav nav-item">-->
+<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Bookmarks</span></i></a>-->
+<!--                </li>-->
+
+<!--                <li class="nav nav-item">-->
+<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Lists</span></i></a>-->
+<!--                </li>-->
+
+<!--                <li class="nav nav-item">-->
+<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Profile</span></i></a>-->
+<!--                </li>-->
+
+<!--                 <li class="list-group-item">-->
+<!--                    &lt;!&ndash;                    <i class="fa fa-circle"></i>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <span class="fa-stack fa-1x">&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <i class="fas fa-circle fa-stack-2x"></i>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse" ></i>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
+<!--                    &lt;!&ndash; todo Question3: why I can't put the ellipsis as a smaller size on the circle, and why there is padding part on the left when I stack the font!? &ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <span class="fa-stack fa-1x" >&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <i class="fas fa-circle fa-stack-1x"></i>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
+<!--                    <span class="fa-stack fa-1x wd-remove-left-margin">-->
+<!--                        <i class="fas fa-circle fa-stack-1x wd-remove-left-margin"></i>-->
+<!--                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse wd-remove-left-margin"></i>-->
+<!--                    </span>-->
+<!--                    <span class="wd-navigation-words wd-remove-left-margin-extra">More</span>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+
+        <div class="col-6">
+            <div class="wd-search">
+<!--                <input class="" placeholder="Search Twitter">-->
+
+                <form class="d-flex  ">
+                    <input class="form-control me-2 wd-search-input wd-rounded-corners-all-around" type="search" placeholder="Search Twitter">
+
+<!--                    <a class="wd-search-cog" href="#"><i class="fa fa-cog "></i></a>-->
+                    <a href="#"><span><i class="fa fa-cog wd-search-cog"></i></span></a>
+                </form>
+
+            </div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For You</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">Trending</a>
                 </li>
                 <li class="nav-item">
@@ -63,35 +122,120 @@
                     <a class="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
+
+            <div class="wd-tweet-img-caption-shrink-frame">
+                <a href="#"><image class="wd-nav-tweet-img" src="pic/spaceX.jpeg"/></a>
+                <h1 class="wd-tweet-img-caption"><a class="wd-tweet-img-title" href="#">SpaceX's Starship</a></h1>
+            </div>
+
+            <div class="wd-wireframe-nav">
+                <p>1st tweet</p>
+            </div>
+            <div class="wd-wireframe-nav">
+                <p>2nd tweet</p>
+            </div>
+            <div class="wd-wireframe-nav">
+                <p>3rd tweet</p>
+            </div>
         </div>
 
-        <div class="col-xl-3 col-xxl-3">
+
+        <div class="col-4">
             <ul class="list-group ">
-                <li class="list-group-item">
+                <li class="list-group-item wd-title-bold" >
                     <span class="wd-who-to-follow-title">Who to follow</span>
-                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i></li>
-                <li class="list-group-item">
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_java.png"/>
+                    </span>
                     <span class="wd-who-to-follow-user-name">Java</span>
-                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i></li>
-                <li class="list-group-item active">
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-padding-bottom">@Java</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_relativityspace.png"/>
+                    </span>
                     <span class="wd-who-to-follow-user-name">Relativity Space</span>
-                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i></li>
-                <li class="list-group-item">
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-padding-bottom">@relativityspace</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_virgin-logo.png"/>
+                    </span>
                     <span class="wd-who-to-follow-user-name">Virgin Galactic</span>
-                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i></li>
-                <li class="list-group-item">
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-padding-bottom">@virgingalactic</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_NASA.png"/>
+                    </span>
                     <span class="wd-who-to-follow-user-name">NASA</span>
-                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i></li>
-                <li class="list-group-item">
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-padding-bottom">@NASA</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_tesla.png"/>
+                    </span>
                     <span class="wd-who-to-follow-user-name">Tesla</span>
-                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i></li>
-                <li class="list-group-item">
-                    <span class="wd-who-to-follow-user-name">Profile</span>
-                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i></li>
-                <li class="list-group-item">
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-padding-bottom">@Tesla</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
             </ul>
         </div>
-    </div>
+</div>
 
 
 </div>
