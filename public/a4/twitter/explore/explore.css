@@ -27,6 +27,16 @@
     padding-left: 12px;
 }
 
+.wd-nav-icon-normal {
+    position: relative;
+    top:5px;
+}
+
+.wd-nav-icon-more {
+    position: relative;
+    top:-5px;
+}
+
 
 .wd-remove-left-margin {
     position: relative;
@@ -36,7 +46,7 @@
 
 .wd-remove-left-margin-extra {
     position: relative;
-    left: -30px;
+    left: -25px;
 
 }
 .wd-fa-more-shrink {

@@ -11,110 +11,52 @@
 
 <div class="wd-wireframe">
     <div class="row">
-<!--    <div class="col-xxl-2 col-xl-1 col-lg-1 col-md-2 col-sm-1 ">-->
-<!--    <div class="col-xxl-6 col-xl-8 col-lg-7">-->
-<!--    <div class="col-xxl-4 col-xl-3 col-lg-4 d-md-none .d-lg-block">-->
 
         <!-- LEFT SIDE BAR - navigation-->
-        <div class="col-xxl-2 col-xl-1 col-lg-1 col-md-1 col-sm-1 ">
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
             <ul class="list-group ">
-                <li class="list-group-item"><i class="fab fa-twitter"></i></li>
-                <li class="list-group-item "><i class="fa fa-home "></i><span class="wd-navigation-words">Home</span></li>
-                <li class="list-group-item active"><i class="fa fa-hashtag"></i><span class="wd-navigation-words">Explore</span></li>
-                <li class="list-group-item"><i class="fa fa-envelope"></i><span class="wd-navigation-words">Messages</span></li>
-                <li class="list-group-item"><i class="fa fa-bookmark"></i><span class="wd-navigation-words">Bookmarks</span></li>
-                <li class="list-group-item"><i class="fa fa-list"></i><span class="wd-navigation-words ">Lists</span></li>
-                <li class="list-group-item"><i class="fa fa-user"></i><span class="wd-navigation-words ">Profile</span></li>
-                <li class="list-group-item">
-<!--                    <i class="fa fa-circle"></i>-->
-<!--                    <span class="fa-stack fa-1x">-->
-<!--                        <i class="fas fa-circle fa-stack-2x"></i>-->
-<!--                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse" ></i>-->
-<!--                    </span>-->
-                    <!-- todo Question3: why I can't put the ellipsis as a smaller size on the circle, and why there is padding part on the left when I stack the font!? -->
-<!--                    <span class="fa-stack fa-1x" >-->
-<!--                        <i class="fas fa-circle fa-stack-1x"></i>-->
-<!--                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>-->
-<!--                    </span>-->
-                    <span class="fa-stack fa-1x wd-remove-left-margin">
+                <li class="list-group-item "><i class="fab fa-twitter d-inline wd-nav-icon-normal"></i></li>
+                <li class="list-group-item " style="clear:both;">
+                    <i class="fa fa-home wd-nav-icon-normal" style="float: left"></i>
+                    <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left" >
+                        Home</span></li>
+                <li class="list-group-item active "><i class="fa fa-hashtag wd-nav-icon-normal" style="float: left"></i>
+                    <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left">
+                        Explore</span></li>
+                <li class="list-group-item "><i class="fa fa-bell wd-nav-icon-normal" style="float: left"></i>
+                    <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left">
+                        Notification</span></li>
+                <li class="list-group-item "><i class="fa fa-envelope wd-nav-icon-normal" style="float: left"></i>
+                    <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left">
+                        Messages</span></li>
+                <li class="list-group-item "><i class="fa fa-bookmark wd-nav-icon-normal" style="float: left"></i>
+                    <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left">
+                        Bookmarks</span></li>
+                <li class="list-group-item "><i class="fa fa-list wd-nav-icon-normal" style="float: left"></i>
+                    <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left">
+                        Lists</span></li>
+
+                <li class="list-group-item "><span class=""><i class="fa fa-user wd-nav-icon-normal" style="float: left"></i></span><span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left">Profile</span></li>
+                <li class="list-group-item ">
+                    <span class="fa-stack fa-1x wd-remove-left-margin wd-nav-icon-more" style="float: left">
                         <i class="fas fa-circle fa-stack-1x "></i>
                         <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse wd-fa-more-shrink"></i>
                     </span>
-                    <span class="wd-navigation-words wd-remove-left-margin-extra ">More</span>
+                    <span class="wd-navigation-words wd-remove-left-margin-extra d-inline d-none d-xl-block" style="float: left">More</span>
                 </li>
             </ul>
         </div>
 
 
-<!--        <div class="col-2">-->
-<!--            <ul class="nav nav-pills ">-->
-<!--                <li class="nav nav-item">-->
-<!--                    <a class="nav-link active" href="#"><i class="fab fa-twitter"></i></a>-->
-<!--                </li>-->
-
-<!--                <li class="nav nav-item">-->
-<!--                    <a class="nav-link" href="#"><i class="fab fa-home">Home</i></a>-->
-<!--                </li>-->
-
-<!--                <li class="nav nav-item">-->
-<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Explore</span></i></a>-->
-<!--                </li>-->
-
-<!--                <li class="nav nav-item">-->
-<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Messages</span></i></a>-->
-<!--                </li>-->
-
-<!--                <li class="nav nav-item">-->
-<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Bookmarks</span></i></a>-->
-<!--                </li>-->
-
-<!--                <li class="nav nav-item">-->
-<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Lists</span></i></a>-->
-<!--                </li>-->
-
-<!--                <li class="nav nav-item">-->
-<!--                    <a class="nav-link" href="#"><i class="fab fa-home"><span class="wd-navigation-words">Profile</span></i></a>-->
-<!--                </li>-->
-
-<!--                 <li class="list-group-item">-->
-<!--                    &lt;!&ndash;                    <i class="fa fa-circle"></i>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <span class="fa-stack fa-1x">&ndash;&gt;-->
-<!--                    &lt;!&ndash;                        <i class="fas fa-circle fa-stack-2x"></i>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse" ></i>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
-<!--                    &lt;!&ndash; todo Question3: why I can't put the ellipsis as a smaller size on the circle, and why there is padding part on the left when I stack the font!? &ndash;&gt;-->
-<!--                    &lt;!&ndash;                    <span class="fa-stack fa-1x" >&ndash;&gt;-->
-<!--                    &lt;!&ndash;                        <i class="fas fa-circle fa-stack-1x"></i>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>&ndash;&gt;-->
-<!--                    &lt;!&ndash;                    </span>&ndash;&gt;-->
-<!--                    <span class="fa-stack fa-1x wd-remove-left-margin">-->
-<!--                        <i class="fas fa-circle fa-stack-1x wd-remove-left-margin"></i>-->
-<!--                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse wd-remove-left-margin"></i>-->
-<!--                    </span>-->
-<!--                    <span class="wd-navigation-words wd-remove-left-margin-extra">More</span>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-
-
-
-
-
-
-
 
 
         <!-- CENTER CONTENT - Navigation -->
-        <div class="col-xxl-6 col-xl-8 col-lg-7 col-md-10 col-sm-11 ">
-<!--        <div class="col-xxl-2 col-xl-1 col-lg-1 col-md-2 col-sm-1 ">-->
-<!--        <div class="col-xxl-4 col-xl-3 col-lg-4 d-md-none .d-lg-block">-->
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10">
+
             <div class="wd-search">
-<!--                <input class="" placeholder="Search Twitter">-->
 
                 <form class="d-flex  ">
                     <input class="form-control me-2 wd-search-input wd-rounded-corners-all-around" type="search" placeholder="Search Twitter">
-
-<!--                    <a class="wd-search-cog" href="#"><i class="fa fa-cog "></i></a>-->
                     <a href="#"><span><i class="fa fa-cog wd-search-cog"></i></span></a>
                 </form>
 
@@ -222,16 +164,8 @@
         </div>
 
 
-
-
-
-
-
-
         <!-- RIGHT SIDE BAR - Who to follow -->
-        <div class="col-xxl-4 col-xl-3 col-lg-4 d-md-none d-lg-block">
-<!--        <div class="col-xxl-4 col-xl-3 col-lg-4 d-md-none .d-lg-block">-->
-
+        <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
             <ul class="list-group ">
                 <li class="list-group-item wd-title-bold" >
                     <span class="wd-who-to-follow-title">Who to follow</span>
@@ -326,7 +260,7 @@
 
             </ul>
         </div>
-</div>
+    </div>
 
 
 </div>
