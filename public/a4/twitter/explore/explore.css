@@ -1,6 +1,5 @@
-.body {
-    background-color: black;
-}
+
+
 .wd-wireframe {
     border-width: 1px;
     border-style: solid;
@@ -65,18 +64,26 @@
     width: 100%;
 }
 
-.wd-tweet-img-caption {
-    color: white;
-    position: relative;
-    bottom: 55px;
-    left: 10px;
-}
-.wd-tweet-img-caption-shrink-frame{
-    padding-bottom: -55px;
+/*.wd-tweet-img-caption {*/
+/*    color: white;*/
+/*    position: relative;*/
+/*    bottom: 55px;*/
+/*    left: 10px;*/
+/*}*/
+/*.wd-tweet-img-caption-shrink-frame{*/
+/*    padding-bottom: -55px;*/
+/*}*/
+.wd-focus-img {
+    padding-top: 10px;
 }
 
 .wd-tweet-img-title {
     color: white;
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+    font-size: 2.5em;
+    font-weight: bolder;
 }
 
 .a {
@@ -155,4 +162,69 @@
 a {
     text-decoration: None;
 }
+
+
+.wd-tweet-preview-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    position: relative;
+    top: -5px;
+    right:-15px
+
+}
+
+.wd-tweet-preview-content {
+    padding-top: 3px;
+}
+
+.wd-tweet-in-topic {
+    /*padding-bottom: 18px;*/
+
+}
+
+
+.wd-tweet-in-topic-content-preview {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    width: 85%;
+    font-family: arial;
+}
+
+.wd-tweet-in-topic-number{
+    font-size: 14px;
+    color: dimgrey;
+    font-family: arial;
+
+}
+
+.wd-tweet-in-topic-number-adjust-upper {
+    margin-top: -18px;
+
+}
+
+.wd-tweet-in-topic-number-adjust-lower {
+    margin-bottom: -1px;
+}
+
+.wd-tweet-in-topic-subtitle{
+    font-size: 14px;
+    color: dimgrey;
+    padding-top: -10px;
+    /*font-family: Helvetica Neue;*/
+    font-family: arial;
+    margin-bottom: -2px;
+}
+.wd-tweet-in-topic-time {
+    padding-left: 7px;
+    font-size: 14px;
+    color: dimgrey;
+    font-family: arial;
+
+}
+
+
+
+
 
