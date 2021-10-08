@@ -11,10 +11,10 @@ body {
 
 .wd-magnifier {
     font-size: 20px;
-    color: grey;
+    color: #b3b3b3;
     position: relative;
     left:30px;
-    top: 4px;
+    top: 14px;
 
 }
 
@@ -36,25 +36,66 @@ body {
     border-color: black;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     margin: 20px;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
 }
+
+
+
 
 .wd-wireframe-nav {
+
     border-width: 1px;
     border-style: solid;
-    border-color: lightgrey;
+    border-color: #404040;
     /*padding: 50px;*/
     /*margin: 20px;*/
-    margin-top: 8px;
+    /*margin-top: 8px;*/
+
 }
 
+.wd-wireframe-without-top-bottom {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #262626;
+    border-bottom: hidden;
+    border-top:hidden;
+    /*padding: 50px;*/
+    /*margin: 20px;*/
+    /*margin-top: 8px;*/
+}
+
+.wd-wireframe-without-bottom {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #262626;
+    border-bottom: hidden;
+    /*padding: 50px;*/
+    /*margin: 20px;*/
+    /*margin-top: 8px;*/
+}
+
+.wd-wireframe-adjust {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #262626;
+    border-bottom: hidden;
+    /*padding: 50px;*/
+    /*margin: 20px;*/
+    /*margin-top: 8px;*/
+}
 
 
 .wd-navigation-words {
     padding-left: 12px;
     position:center;
     color:#d9d9d9;
+}
+
+.wd-icon-twitter {
+    font-size: 1.5em;
 }
 
 .wd-nav-icon-normal {
@@ -113,6 +154,8 @@ body {
 }
 
 .wd-nav-tweet-img {
+    position: relative;
+    top:-10px;
     width: 100%;
 }
 
@@ -144,8 +187,10 @@ body {
 }
 
 .wd-search-cog {
-    size: 25px;
-    color: ghostwhite;
+    position: relative;
+    bottom: 25px;
+    right: 10px;
+    size: 0.5em;
 }
 
 .wd-rounded-corners-all-around {
@@ -160,6 +205,8 @@ body {
     padding-left: 35px;
     border-style: hidden;
     background-color: #333333;
+    margin-top: 10px;
+
 }
 
 .wd-search-cog {
@@ -167,6 +214,8 @@ body {
     position: relative;
     top: 5px;
     font-size: 1.6em;
+    size: 25px;
+    color: #b3b3b3;
 }
 
 .wd-who-to-follow-user-avatar {
@@ -310,7 +359,8 @@ a {
 
 .list-group-item:not(.active){
     background-color: black;
-    border: 1px solid #444;
+    /*border: 1px solid #404040;*/
+    border-style: hidden;
 }
 
 
@@ -321,3 +371,31 @@ a {
 .wd-who-to-follow-title {
     color: #d9d9d9;
 }
+
+.nav-item:not(.active){
+    background-color: black;
+
+}
+.nav-linknav-link:not(.active) {
+    color: #999999;
+    border: 1px solid black;
+}
+
+.wd-tweet-in-topic-tag-word {
+    color: white;
+}
+
+.wd-tweet-in-topic-tag-selected {
+    font-weight: bolder;
+    /*text-decoration: underline;*/
+    border-bottom-style: solid;
+    border-bottom: #7070ff;
+
+    border-bottom-color: dodgerblue;
+}
+
+.nav-tabs {
+    border-style: hidden;
+}
+
+

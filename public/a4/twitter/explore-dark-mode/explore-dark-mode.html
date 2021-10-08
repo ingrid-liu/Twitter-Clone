@@ -16,7 +16,7 @@
 <!--        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ">-->
         <div class="col-2 ">
             <ul class="list-group wd-left-nav-list-dark" >
-                <li class="list-group-item " ><i class="fab fa-twitter d-inline wd-nav-icon-normal"></i></li>
+                <li class="list-group-item " ><i class="fab fa-twitter d-inline wd-nav-icon-normal wd-icon-twitter"></i></li>
                 <li class="list-group-item " style="clear:both;">
                     <i class="fa fa-home wd-nav-icon-normal" style="float: left"></i>
                     <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left" >
@@ -63,43 +63,50 @@
 
         <!-- CENTER CONTENT - Navigation -->
 <!--        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10">-->
-        <div class="col-10 col-lg-6">
-            <div class="wd-search">
+        <div class="col-10 col-lg-6 ">
+            <div class="wd-search wd-wireframe-without-bottom">
 
                 <form class="d-flex  ">
-                    <span class="wd-magnifier"><i class="fa fa-search "></i> </span>
+                    <span class="wd-magnifier"><i class="fa fa-search"></i> </span>
                     <input class="form-control me-2 wd-search-input wd-rounded-corners-all-around"
                            type="search" placeholder="Search Twitter">
-                    <a href="#"><span><i class="fa fa-cog wd-search-cog"></i></span></a>
+                    <a class="wd-search-cog" href="#"><span><i class="fa fa-cog "></i></span></a>
                 </form>
 
 
             </div>
+
+            <div class="wd-wireframe-without-top-bottom">
             <ul class="nav nav-tabs ">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">For You</a>
+                    <a class="nav-link wd-tweet-in-topic-tag-word" href="#">For You</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Trending</a>
+                    <a class="nav-link wd-tweet-in-topic-tag-word" href="#">Trending</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link wd-tweet-in-topic-tag-word" href="#">News</a>
                 </li>
                 <li class="nav-item d-none d-sm-block">
-                    <a class="nav-link" href="#">Sports</a>
+                    <a class="nav-link wd-tweet-in-topic-tag-word" href="#">Sports</a>
                 </li>
                 <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" href="#">Entertainment</a>
+                    <a class="nav-link wd-tweet-in-topic-tag-word wd-tweet-in-topic-tag-selected" href="#">Entertainment</a>
                 </li>
             </ul>
+            </div>
 
-            <div class="wd-focus-img">
+
+
+            <div class="wd-focus-img wd-wireframe-without-bottom">
                 <a href="#"><image class="wd-nav-tweet-img " src="pic/spaceX_nite2.jpeg"/></a>
                 <a class="wd-tweet-img-title d-none d-sm-block" href="#">SpaceX's Starship</a>
             </div>
 
 
             <!--  CENTER CONTENT - recommended tweets  -->
+
+            <div class="wd-tweet-in-topic-tweets wd-wireframe-adjust">
             <ul class="list-group wd-focus-tweet-frame-adjust-upper">
 
                 <li class="list-group-item wd-tweet-in-topic">
@@ -175,6 +182,7 @@
                     <div class="wd-float-done"></div>
                 </li>
             </ul>
+            </div>
         </div>
 
 
@@ -248,7 +256,7 @@
                     <span class=" wd-float-left wd-who-to-follow-user-avatar">
                         <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_NASA.png"/>
                     </span>
-                    <span class="wd-who-to-follow-user-name">NASA</span>
+                    <span class="wd-who-to-follow-user-name">NASA 🚀</span>
                     <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
                     <p class="wd-who-to-follow-id wd-who-to-follow-padding-bottom">@NASA</p>
 
@@ -266,7 +274,7 @@
                     <span class=" wd-float-left wd-who-to-follow-user-avatar">
                         <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_tesla.png"/>
                     </span>
-                    <span class="wd-who-to-follow-user-name">Tesla</span>
+                    <span class="wd-who-to-follow-user-name">Tesla 🚗</span>
                     <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
                     <p class="wd-who-to-follow-id wd-who-to-follow-padding-bottom">@Tesla</p>
 
