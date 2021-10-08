@@ -13,7 +13,8 @@
     <div class="row">
 
         <!-- LEFT SIDE BAR - navigation-->
-        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ">
+<!--        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 ">-->
+        <div class="col-2">
             <ul class="list-group ">
                 <li class="list-group-item "><i class="fab fa-twitter d-inline wd-nav-icon-normal"></i></li>
                 <li class="list-group-item " style="clear:both;">
@@ -45,23 +46,34 @@
                     <span class="wd-navigation-words wd-remove-left-margin-extra d-inline d-none d-xl-block" style="float: left">More</span>
                 </li>
             </ul>
+            <div class=" d-none d-xl-block">
+                <button class="btn btn-primary  wd-tweet-button">
+                    <a class="wd-tweet-button-link" href="#">Tweet</a>
+                </button>
+            </div>
+
+            <div class=" d-xl-none">
+                <a class="wd-tweet-button-link" href="#">
+                    <img class="wd-tweet-button-img " src="icon/tweet.png"/>
+                </a>
+            </div>
+
         </div>
 
 
-
-
         <!-- CENTER CONTENT - Navigation -->
-        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10">
-
+<!--        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10">-->
+        <div class="col-10 col-lg-6">
             <div class="wd-search">
 
                 <form class="d-flex  ">
+                    <span class="wd-magnifier"><i class="fa fa-search "></i> </span>
                     <input class="form-control me-2 wd-search-input wd-rounded-corners-all-around" type="search" placeholder="Search Twitter">
                     <a href="#"><span><i class="fa fa-cog wd-search-cog"></i></span></a>
                 </form>
 
             </div>
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs ">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">For You</a>
                 </li>
@@ -71,17 +83,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">News</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-sm-block">
                     <a class="nav-link" href="#">Sports</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-lg-block">
                     <a class="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
 
             <div class="wd-focus-img">
-                <a href="#"><image class="wd-nav-tweet-img" src="pic/spaceX.jpeg"/></a>
-                <a class="wd-tweet-img-title" href="#">SpaceX's Starship</a>
+                <a href="#"><image class="wd-nav-tweet-img " src="pic/spaceX.jpeg"/></a>
+                <a class="wd-tweet-img-title d-none d-sm-block" href="#">SpaceX's Starship</a>
             </div>
 
 
@@ -165,7 +177,8 @@
 
 
         <!-- RIGHT SIDE BAR - Who to follow -->
-        <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">
+<!--        <div class="col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block">-->
+        <div class="col-4 d-none d-lg-block">
             <ul class="list-group ">
                 <li class="list-group-item wd-title-bold" >
                     <span class="wd-who-to-follow-title">Who to follow</span>
@@ -199,7 +212,7 @@
                     </span>
                     <span class="wd-who-to-follow-user-name">Relativity Space</span>
                     <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
-                    <p class="wd-who-to-follow-padding-bottom">@relativityspace</p>
+                    <p class="wd-who-to-follow-padding-bottom d-lg-none d-xl-block">@relativityspace</p>
 
                     <div class="wd-float-done"></div>
                 </li>
@@ -217,7 +230,7 @@
                     </span>
                     <span class="wd-who-to-follow-user-name">Virgin Galactic</span>
                     <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
-                    <p class="wd-who-to-follow-padding-bottom">@virgingalactic</p>
+                    <p class="wd-who-to-follow-padding-bottom d-lg-none d-xl-block">@virgingalactic</p>
 
                     <div class="wd-float-done"></div>
                 </li>
@@ -260,9 +273,18 @@
 
             </ul>
         </div>
+
     </div>
-
-
 </div>
+
+
+<!--    <div class="d-block d-sm-none fa-2x">XS</div>-->
+<!--    <div class="d-none d-sm-block d-md-none fa-2x">S</div>-->
+<!--    <div class="d-none d-md-block d-lg-none fa-2x">M</div>-->
+<!--    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>-->
+<!--    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>-->
+<!--    <div class="d-none d-xxl-block fa-2x">XXL</div>-->
+
+
 </body>
 </html>

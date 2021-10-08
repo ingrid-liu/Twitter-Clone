@@ -9,8 +9,10 @@
 .wd-wireframe {
     border-width: 1px;
     border-style: solid;
-    border-color: lightgrey;
-    padding: 50px;
+    border-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
     margin: 20px;
 }
 
@@ -23,18 +25,24 @@
     margin-top: 8px;
 }
 
+
+
 .wd-navigation-words {
     padding-left: 12px;
+    position:center;
 }
 
 .wd-nav-icon-normal {
-    position: relative;
-    top:5px;
+    /*position: relative;*/
+    /*top:5px;*/
+    position:center;
 }
 
 .wd-nav-icon-more {
-    position: relative;
-    top:-5px;
+    /*position: relative;*/
+    /*top:-5px;*/
+    position:center;
+    margin-bottom: -5px;
 }
 
 
@@ -120,7 +128,7 @@
 
 
 .wd-search-input {
-
+    padding-left: 35px;
 }
 
 .wd-search-cog {
@@ -161,6 +169,14 @@
     margin-bottom: -5px;
 }
 
+.wd-magnifier {
+    font-size: 20px;
+    color: grey;
+    position: relative;
+    left:30px;
+    top: 4px;
+}
+
 .wd-who-to-follow-button {
     border-radius: 20px;
 }
@@ -174,6 +190,30 @@
 
 .wd-who-to-follow-button-word {
     color: white;
+}
+
+.wd-tweet-button {
+    border-radius: 20px;
+    position: relative;
+    top:10px;
+}
+
+.wd-tweet-button-link {
+    color: white;
+    font-weight: bold;
+}
+
+.wd-tweet-button-img {
+
+    width: 30px;
+    position: relative;
+    left: 10px;
+    top:10px;
+
+}
+
+.wd-nav-tabs {
+    width: 90%;
 }
 
 a {
