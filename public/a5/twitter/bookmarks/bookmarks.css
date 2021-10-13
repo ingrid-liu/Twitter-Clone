@@ -1,0 +1,195 @@
+body {
+    background: black;
+    font-family: Arial;
+    /*color: #bedcfe;*/
+    /*margin: 0px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+
+    /*justify-content: center;*/
+    /*margin: 10px;*/
+}
+
+
+a {
+    text-decoration: none;
+    color: #bedcfe;
+}
+
+
+.fa {
+    color: white;
+}
+
+/*TA的*/
+.wd-divider {
+    padding: 12px;
+    /*max-width: 500px;*/
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+
+}
+
+.wd-wireframe {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+/*---- components ----*/
+
+.wd-bookmarks {
+    padding-left: 16px;
+    padding-bottom: 12px;
+    border-bottom-style: hidden;
+}
+.wd-bookmarks-title {
+    color: white;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bolder;
+}
+.wd-bookmarks-user {
+    /*color: lightgray;           !* as required *!*/
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-bookmarks-avatar {
+    height: 48px;
+    width: 48px;
+}
+.wd-rounded-pic {
+    border-radius: 50%;
+}
+
+.wd-bookmarks-tweets-content {
+    font-size: 15px;
+    color: white;
+}
+
+
+.wd-bookmarks-tweet {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+.wd-float-done {
+    clear: both;
+}
+
+.wd-bookmarks-avatar {
+    margin-bottom: 6px;
+}
+
+.wd-bookmarks-info {
+    padding-left: 16px;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+}
+.wd-bookmarks-tweets-title {
+
+}
+
+.wd-bookmarks-tweets-author {
+    font-size: 15px;
+    color: white;
+}
+.wd-bookmarks-tweets-account {
+    color: rgb(110, 118, 125);
+    font-size: 12px;
+}
+
+.wd-bookmarks-tweets-timestamp {
+    color: rgb(110, 118, 125);
+    font-size: 12px;
+
+}
+
+.wd-bookmarks-tweets-content {
+    font-size: 15px;
+    color: lightgray;
+    width: 85%;
+}
+
+
+
+.wd-bookmarks-tweets-image-frame {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    margin-bottom: 20px;
+
+    width: 504px;
+    height: 350px;
+
+}
+
+.wd-bookmarks-tweets-image {
+    width: 504px;
+    height: 264px;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 16px;
+}
+
+.wd-rounded-up-rounded {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+}
+
+.wd-bookmarks-image-caption-title {
+    padding-left: 12px;
+    color: white;
+    font-size: 12px;
+}
+
+.wd-bookmarks-image-caption-content {
+    padding-left: 12px;
+
+    color: darkgrey;
+    font-size: 12px;
+}
+
+.wd-bookmarks-action-button {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: rgb(47, 51, 54);
+}
+
+.wd-bookmarks-action-icon {
+    width: 12px;
+    color: darkgrey;
+}
+.wd-bookmarks-action-numbers {
+    padding-left: 10px;
+    padding-right: 20%;
+}
+
+.wd-bookmarks-action-numbers-like {
+    color: red;
+}
+
+.wd-bookmarks-action-button {
+    width: 504px;
+}
+
+
+.fa fa-heart {
+    color: red;
+    size: 20px;
+}
+
