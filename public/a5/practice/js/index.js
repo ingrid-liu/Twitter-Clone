@@ -2,7 +2,7 @@
 
 // console.log('Hello World!');
 
-global1 = 10;
+var global1 = 10;
 var functionScoped = 2;
 let blockScoped = 5;
 const constant1 = global1 + functionScoped - blockScoped;
@@ -192,6 +192,9 @@ console.log(string3)
 
 
 
+// function() {
+//     console.log('Hello World')
+// }
 
 
 
