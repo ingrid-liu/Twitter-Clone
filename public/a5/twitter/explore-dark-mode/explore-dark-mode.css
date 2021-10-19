@@ -3,10 +3,10 @@ body {
 }
 
 
-.wd-left-nav-list-dark {
-    background-color: black;
-    color:black;
-}
+/*.wd-left-nav-list-dark {*/
+/*    background-color: black;*/
+/*    color:black;*/
+/*}*/
 
 
 .wd-magnifier {
@@ -172,11 +172,19 @@ body {
     padding-top: 10px;
 }
 
-
+.wd-tweet-img-subtitle {
+    font-family: "Arial";
+    color: lightgrey;
+    position: relative;
+    bottom:80px;
+    left: 12px;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
 .wd-tweet-img-title {
     color: white;
     position: relative;
-    bottom: 60px;
+    bottom: 90px;
     left: 10px;
     font-size: 2.5em;
     font-weight: bolder;
@@ -191,6 +199,10 @@ body {
     bottom: 25px;
     right: 10px;
     size: 0.5em;
+}
+
+.fa-cog {
+    font-size: 18px;
 }
 
 .wd-rounded-corners-all-around {
@@ -271,6 +283,7 @@ body {
     border-radius: 20px;
     position: relative;
     top:10px;
+    width:95%
 
 }
 
@@ -357,11 +370,8 @@ a {
 
 }
 
-.list-group-item:not(.active){
-    background-color: black;
-    /*border: 1px solid #404040;*/
-    border-style: hidden;
-}
+
+
 
 
 .wd-who-to-follow-id {
@@ -372,30 +382,120 @@ a {
     color: #d9d9d9;
 }
 
-.nav-item:not(.active){
-    background-color: black;
-
-}
-.nav-linknav-link:not(.active) {
-    color: #999999;
-    border: 1px solid black;
-}
-
-.wd-tweet-in-topic-tag-word {
-    color: white;
-}
 
 .wd-tweet-in-topic-tag-selected {
     font-weight: bolder;
+    color: white;
     /*text-decoration: underline;*/
     border-bottom-style: solid;
-    border-bottom: #7070ff;
-
-    border-bottom-color: dodgerblue;
+    /*border-bottom: #7070ff;*/
+    /*border-bottom-color: dodgerblue;*/
+    border-color: rgb(47, 51, 54);
 }
+
+.wd-tags {
+    /*padding-top: 12px;*/
+    /*display: flex;*/
+    padding-bottom: 6px;
+
+}
+
+.wd-tweet-in-topic-tag-word {
+    color: dimgrey;
+}
+
+
 
 .nav-tabs {
     border-style: hidden;
 }
 
 
+.wd-terms {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: rgb(110, 118, 125);
+    font-size: 14px;
+}
+
+.wd-show-more {
+    /*position: relative;*/
+    /*top: 10px;*/
+    font-weight: bolder;
+    color: rgb(29,161,242);
+}
+
+/*.wd-who-to-follow-block {*/
+/*    background-color: #7070ff;*/
+/*    border-style: solid;*/
+/*}*/
+
+
+.wd-test {
+    border-radius: 20px;
+    background-color: pink;
+}
+
+
+
+
+
+
+/*adjust the center gag bar*/
+.wd-tag-style {
+    /*width: 100%;*/
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    font-weight: bolder;
+////////////////////////
+    /* Stretch out??????? */
+    /*text-align-all: center;*/
+}
+
+.wd-tag-selected {
+    color: rgb(29,161,242);
+    /*text-decoration: underline;*/
+    border-bottom-style: solid;
+    /*border-bottom-color: dodgerblue;*/
+////////////////////////
+    /* not ideal effect ???? */
+
+}
+.wd-tag-unselected {
+    /*color: whitesmoke;*/
+    /*color: rgb(110, 118, 125);*/
+}
+
+
+.wd-divider {
+    padding-left: 16px;
+}
+
+.wd-tags {
+    padding-top: 12px;
+    /*display: flex;*/
+    padding-bottom: 15px;
+
+}
+
+/* magic turn-key solution*/
+
+
+.list-group-item:not(.active){
+    background-color: rgb(20, 20, 20) ;
+    /*border: 1px solid #404040;*/
+    border-style: hidden;
+}
+
+
+
+
+/*.nav-item:not(.active){*/
+/*    background-color: black;*/
+
+/*}*/
+/*.nav-linknav-link:not(.active) {*/
+/*    color: #999999;*/
+/*    border: 1px solid black;*/
+/*}*/

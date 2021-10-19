@@ -387,17 +387,6 @@ a {
     color: #d9d9d9;
 }
 
-.nav-item:not(.active){
-    background-color: black;
-
-}
-.nav-linknav-link:not(.active) {
-    color: #999999;
-    border: 1px solid black;
-}
-
-
-
 
 .wd-tweet-in-topic-tag-selected {
     font-weight: bolder;
@@ -419,7 +408,6 @@ a {
 .wd-tweet-in-topic-tag-word {
     color: dimgrey;
 }
-
 
 
 
@@ -448,14 +436,17 @@ a {
 /*}*/
 
 
+.wd-test {
+    border-radius: 20px;
+    background-color: pink;
+}
 
 
 
 
 
 
-
-
+/*adjust the center gag bar*/
 .wd-tag-style {
     /*width: 100%;*/
     color: rgb(110, 118, 125);
@@ -471,11 +462,12 @@ a {
     color: rgb(29,161,242);
     /*text-decoration: underline;*/
     border-bottom-style: solid;
+
     /*border-bottom-color: dodgerblue;*/
 ////////////////////////
     /* not ideal effect ???? */
-
 }
+
 .wd-tag-unselected {
     /*color: whitesmoke;*/
     /*color: rgb(110, 118, 125);*/
@@ -492,3 +484,17 @@ a {
     padding-bottom: 15px;
 
 }
+
+
+
+
+/* magic turn-key solution*/
+
+/*.nav-item:not(.active){*/
+/*    background-color: black;*/
+
+/*}*/
+/*.nav-linknav-link:not(.active) {*/
+/*    color: #999999;*/
+/*    border: 1px solid black;*/
+/*}*/
