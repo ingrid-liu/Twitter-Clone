@@ -172,11 +172,19 @@ body {
     padding-top: 10px;
 }
 
-
+.wd-tweet-img-subtitle {
+    font-family: "Arial";
+    color: lightgrey;
+    position: relative;
+    bottom:80px;
+    left: 12px;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
 .wd-tweet-img-title {
     color: white;
     position: relative;
-    bottom: 60px;
+    bottom: 90px;
     left: 10px;
     font-size: 2.5em;
     font-weight: bolder;
@@ -386,21 +394,78 @@ a {
     border: 1px solid black;
 }
 
-.wd-tweet-in-topic-tag-word {
-    color: white;
-}
+
+
 
 .wd-tweet-in-topic-tag-selected {
     font-weight: bolder;
+    color: white;
     /*text-decoration: underline;*/
     border-bottom-style: solid;
-    border-bottom: #7070ff;
-
-    border-bottom-color: dodgerblue;
+    /*border-bottom: #7070ff;*/
+    /*border-bottom-color: dodgerblue;*/
+    border-color: rgb(47, 51, 54);
 }
+
+.wd-tags {
+    /*padding-top: 12px;*/
+    /*display: flex;*/
+    padding-bottom: 6px;
+
+}
+
+.wd-tweet-in-topic-tag-word {
+    color: dimgrey;
+}
+
+
+
 
 .nav-tabs {
     border-style: hidden;
 }
 
 
+
+
+
+
+
+
+
+.wd-tag-style {
+    /*width: 100%;*/
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    font-weight: bolder;
+////////////////////////
+    /* Stretch out??????? */
+    /*text-align-all: center;*/
+}
+
+.wd-tag-selected {
+    color: rgb(29,161,242);
+    /*text-decoration: underline;*/
+    border-bottom-style: solid;
+    /*border-bottom-color: dodgerblue;*/
+////////////////////////
+    /* not ideal effect ???? */
+
+}
+.wd-tag-unselected {
+    /*color: whitesmoke;*/
+    /*color: rgb(110, 118, 125);*/
+}
+
+
+.wd-divider {
+    padding-left: 16px;
+}
+
+.wd-tags {
+    padding-top: 12px;
+    /*display: flex;*/
+    padding-bottom: 15px;
+
+}
