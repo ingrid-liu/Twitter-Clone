@@ -3,10 +3,10 @@ body {
 }
 
 
-.wd-left-nav-list-dark {
-    background-color: black;
-    color:black;
-}
+/*.wd-left-nav-list-dark {*/
+/*    background-color: black;*/
+/*    color:black;*/
+/*}*/
 
 
 .wd-magnifier {
@@ -377,6 +377,8 @@ a {
 }
 
 
+
+
 .wd-who-to-follow-id {
     color: #999999;
 }
@@ -424,6 +426,27 @@ a {
 .nav-tabs {
     border-style: hidden;
 }
+
+
+.wd-terms {
+    padding-left: 20px;
+    padding-top: 10px;
+    color: rgb(110, 118, 125);
+    font-size: 14px;
+}
+
+.wd-show-more {
+    /*position: relative;*/
+    /*top: 10px;*/
+    font-weight: bolder;
+    color: rgb(29,161,242);
+}
+
+/*.wd-who-to-follow-block {*/
+/*    background-color: #7070ff;*/
+/*    border-style: solid;*/
+/*}*/
+
 
 
 
