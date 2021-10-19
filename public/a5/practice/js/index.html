@@ -3,21 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript</title>
-
-
 </head>
 <body>
-    <h1 id="hello" style="background-color: #9FE2BF">JavaScript</h1>
-    <button onclick="sayHello()">
-        Say Hello
-    </button>
+
+<!--button-->
+
+<!--    <h1 id="hello" style="background-color: #9FE2BF">JavaScript</h1>-->
+<!--    <button onclick="sayHello()">-->
+<!--        Say Hello-->
+<!--    </button>-->
+
+<!--alert-->
+
+<!--    <h2>Embedded script tag</h2>-->
+<!--    <script>-->
+<!--        alert('Hello World!');-->
+<!--    </script>-->
+
 
     <!-- if I write the scripts in the html,
     it will show this message first without showing the html at the same time-->
 
+
+
+
+    <h2>Writing to the DOM</h2>
+    <script>
+        document.write('Welcome to JavaScript!')
+    </script>
+
+    <h2>Calculating an HTML string</h2>
+    <script>
+        const renderTodos = (todos) => `
+            <ul>
+                ${todos.map(todo =>
+            `<li>${todo}</li>`
+        ).join('')}
+            </ul>`;
+        const todos = ['Pickup kids', 'Feed dogs']
+        let html = renderTodos(todos);
+        document.write(html);
+    </script>
+
+
+
     <script src="index.js"></script>
 
 
-<script src="index.js"></script>
-</body>
+<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+
+<!--    <script>-->
+<!--        $(init);-->
+<!--    </script>-->
+
+
+
+
 </html>

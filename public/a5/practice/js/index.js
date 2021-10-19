@@ -1,6 +1,7 @@
 // alert('Hello World!');
 
-// console.log('Hello World!');
+console.log('Hello World!');
+console.log('\t');
 
 var global1 = 10;
 var functionScoped = 2;
@@ -60,29 +61,26 @@ const loggedIn = true;
 const greeting = loggedIn ? 'Welcome!' : 'Please login';
 console.log(greeting);
 
-console.log('\n');
-console.log('Functions');
-console.log('Legacy ES5 function');
+console.log('\t');
 function add (a, b) {
     return a + b;
 }
 const twoPlusFour = add(2, 4);
-console.log('a + b = ' + twoPlusFour);
+console.log(twoPlusFour);
+
 
 console.log('\t');
-console.log('New ES6 functions');
 const subtract = (a, b) => {
     return a - b;
 }
 const threeMinusOne = subtract(3, 1);
-console.log('a - b = ' + threeMinusOne);
+console.log(threeMinusOne);
+
 
 console.log('\t');
 const multiply = (a, b) => a * b;
 const fourTimesFive = multiply(4, 5);
-// console.log(fourTimesFive);
-console.log('a * b = ' + fourTimesFive);
-
+console.log(fourTimesFive);
 
 
 console.log('\n');
@@ -126,9 +124,6 @@ let variableArray1 = [
     stringArray1
 ];
 
-// var functionScoped = 2;
-//let blockScoped = 5;
-//const constant1 = global1 + functionScoped - blockScoped;      -------7
 
 
 console.log('Arrays');
@@ -150,23 +145,15 @@ console.log(length1);
 console.log(index1);
 
 console.log('\nAdd and remove data to arrays');
-console.log('original arrays');
-console.log(numberArray1);
-console.log(stringArray1);
-console.log('after adding');
 // adding new items
 numberArray1.push(6);
 stringArray1.push('string3');
-console.log(numberArray1);
-console.log(stringArray1);
 
-console.log('after removing');
 // remove 1 item starting on 3rd spot
 numberArray1.splice(2, 1);
 stringArray1.splice(1, 1);
 console.log(numberArray1);
 console.log(stringArray1);
-
 
 console.log('\t');
 console.log('For loops');
@@ -175,27 +162,60 @@ for (let i=0; i<stringArray1.length; i++) {
     console.log(string1);
 }
 
-
 console.log('\t');
 console.log('Map');
 const squares = numberArray1.map(square);
 const cubes = numberArray1.map(a => a * a * a);
+console.log(numberArray1)
 console.log(squares);
 console.log(cubes);
-console.log('👍 Wow-oh! Javascript is sooooo amazing!!');
+// console.log('👍 Wow-oh! Javascript is sooooo amazing!!');
 
 console.log('\t')
+console.log('Find');
 const four = numberArray1.find(a => a === 4);
 const string3 = stringArray1.find(a => a === 'string3');
 console.log(four)
 console.log(string3)
 
 
+console.log('\t')
+console.log('Find Index');
+const fourIndex = numberArray1.findIndex(a => a === 4);
+const string3Index = stringArray1.findIndex(a => a === 'string3');
+console.log(fourIndex)
+console.log(string3Index)
 
-// function() {
-//     console.log('Hello World')
+
+console.log('\t')
+console.log('Filter');
+const numbersGreaterThan2 = numberArray1.filter(a => a > 2);
+const evenNumbers = numberArray1.filter(a => a % 2 === 0);
+const oddNumbers = numberArray1.filter(a => a % 2 !== 0);
+console.log(numberArray1)
+console.log(numbersGreaterThan2)
+console.log(evenNumbers)
+console.log(oddNumbers)
+
+console.log('\t')
+const five = 2 + 3;
+const result1 = "2 + 3 = " + five;
+console.log(result1);
+
+const result2 = `2 + 3 = ${2 + 3}`;
+console.log(result2);
+
+const username = "alice";
+const greeting1 = `Welcome home ${username}`;
+console.log(greeting1);
+
+const loggedIn2 = false;
+const greeting2 = `Logged in: ${loggedIn2 ? "Yes" : "No"}`;
+console.log(greeting2);
+
+// jQuery
+// console.log('\t')
+// const init = () => {
+//     console.log('Hello world from jQuery');
+//     /* do the rest of the work here */
 // }
-
-
-
-
