@@ -193,6 +193,10 @@ body {
     size: 0.5em;
 }
 
+.fa-cog {
+    font-size: 18px;
+}
+
 .wd-rounded-corners-all-around {
     border-radius: 18px;
 }
@@ -271,6 +275,7 @@ body {
     border-radius: 20px;
     position: relative;
     top:10px;
+    width:95%
 
 }
 
