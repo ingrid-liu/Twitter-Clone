@@ -5,7 +5,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
     <link href="explore-dark-mode.css" rel="stylesheet"/>
     <meta charset="UTF-8">
-    <title>A4-Explore Dark Mode</title>
+    <title>A5-Build</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@
                     <i class="fa fa-home wd-nav-icon-normal" style="float: left"></i>
                     <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left" >
                         Home</span></li>
-                <li class="list-group-item  "><i class="fa fa-hashtag wd-nav-icon-normal" style="float: left"></i>
+                <li class="list-group-item  active"><i class="fa fa-hashtag wd-nav-icon-normal" style="float: left"></i>
                     <span class="wd-navigation-words d-inline d-none d-xl-block" style="float: left">
                         Explore</span></li>
                 <li class="list-group-item "><i class="fa fa-bell wd-nav-icon-normal" style="float: left"></i>
@@ -64,34 +64,57 @@
         <!-- CENTER CONTENT - Navigation -->
 <!--        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10">-->
         <div class="col-10 col-lg-6 ">
-            <div class="wd-search wd-wireframe-without-bottom">
+            <div class="wd-search ">
 
                 <form class="d-flex  ">
                     <span class="wd-magnifier"><i class="fa fa-search"></i> </span>
                     <input class="form-control me-2 wd-search-input wd-rounded-corners-all-around"
                            type="search" placeholder="Search Twitter">
-                    <a class="wd-search-cog" href="#"><span><i class="fa fa-cog "></i></span></a>
+                    <a class="wd-search-cog" href="#"><span><i class="fa fa-cog " style="color:rgb(0, 102, 255);"></i></span></a>
                 </form>
 
 
             </div>
 
 
-            <div class="wd-divider wd-tags wd-wireframe-without-top-bottom">
-                <a href="#"><span class="wd-tag-style wd-tag-unselected">For you</span></a>
-                <a href="#"><span class="wd-tag-style wd-tag-unselected">Trending</span></a>
-                <a href="#"><span class="wd-tag-style wd-tag-unselected">News</span></a>
-                <a href="#"><span class="wd-tag-style wd-tag-unselected">Sports</span></a>
-                <a href="#"><span class="wd-tag-style wd-tag-selected" >Entertainment</span></a>
-            </div>
+<!--            <div class="wd-divider wd-tags wd-wireframe-without-top-bottom">-->
+<!--                <a href="#"><span class="wd-tag-style wd-tag-unselected">For you</span></a>-->
+<!--                <a href="#"><span class="wd-tag-style wd-tag-unselected">Trending</span></a>-->
+<!--                <a href="#"><span class="wd-tag-style wd-tag-unselected">News</span></a>-->
+<!--                <a href="#"><span class="wd-tag-style wd-tag-unselected">Sports</span></a>-->
+<!--                <a href="#"><span class="wd-tag-style wd-tag-selected" >Entertainment</span></a>-->
+<!--            </div>-->
 
 <!--            <div class="wd-wireframe-without-top-bottom ">-->
+
+            <ul class="nav nav-tabs wd-bottom-space">
+                <li class="nav nav-item active wd-a5-tag-selected">
+                    <a class="nav-link  " href="#">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span style="color: white">Trending</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span style="color: white">News</span></a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link" href="#"><span style="color: white">Sports</span></a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#"><span style="color: white">Entertainment</span></a>
+                </li>
+            </ul>
+
+
+<!--styling in a4 night mode-->
+
+<!--            <div class=" ">-->
 <!--                <ul class="nav nav-tabs ">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link wd-tweet-in-topic-tag-word" href="#">For You</a>-->
+<!--                    <li class="nav nav-item active wd-nav-tabs-selected">-->
+<!--                        <a class="nav-link wd-tweet-in-topic-tag-word " href="#">For You</a>-->
 <!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link wd-tweet-in-topic-tag-word" href="#">Trending</a>-->
+<!--                    <li class="nav-item wd-nav-tabs-unselected">-->
+<!--                        <a class="nav-link wd-tweet-in-topic-tag-word" href="#" ><span style="color: white">Trending</span></a>-->
 <!--                    </li>-->
 <!--                    <li class="nav-item">-->
 <!--                        <a class="nav-link wd-tweet-in-topic-tag-word" href="#">News</a>-->
@@ -100,7 +123,7 @@
 <!--                        <a class="nav-link wd-tweet-in-topic-tag-word" href="#">Sports</a>-->
 <!--                    </li>-->
 <!--                    <li class="nav-item d-none d-lg-block">-->
-<!--                        <a class="nav-link  wd-tweet-in-topic-tag-selected" href="#">Entertainment</a>-->
+<!--                        <a class="nav-link  wd-tweet-in-topic-tag-word" href="#">Entertainment</a>-->
 <!--                        &lt;!&ndash;                    <a href="#"><span class="wd-tag-style wd-tag-selected">Entertainment!</span></a>&ndash;&gt;-->
 <!--                    </li>-->
 <!--                </ul>-->
@@ -108,17 +131,15 @@
 
 
             <div class="wd-focus-img wd-wireframe-without-bottom">
-                <a href="#"><image class="wd-nav-tweet-img " src="pic/spaceX_nite2.jpeg"/></a>
-                <a class="wd-tweet-img-subtitle d-none d-sm-block" href="#">Music · Last night</a>
-                <a class="wd-tweet-img-title d-none d-sm-block" href="#">SpaceX's Starship ☄️</a>
+                <a href="#"><image class="wd-nav-tweet-img " src="pic/spaceX.jpeg"/></a>
+<!--                <a class="wd-tweet-img-subtitle d-none d-sm-block" href="#">Music · Last night</a>-->
+                <a class="wd-tweet-img-title d-none d-sm-block" href="#" style="color: black">SpaceX's Starship</a>
             </div>
 
 
             <!--  CENTER CONTENT - recommended tweets  -->
-
             <div class="wd-tweet-in-topic-tweets wd-wireframe-adjust">
             <ul class="list-group wd-focus-tweet-frame-adjust-upper">
-
                 <li class="list-group-item wd-tweet-in-topic">
                     <div class="wd-float-right">
                         <span class=" wd-float-left wd-who-to-follow-user-avatar">
@@ -145,11 +166,11 @@
 
                     <div class="wd-tweet-preview-content">
                         <span class="wd-tweet-in-topic-content-preview">JavaScript</span>
-                        <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i><span class="wd-tweet-in-topic-time">- 2h</span>
+                        <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i><span class="wd-tweet-in-topic-time">- 1 day</span>
                         <p class="wd-tweet-in-topic-content-preview ">
                             JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
                         </p>
-                        <p class="wd-tweet-in-topic-number wd-tweet-in-topic-number-adjust-upper wd-tweet-in-topic-number-adjust-lower">123K Tweets</p>
+<!--                        <p class="wd-tweet-in-topic-number wd-tweet-in-topic-number-adjust-upper wd-tweet-in-topic-number-adjust-lower">123K Tweets</p>-->
 
                     </div>
 
@@ -167,7 +188,9 @@
                         <p class="wd-tweet-in-topic-subtitle">Web Development</p>
                         <span class="wd-tweet-in-topic-content-preview">jQuery</span>
                         <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
-                        <p class="wd-tweet-in-topic-number wd-tweet-in-topic-number-adjust-lower">123K Tweets</p>
+                        <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i> <span class="wd-tweet-in-topic-time">- last week</span>
+
+                        <!--                        <p class="wd-tweet-in-topic-number wd-tweet-in-topic-number-adjust-lower">123K Tweets</p>-->
 
                     </div>
 
@@ -184,8 +207,8 @@
                     <div class="wd-tweet-preview-content">
                         <p class="wd-tweet-in-topic-subtitle">Web Development</p>
                         <span class="wd-tweet-in-topic-content-preview">NodeJS</span>
-                        <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i> <span class="wd-tweet-in-topic-time">- 2h</span>
-                        <p class="wd-tweet-in-topic-number wd-tweet-in-topic-number-adjust-lower">123K Tweets</p>
+                        <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i> <span class="wd-tweet-in-topic-time">- last month</span>
+<!--                        <p class="wd-tweet-in-topic-number wd-tweet-in-topic-number-adjust-lower">123K Tweets</p>-->
 
                     </div>
 
@@ -206,7 +229,7 @@
                 <li class="list-group-item wd-who-to-follow-padding">
                     <div >
                         <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
-                            <a class="wd-who-to-follow-button-word" href="#">Follow</a>
+                            <a class="wd-who-to-follow-button-word" href="#" style="color: white">Follow</a>
                         </button>
                     </div>
 
@@ -224,7 +247,60 @@
                 <li class="list-group-item wd-who-to-follow-padding">
                     <div >
                         <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
-                            <a class="wd-who-to-follow-button-word" href="#">Follow</a>
+                            <a class="wd-who-to-follow-button-word" href="#" style="color: white">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_relativityspace.png"/>
+                    </span>
+                    <span class="wd-who-to-follow-user-name">Relativity Space</span>
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-id wd-who-to-follow-padding-bottom d-lg-none d-xl-block">@relativityspace</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#" style="color: white">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_virgin-logo.png"/>
+                    </span>
+                    <span class="wd-who-to-follow-user-name">Virgin Galactic</span>
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-id wd-who-to-follow-padding-bottom d-lg-none d-xl-block">@virgingalactic</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#" style="color: white">Follow</a>
+                        </button>
+                    </div>
+
+                    <span class=" wd-float-left wd-who-to-follow-user-avatar">
+                        <img class="wd-bookmarks-avatar wd-rounded-pic" src="pic/avatar_NASA.png"/>
+                    </span>
+                    <span class="wd-who-to-follow-user-name">NASA 🚀</span>
+                    <i class="fa fa-check-circle wd-who-to-follow-authenticated"></i>
+                    <p class="wd-who-to-follow-id wd-who-to-follow-padding-bottom">@NASA</p>
+
+                    <div class="wd-float-done"></div>
+                </li>
+
+                <li class="list-group-item wd-who-to-follow-padding">
+                    <div >
+                        <button class="btn btn-primary wd-who-to-follow-button wd-float-right">
+                            <a class="wd-who-to-follow-button-word" href="#" style="color: white">Follow</a>
                         </button>
                     </div>
 
@@ -237,15 +313,10 @@
 
                     <div class="wd-float-done"></div>
                 </li>
-                <br/>
-
-                <ul><a href="#"><span class="wd-show-more">Show More</span></a> </ul>
-                <br/>
 
             </ul>
-            <p class="wd-terms">Terms of Service Privacy Policy Cookie Policy Ads info More ... @2021 Twitter, inc</p>
-
         </div>
+
 
     </div>
 </div>
