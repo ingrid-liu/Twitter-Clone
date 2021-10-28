@@ -26,6 +26,8 @@ let isNumber = typeof numberVariable;
 let isString = typeof stringVariable;
 let isBoolean = typeof booleanVariable;
 
+console.log('\t');
+
 console.log(floatingPointNumber);
 console.log(stringVariable);
 console.log(booleanVariable);
@@ -33,6 +35,8 @@ console.log(isNumber);
 console.log(isString);
 console.log(isBoolean);
 
+
+console.log('\t');
 
 console.log('Boolean');
 let true1 = true;
@@ -43,6 +47,16 @@ let true3 = !false2;
 let true4 = numberVariable === 123;
 let true5 = floatingPointNumber !== 321.432;
 let false3 = numberVariable < 100;
+
+console.log(true1)
+console.log(false1)
+console.log(false2)
+console.log(true2)
+console.log(true3)
+console.log(true4)
+console.log(true5)
+console.log(false3)
+
 
 console.log('\t');
 console.log('If else');
@@ -82,26 +96,6 @@ const multiply = (a, b) => a * b;
 const fourTimesFive = multiply(4, 5);
 console.log(fourTimesFive);
 
-
-console.log('\n');
-
-console.log('write a function by myself to practice');
-let division = (a , b) => {
-    return a/b;
-}
-
-let ceil = (a, b) => {
-    return Math.ceil(a/b)
-}
-let floor = (a, b) => {
-    return Math.floor(a/b)
-}
-let fiveDividesTwo = division(5, 2);
-let ceilNum = ceil(5, 2);
-let floorNum = floor(5, 2);
-console.log(fiveDividesTwo);
-console.log(ceilNum);
-console.log(floorNum);
 
 console.log('\t');
 
@@ -212,10 +206,3 @@ console.log(greeting1);
 const loggedIn2 = false;
 const greeting2 = `Logged in: ${loggedIn2 ? "Yes" : "No"}`;
 console.log(greeting2);
-
-// jQuery
-// console.log('\t')
-// const init = () => {
-//     console.log('Hello world from jQuery');
-//     /* do the rest of the work here */
-// }
