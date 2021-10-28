@@ -3,11 +3,8 @@ const TodoItem = (todo) => {
         <li>
             <input type="checkbox"
                 ${todo.done ? 'checked' : ''}/>
-                ${todo.title}
-                (${todo.status})
-
-        </li>
-    `);
+            ${todo.title}
+            (${todo.status})
+        </li>`);
 }
 export default TodoItem;
-
