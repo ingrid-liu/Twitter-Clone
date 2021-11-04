@@ -81,7 +81,7 @@ body {
     border-width: 1px;
     border-style: solid;
     border-color: #262626;
-    border-bottom: hidden;
+    /*border-bottom: hidden;*/
     /*padding: 50px;*/
     /*margin: 20px;*/
     /*margin-top: 8px;*/
@@ -433,6 +433,10 @@ a {
 /*.wd-who-to-follow-block {*/
 /*    background-color: #7070ff;*/
 /*    border-style: solid;*/
+/*}*/
+
+/*.wd-add-bg {*/
+/*    background-color: grey;*/
 /*}*/
 
 
