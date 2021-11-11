@@ -1,4 +1,4 @@
-import NavigationSidebar from "../NavigationSidebar.js";
+import NavigationSidebar from "./NavigationSidebar/NavigationSidebar.js";
 // import ExploreComponent from "./ExploreComponent.js";
 // import WhoToFollowList from "../WhoToFollowList.js";
 
