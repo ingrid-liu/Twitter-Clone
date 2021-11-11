@@ -1,6 +1,8 @@
-import NavigationSidebar from "./NavigationSidebar/NavigationSidebar.js";
-// import ExploreComponent from "./ExploreComponent.js";
-// import WhoToFollowList from "../WhoToFollowList.js";
+// import NavigationSidebar from "./test.js";
+// import NavigationSidebar from "../test/test.js";
+import NavigationSidebar from "../NavigationSidebar/NavigationSidebar.js";
+import ExploreComponent from "../ExploreComponent/ExploreComponent.js";
+import WhoToFollowList from "../WhoToFollowList/WhoToFollowList.js";
 
 (function ($) {
     $('#wd-explore').append(`
@@ -9,27 +11,11 @@ import NavigationSidebar from "./NavigationSidebar/NavigationSidebar.js";
             ${NavigationSidebar()}
         </div>
 
-
-
-
-        </div>
     `);
 })($);
 
-
-
-// NavigationSidebar
-
-
-//     ${ExploreComponent()}
+// ${ExploreComponent()}
 // <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
 //     ${WhoToFollowList()}
 // </div>
-
-
-
-// ExploreComponent
-// WhoToFollowList
-
-
-
+// </div>
