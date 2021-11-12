@@ -1,6 +1,6 @@
 const NavigationSidebar = () => {
     return(`
-            <div class="list-group">
+            <ul class="list-group">
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter"></i></a>
             <!-- continue the rest of the list -->
@@ -33,7 +33,7 @@ const NavigationSidebar = () => {
                         </span>
                         <span class="wd-navigation-words wd-remove-left-margin-extra d-inline d-none d-xl-block" style="float: left">More</span>
                     </li>            
-            </div>
+            </ul>
             <div class="d-grid mt-2">
                 <a href="tweet.html"
                    class="btn btn-primary btn-block rounded-pill">

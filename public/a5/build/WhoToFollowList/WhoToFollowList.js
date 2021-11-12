@@ -1,15 +1,20 @@
+import WhoToFollowListItem from "./WhoToFollowListItem.js";
+import who from "./who.js";
+
 const WhoToFollowList = () => {
     return(`
-            <div class="list-group">
-                <a class="list-group-item" href="/">
-                    <i class="fab fa-twitter"></i></a>
-            <!-- continue the rest of the list -->
-            </div>
-            <div class="d-grid mt-2">
-                <a href="tweet.html"
-                   class="btn btn-primary btn-block rounded-pill">
-                    Tweet</a>
-            </div>
+            <ul class="list-group ">
+                <li class="list-group-item wd-title-bold" >
+                    <span class="wd-who-to-follow-title">Who to follow</span>                
+                    
+                ${
+                    who.map(each => {
+                        return(WhoToFollowListItem(each));
+                    }).join('')
+                }
+             
+            </ul>
+                    
     `);
 }
 export default WhoToFollowList;
