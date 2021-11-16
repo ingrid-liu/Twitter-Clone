@@ -158,7 +158,6 @@ a {
 
 .wd-bookmarks-image-caption-content {
     padding-left: 12px;
-
     color: darkgrey;
     font-size: 12px;
 }
@@ -168,6 +167,7 @@ a {
     padding-left: 10px;
     font-size: 12px;
     color: rgb(47, 51, 54);
+
 }
 
 .wd-bookmarks-action-icon {
@@ -184,7 +184,8 @@ a {
 }
 
 .wd-bookmarks-action-button {
-    width: 504px;
+    /*width: 504px;*/
+    width: 80%;
 }
 
 
