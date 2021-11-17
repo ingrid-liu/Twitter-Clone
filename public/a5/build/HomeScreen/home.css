@@ -397,16 +397,20 @@ a {
 .wd-bookmarks-action-button {
     padding-bottom: 10px;
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 15px;
     color: rgb(47, 51, 54);
+    width: 90%;
 }
 .wd-bookmarks-action-icon {
     width: 12px;
-    color: darkgrey;
+    font-size: 15px;
+    color: grey;
 }
 .wd-bookmarks-action-numbers {
-    padding-left: 10px;
-    padding-right: 20%;
+    /*padding-left: 10px;*/
+    /*padding-right: 20%;*/
+    font-size: 15px;
+    color: grey;
 }
 
 .wd-bookmarks-action-numbers-like {
@@ -421,4 +425,51 @@ a {
 .fa fa-heart {
     color: red;
     size: 20px;
+}
+
+a > i{
+    padding-right:10px;
+}
+.btn-primary.override-bs {
+    background-color:#0d6efd;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+.btn-primary.override {
+    display: inline-flex;
+    background-color:#0d6efd;
+    margin-top: 5px;
+    width: 80px;
+    border-radius: 20px;
+    font-weight: bolder;
+    margin-left: -25px;
+}
+.wd-rounded{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -20px;
+}
+.wd-secondary{
+    font-size: medium;
+    color:dodgerblue;
+}
+
+.wd-span {
+    margin-left:60px;
+}
+
+.wd-text-lightgray{
+    color: lightgray;
+}
+
+.wd-icon-spaceout{
+    text-decoration: none;
+    float: left;
+    width: 25%;
+}
+.wd-icon-space{
+    margin-left: 12px;
 }
