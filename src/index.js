@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HelloWorld from "./hello.js";
+import Todo from "./components/Todo";
 
 ReactDOM.render(
-    <h1>Hello React World!</h1>,
+    // <h1>Hello React World!</h1>,
+    <Todo/>,
     document.getElementById('root')
 );
 
