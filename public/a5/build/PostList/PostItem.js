@@ -1,4 +1,6 @@
 const PostItem = (post) => {
+
+    const haveCaption = !!(post.imgCaption && post.imgCaption_content && post.imgCaption_content_link);
     return(`
         <li class="list-group-item ">
             <!-- Avatar -->
@@ -21,7 +23,7 @@ const PostItem = (post) => {
                 <!-- Tweet Image -->
                 <div class="wd-post-tweets-image-frame wd-post-rounded-corners-all-around">
                     <img class="wd-post-tweets-image " src=${post.image}/>
-                    <div class="wd-post-tweets-content">
+                    <div class="wd-post-tweets-content ${haveCaption === true? '':'d-none'}">
                         <p class="wd-post-tweets-content-title">${post.imgCaption }</p>
                         <p class="wd-post-tweets-content-content">${post.imgCaption_content}</p>
                         <a class="wd-post-tweets-content-link" href="#">${post.imgCaption_content_link}</a>

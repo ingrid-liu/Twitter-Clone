@@ -5,10 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloWorld from "./hello.js";
 import Todo from "./components/Todo";
+import todos from "./components/todos.json";
+import NavigationExample from "./components/NavigationExample";
 
 ReactDOM.render(
     // <h1>Hello React World!</h1>,
-    <Todo/>,
+    // <Todo todos={todos}/>,              // if forgot to pass todos={todos}, the default value will show up!
+    <NavigationExample/>,
     document.getElementById('root')
 );
 
