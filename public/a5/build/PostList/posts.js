@@ -30,6 +30,7 @@ const post =  [
         comment:"965",
         retweets: "2.4K",
         likes: "4K",
-    },];
+    },
+];
 
 export default post;

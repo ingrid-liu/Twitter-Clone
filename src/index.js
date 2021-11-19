@@ -4,14 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HelloWorld from "./hello.js";
-import Todo from "./components/Todo";
-import todos from "./components/todos.json";
-import NavigationExample from "./components/NavigationExample";
+import Todo from "./Navigation/Todo";
+import todos from "./Navigation/todos.json";
+import NavigationExample from "./Navigation/NavigationExample";
+
+
 
 ReactDOM.render(
-    // <h1>Hello React World!</h1>,
-    // <Todo todos={todos}/>,              // if forgot to pass todos={todos}, the default value will show up!
-    <NavigationExample/>,
+    // <NavigationExample/>,
+    <App/>,
     document.getElementById('root')
 );
 
