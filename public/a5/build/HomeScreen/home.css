@@ -14,7 +14,7 @@ body {
 }
 
 .wd-tags {
-    background-color: #005ce6;
+    /*background-color: #005ce6;*/
 }
 .wd-tags-nav-bar {
     border-color: #404040;
@@ -431,7 +431,7 @@ a > i{
     padding-right:10px;
 }
 .btn-primary.override-bs {
-    background-color:#0d6efd;
+    /*background-color:#0d6efd;*/
     margin-top: 20px;
     width: 100%;
     border-radius: 20px;
@@ -439,7 +439,7 @@ a > i{
 }
 .btn-primary.override {
     display: inline-flex;
-    background-color:#0d6efd;
+    /*background-color:#0d6efd;*/
     margin-top: 5px;
     width: 80px;
     border-radius: 20px;
@@ -454,7 +454,7 @@ a > i{
 }
 .wd-secondary{
     font-size: medium;
-    color:dodgerblue;
+    /*color:dodgerblue;*/
 }
 
 .wd-span {

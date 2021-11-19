@@ -1,6 +1,6 @@
 const PostSummaryItem = (post) => {
     return(`
-        <li class="list-group-item wd-tweet-in-topic wd-inner-border">
+        <li class="list-group-item wd-tweet-in-topic ">
             <div class="wd-float-right ">
                 <span class=" wd-float-left wd-who-to-follow-user-avatar">
                 <img class="wd-tweet-preview-img " src=${post.image}/>

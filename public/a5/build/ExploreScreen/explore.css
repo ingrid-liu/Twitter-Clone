@@ -14,13 +14,30 @@ body {
 }
 
 .wd-tags {
-    background-color: #005ce6;
+    background-color: #339dd3;
 }
 .wd-tags-nav-bar {
     border-color: #404040;
 }
 
+/*Global */
+.wd-float-left {
+    float: left;
+}
 
+.wd-float-right {
+    float: right;
+    position: relative;
+    top:5px;
+}
+.wd-float-done {
+    clear: both;
+}
+a {
+    text-decoration: None;
+}
+
+/*l40-180*/
 .wd-focus-tweet-frame-adjust-upper {
     /*margin-top: -50px;*/
     /*margin-top: -100px;*/
@@ -63,11 +80,11 @@ body {
     position:center;
 }
 
-.wd-nav-icon-normal {
-    /*position: relative;*/
-    /*top:5px;*/
-    position:center;
-}
+/*.wd-nav-icon-normal {*/
+/*    !*position: relative;*!*/
+/*    !*top:5px;*!*/
+/*    position:center;*/
+/*}*/
 
 .wd-nav-icon-more {
     /*position: relative;*/
@@ -92,12 +109,6 @@ body {
     font-size:0.7em;
 }
 
-.wd-rounded-corners-all-around-little {
-    /*border-radius: 6px;*/
-}
-.wd-who-to-follow-authenticated {
-    padding-left: 4px;
-}
 
 .wd-title-bold {
     font-weight: bolder;
@@ -169,36 +180,10 @@ body {
     font-size: 1.6em;
 }
 
-.wd-who-to-follow-user-avatar {
-    padding-right: 12px;
-}
 
 
 
-.wd-float-left {
-    float: left;
-}
-
-.wd-float-right {
-    float: right;
-    position: relative;
-    top:5px;
-}
-.wd-float-done {
-    clear: both;
-}
-
-.wd-who-to-follow-padding {
-    padding-top: 10px;
-
-}
-
-.wd-who-to-follow-padding-bottom {
-    /*padding-bottom: -5px;*/
-    /*position: relative;*/
-    /*bottom: -5px;*/
-    margin-bottom: -5px;
-}
+/*above haven't make comment*/
 
 .wd-magnifier {
     font-size: 20px;
@@ -248,11 +233,36 @@ body {
     width: 90%;
 }
 
-a {
-    text-decoration: None;
+
+
+.wd-who-to-follow-user-avatar {
+    padding-right: 12px;
+}
+
+.wd-rounded-corners-all-around-little {
+    /*border-radius: 6px;*/
+}
+.wd-who-to-follow-authenticated {
+    padding-left: 4px;
 }
 
 
+
+
+.wd-who-to-follow-padding {
+    padding-top: 10px;
+
+}
+
+.wd-who-to-follow-padding-bottom {
+    /*padding-bottom: -5px;*/
+    /*position: relative;*/
+    /*bottom: -5px;*/
+    margin-bottom: -5px;
+}
+
+
+/*2nd Part: Post Part*/
 .wd-tweet-preview-img {
     width: 85px;
     height: 85px;
@@ -260,7 +270,6 @@ a {
     position: relative;
     top: -5px;
     right:-15px
-
 }
 
 .wd-tweet-preview-content {
@@ -271,7 +280,6 @@ a {
     /*padding-bottom: 18px;*/
 
 }
-
 
 .wd-tweet-in-topic-content-preview {
     font-size: 16px;
@@ -310,7 +318,6 @@ a {
     font-size: 14px;
     color: dimgrey;
     font-family: arial;
-
 }
 
 

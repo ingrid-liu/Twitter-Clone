@@ -11,8 +11,12 @@ const HelloWorld = () => {
             <Link to="/a6/build">
                 Build
             </Link>
+
         </>
     )
 };
 
 export default HelloWorld;
+// <a href="/a6/practice">
+//     Practice
+// </a> |
