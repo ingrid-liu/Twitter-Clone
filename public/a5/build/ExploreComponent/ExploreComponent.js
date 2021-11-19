@@ -2,22 +2,23 @@ import PostSummaryList from "../PostSummaryItem/PostSummaryList.js";
 
 const ExploreComponent = () => {
     return(`
+            <!-- search field and cog -->
             <div class="row">
-               <!-- search field and cog -->
-               <div class="wd-search">
-
-                    <form class="d-flex  ">
-                        <span class="wd-magnifier"><i class="fa fa-search "></i> </span>
-                        <input class="form-control me-2 wd-search-input wd-rounded-corners-all-around" type="search" placeholder="Search Twitter">
-                        <a href="#"><span><i class="fa fa-cog wd-search-cog"></i></span></a>
-                    </form>
-
+                <div class="col-11" style="position: relative">
+                    <i  class="fa fa-search position-absolute"
+                        style="left: 25px; top: 11px"></i>
+                    <input placeholder="Search Twitter" class="ps-5 form-control rounded-pill mb-2 col-11"/>
                 </div>
-           </div>
+                <div class="col-1">
+                    <a href="setting.html">
+                        <i class="mt-1 fa fa-2x fa-cog float-end"></i>
+                    </a>
+                </div>
+            </div>
            <ul class="nav mb-2 nav-tabs">
                     <!-- tabs -->
-                    <li class="nav-item wd-tags">
-                        <a class="nav-link " href="for-you.html">For You</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html">For You</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="trending.html">Trending</a>
@@ -47,3 +48,18 @@ const ExploreComponent = () => {
 }
 export default ExploreComponent;
 
+// my previous search bar <-- Learn from the better style
+// <div className="row">
+//     <!-- search field and cog -->
+//     <div className="wd-search">
+//
+//         <form className="d-flex  ">
+//             <span className="wd-magnifier"><i className="fa fa-search "></i> </span>
+//             <input className="form-control me-2 wd-search-input rounded-pill" type="search"
+//                    placeholder="Search Twitter">
+//                 <a href="#"><span><i className="fa fa-cog wd-search-cog"></i></span></a>
+//         </form>
+//
+//     </div>
+//
+// </div>

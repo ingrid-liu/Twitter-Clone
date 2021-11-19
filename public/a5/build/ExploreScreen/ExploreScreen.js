@@ -10,7 +10,7 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
             <!-- LEFT SIDE BAR - navigation-->
             <!--   prof:    <div class="col-2 col-md-2 col-lg-1 col-xl-2">-->
             <div class="col-2 ">
-                ${NavigationSidebar()}
+                ${NavigationSidebar('explore')}
             </div>
             
             <!-- CENTER CONTENT - Navigation -->

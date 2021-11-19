@@ -17,7 +17,7 @@ const post =  [
     {
         avatar: "../images/avatar_nyp.jpeg",
         userName: "New York Post",
-        userID: "@nypost • 23h",
+        userID: "@nypost",
         time: "23h",
         tweet_predix: "Grimes seen reading Karl Marx following split with world's richest man Elon Musk",
         tweet_at: "@trib.al/nx2Gfaq",
