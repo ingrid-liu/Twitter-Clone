@@ -18,3 +18,464 @@ code {
 .font-size-0-5em {
   font-size: 0.5em;
 }
+
+
+/*ExploreScreen*/
+/*==================================*/
+/*GLOBAL*/
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: None;
+}
+/*.list-group-item:not(.active){*/
+/*    background-color: #1a1a1a;*/
+/*    !*border: 1px solid #404040;*!*/
+/*    border-style: hidden;*/
+/*    color: white;*/
+/*}*/
+
+/*.nav-link:not(.active) {*/
+/*    color: white;*/
+/*}*/
+
+
+
+
+
+
+
+
+/*.wd-wireframe {*/
+/*    border-width: 1px;*/
+/*    border-style: solid;*/
+/*    border-color: black;*/
+/*    padding-left: 50px;*/
+/*    padding-right: 50px;*/
+/*    padding-top: 10px;*/
+/*    margin: 20px;*/
+/*}*/
+
+.wd-wireframe-nav {
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+  /*padding: 50px;*/
+  /*margin: 20px;*/
+  margin-top: 8px;
+}
+
+
+
+.wd-navigation-words {
+  padding-left: 12px;
+  position:center;
+}
+
+
+
+.wd-nav-icon-more {
+  /*position: relative;*/
+  /*top:-5px;*/
+  position:center;
+  margin-bottom: -5px;
+}
+
+
+.wd-remove-left-margin {
+  position: relative;
+  left: -13px;
+  bottom:1px;
+}
+
+.wd-remove-left-margin-extra {
+  position: relative;
+  left: -25px;
+
+}
+.wd-fa-more-shrink {
+  font-size:0.7em;
+}
+
+
+.wd-title-bold {
+  font-weight: bolder;
+}
+.wd-who-to-follow-user-name {
+  font-weight: bolder;
+}
+
+.wd-bookmarks-avatar {
+  height: 48px;
+  width: 48px;
+}
+.wd-rounded-pic {
+  border-radius: 50%;
+}
+
+
+
+.wd-tweet-img-title {
+  color: #1a1a1a;
+  position: relative;
+  bottom: 60px;
+  left: 10px;
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.a {
+  text-decoration: None;
+}
+
+/*==========================================*/
+/*Explore Screen*/
+
+/*==========================================*/
+/*Explore Screen: 1.1 Part: Search Bar*/
+/*Use library style deal with the shape, learn from the code!*/
+/*.wd-magnifier {*/
+/*    font-size: 20px;*/
+/*    color: grey;*/
+/*    position: relative;*/
+/*    left:30px;*/
+/*    top: 4px;*/
+/*}*/
+
+/*.wd-search-cog {*/
+/*    size: 25px;*/
+/*}*/
+/*.wd-search-cog {*/
+/*    padding-left: 16px;*/
+/*    position: relative;*/
+/*    top: 5px;*/
+/*    font-size: 1.6em;*/
+/*}*/
+
+
+/*.wd-search {*/
+/*    padding-bottom: 8px;*/
+/*}*/
+
+/*.wd-search-input {*/
+/*    padding-left: 35px;*/
+/*}*/
+
+/*.wd-float-right {*/
+/*    float: right;*/
+/*}*/
+/*.wd-float-right {*/
+/*    float: right;*/
+/*    position: relative;*/
+/*    top:5px;*/
+/*}*/
+
+/*.wd-float-done {*/
+/*    clear: both;*/
+/*}*/
+
+
+
+/*==========================================*/
+/*Explore Screen: 1.2 Part: Tag Part*/
+/*Use active hotkey to activate the color now*/
+/*.wd-nav-tabs {*/
+/*    width: 90%;*/
+/*}*/
+
+/*Manually adjust the active tag's color*/
+/*.wd-tags {*/
+/*    background-color: #339dd3;*/
+/*}*/
+/*.wd-tags-nav-bar {*/
+/*    border-color: #404040;*/
+/*}*/
+
+
+/*==========================================*/
+/*Explore Screen: 1.3 Part: Focus Image*/
+/* Adjust PostSummaryItem Focus Img Margin*/
+.wd-focus-tweet-frame-adjust-upper {
+  position: relative;
+  top:-50px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #0d0d0d;
+}
+
+.wd-nav-tweet-img {
+  width: 100%;
+}
+
+
+
+/*==========================================*/
+/*Explore Screen: 2nd Part: Post Part*/
+.wd-tweet-preview-img {
+  width: 85px;
+  height: 85px;
+  border-radius: 10px;
+  position: relative;
+  top: -5px;
+  right:-15px
+}
+
+.wd-tweet-preview-content {
+  padding-top: 3px;
+}
+
+.wd-tweet-in-topic {
+  /*padding-bottom: 18px;*/
+
+}
+
+.wd-tweet-in-topic-content-preview {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  width: 85%;
+  font-family: arial;
+}
+
+.wd-tweet-in-topic-number{
+  font-size: 14px;
+  color: dimgrey;
+  font-family: arial;
+
+}
+
+.wd-tweet-in-topic-number-adjust-upper {
+  margin-top: -18px;
+
+}
+
+.wd-tweet-in-topic-number-adjust-lower {
+  margin-bottom: -1px;
+}
+
+.wd-tweet-in-topic-subtitle{
+  font-size: 14px;
+  color: dimgrey;
+  padding-top: -10px;
+  /*font-family: Helvetica Neue;*/
+  font-family: arial;
+  margin-bottom: -2px;
+}
+.wd-tweet-in-topic-time {
+  padding-left: 7px;
+  font-size: 14px;
+  color: dimgrey;
+  font-family: arial;
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-float-right {
+  float: right;
+  position: relative;
+  top:5px;
+}
+.wd-float-done {
+  clear: both;
+}
+/*Professor didn't use these float css style to shape the pic layout*/
+/*But to use div + col divisions to assign different pos to the text/img*/
+
+
+
+/*==========================================*/
+/*Home Screen Caption Style*/
+
+.wd-post-userName {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wd-bookmarks-tweets-image {
+  width: 504px;
+  height: 264px;
+}
+
+.wd-post-avatar {
+  /*margin-bottom: 6px;*/
+  width: 60px;
+  height: 60px;
+}
+.wd-post-rounded-pic {
+  border-radius: 50%;
+}
+.wd-post-float-left {
+  float: left;
+}
+.wd-post-float-right {
+  /*float: right;*/
+  margin-left: 80px;
+}
+.wd-post {
+  /*position:relative;*/
+}
+
+
+.wd-post-tweets-image-frame {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(47, 51, 54);
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  /*width: 504px;*/
+  /*height: 350px;*/
+  width: 100%;
+}
+
+.wd-post-bottom-margin {
+  margin-bottom: 15px;
+}
+
+.wd-post-tweets-image {
+  /*width: 504px;*/
+  /*height: 264px;*/
+  width: 100%;
+  border-radius: 16px;
+
+}
+
+.wd-post-rounded-corners-all-around {
+  border-radius: 16px;
+}
+
+.wd-post-tweets-content {
+  margin: 10px;
+}
+.wd-post-tweets-content-title{
+  color: white;
+}
+.wd-post-tweets-content-content {
+  color: grey;
+}
+
+.wd-post-tweets-content-link {
+  color: grey;
+}
+
+.wd-bookmarks-action-button {
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  color: rgb(47, 51, 54);
+  width: 90%;
+}
+.wd-bookmarks-action-icon {
+  width: 12px;
+  font-size: 15px;
+  color: grey;
+}
+.wd-bookmarks-action-numbers {
+  /*padding-left: 10px;*/
+  /*padding-right: 20%;*/
+  font-size: 15px;
+  color: grey;
+}
+
+/*a > i{*/
+/*    padding-right:10px;*/
+/*}*/
+/*.btn-primary.override-bs {*/
+/*    !*background-color:#0d6efd;*!*/
+/*    margin-top: 20px;*/
+/*    width: 100%;*/
+/*    border-radius: 20px;*/
+/*    font-weight: bolder;*/
+/*}*/
+/*.btn-primary.override {*/
+/*    display: inline-flex;*/
+/*    !*background-color:#0d6efd;*!*/
+/*    margin-top: 5px;*/
+/*    width: 80px;*/
+/*    border-radius: 20px;*/
+/*    font-weight: bolder;*/
+/*    margin-left: -25px;*/
+/*}*/
+/*.wd-rounded{*/
+/*    border-radius: 50%;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    margin-left: -20px;*/
+/*}*/
+/*.wd-secondary{*/
+/*    font-size: medium;*/
+/*    !*color:dodgerblue;*!*/
+/*}*/
+
+.wd-span {
+  margin-left:60px;
+}
+
+.wd-text-lightgray{
+  color: lightgray;
+}
+
+.wd-icon-spaceout{
+  text-decoration: none;
+  float: left;
+  width: 25%;
+}
+.wd-icon-space{
+  margin-left: 12px;
+}
+
+
+/*==========================================*/
+/*Explore Screen: 3nd Part: Who to follow*/
+
+/*.wd-who-to-follow-button {*/
+/*    border-radius: 20px;*/
+/*}*/
+
+/*.wd-who-to-follow-button-word {*/
+/*    color: white;*/
+/*}*/
+
+/*.wd-who-to-follow-user-avatar {*/
+/*    padding-right: 12px;*/
+/*}*/
+
+/*.wd-who-to-follow-authenticated {*/
+/*    padding-left: 4px;*/
+/*}*/
+
+/*.wd-who-to-follow-padding {*/
+/*    padding-top: 10px;*/
+
+/*}*/
+
+/*.wd-who-to-follow-padding-bottom {*/
+/*    !*padding-bottom: -5px;*!*/
+/*    !*position: relative;*!*/
+/*    !*bottom: -5px;*!*/
+/*    margin-bottom: -5px;*/
+/*}*/
+
+
+
+/*==========================================*/
+/*Didn't use, save for future feature*/
+.wd-bookmarks-action-numbers-like {
+  color: red;
+}
+
+.wd-bookmarks-action-button {
+  width: 504px;
+}
+
+
+.fa fa-heart {
+  color: red;
+  size: 20px;
+}

@@ -2,8 +2,11 @@
 import React from "react";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 //import Library in local vendors
+//1.bootstrap
 import './vendors/bootstrap/css/bootstrap.min.css';
+//2.override one with black background
 import './vendors/bootstrap/bootstrap.min.css';
+//3.fontawesome
 import './vendors/fontawesome-pro/css/all.css';
 //import js component
 import HelloWorld from "./components/a6/HelloWorld";
@@ -26,7 +29,7 @@ function App() {
           <BrowserRouter>
               <HelloWorld/>
               <Routes>
-                  <Route path="/hello" element={<HelloWorld/>} />
+                  {/*<Route path="/hello" element={<HelloWorld/>} />*/}
                   <Route path="/a6" element={<A6/>} />
                   <Route path="/a6/practice" element={<Practice/>}/>
                   <Route path="/a6/build" element={<Build/>}/>
@@ -39,7 +42,7 @@ function App() {
 }
 
 export default App;
-// work but not the requirements
+// test
 // <BrowserRouter>
 //     <div className="container">
 //         <HelloWorld/>
@@ -49,7 +52,7 @@ export default App;
 //     </div>
 // </BrowserRouter>
 
-// assignment provided code: doesn't work (lower version?)
+// assignment provided code: doesn't work on latest version (can't sync on Netlify)
 // <BrowserRouter>
 //     <div className="container">
 //         <Route path="/a6/hello">
@@ -66,7 +69,7 @@ export default App;
 // </BrowserRouter>
 
 
-//worked
+//worked but not required version
 // <BrowserRouter>
 //     <Routes>
 //         <Route path="/a6/hello" exact={true} element={<HelloWorld />} />

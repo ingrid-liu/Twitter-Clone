@@ -6,13 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import HelloWorld from "./hello.js";
 import Todo from "./Navigation/Todo";
 import todos from "./Navigation/todos.json";
-import NavigationExample from "./Navigation/NavigationExample";
-
+import NavigationSidebar from "./components/a6/Build/NavigationSidebar";
+//import NavigationExample from "./Navigation/NavigationExample";
+import WhoToFollowListItem from "../src/components/a6/Build/WhoToFollowList/WhoToFollowListItem";
+import ExploreScreen from "./components/a6/Build/ExploreScreen";
 
 
 ReactDOM.render(
     // <NavigationExample/>,
     <App/>,
+    // <NavigationSidebar/>,
+    // <WhoToFollowListItem/>,
+    // <ExploreScreen/>,
     document.getElementById('root')
 );
 
