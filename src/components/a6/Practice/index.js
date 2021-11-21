@@ -5,7 +5,9 @@ import Classes from "./Classes";
 const Practice = () => {
     return(
         <>
-            <h1>Practice</h1>
+            <h1>Practice from a6</h1>
+            <Classes/>
+
             <Link to="/a6/hello">
                 Hello
             </Link> |

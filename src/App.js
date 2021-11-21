@@ -24,11 +24,13 @@ function App() {
   return (
       <div className="container">
           <BrowserRouter>
+              <HelloWorld/>
               <Routes>
                   <Route path="/hello" element={<HelloWorld/>} />
                   <Route path="/a6" element={<A6/>} />
                   <Route path="/a6/practice" element={<Practice/>}/>
                   <Route path="/a6/build" element={<Build/>}/>
+
               </Routes>
           </BrowserRouter>
       </div>
