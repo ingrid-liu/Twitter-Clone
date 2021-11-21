@@ -15,8 +15,20 @@ const HelloWorld = () => {
         </>
     )
 };
-
 export default HelloWorld;
+
+
 // <a href="/a6/practice">
 //     Practice
 // </a> |
+
+//version I
+// import React from "react";
+//
+// const HelloWorld = () => {
+//     return(
+//         <h1>Hello World!</h1>
+//     )
+// };
+//
+// export default HelloWorld;

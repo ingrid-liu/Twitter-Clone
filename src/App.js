@@ -11,11 +11,11 @@ import Practice from "./components/a6/Practice";
 import Build from "./components/a6/Build";
 
 import A6 from "./components/a6/HelloWorld";
-import A7 from "./components/a7/HelloWorld";
-import A9 from "./components/a8/HelloWorld";
+// import A7 from "./components/a7/HelloWorld";
+// import A9 from "./components/a8/HelloWorld";
 
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 // import {Provider} from "react-redux";
 
@@ -23,24 +23,15 @@ import A9 from "./components/a8/HelloWorld";
 function App() {
   return (
       <div className="container">
-        <BrowserRouter>
-              {/*<Route path="/a6">*/}
-              {/*    <A6/>*/}
-              {/*</Route>*/}
-
-              {/*<Route path="/a9">*/}
-              {/*    <A9/>*/}
-              {/*</Route>*/}
-
-              {/*<Route path="/a7">*/}
-              {/*    <A7/>*/}
-              {/*</Route>*/}
-
-              <Link to="/a6">A6</Link> |
-              {/*<Link to="/a7/practice">A7</Link> |*/}
-              {/*<Link to="/a8/practice">A8</Link>*/}
-         </BrowserRouter>
-       </div>
+          <BrowserRouter>
+              <Routes>
+                  <Route path="/hello" element={<HelloWorld/>} />
+                  <Route path="/a6" element={<A6/>} />
+                  <Route path="/a6/practice" element={<Practice/>}/>
+                  <Route path="/a6/build" element={<Build/>}/>
+              </Routes>
+          </BrowserRouter>
+      </div>
 
   );
 }
