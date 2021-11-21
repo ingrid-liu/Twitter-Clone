@@ -15,7 +15,7 @@ const Practice = () => {
             <Classes/>
             <Link to="/a6/hello">
                 Back
-            </Link>  |
+            </Link> |
             <Link to="/a6/build">
                 Build
             </Link>

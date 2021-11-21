@@ -11,7 +11,7 @@ const Build = () => {
             <h3>A6 Build</h3>
             {/*<NavigationSidebar active="home"/>*/}
             {/*<WhoToFollowList/>*/}
-            <ExploreScreen/>,
+            <ExploreScreen/>
 
             <Link to="/a6/hello">
                 Back
