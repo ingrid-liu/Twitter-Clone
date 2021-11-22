@@ -1,8 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import NavigationSidebar from "./NavigationSidebar";
+// import NavigationSidebar from "./NavigationSidebar";
 // import WhoToFollowListItem from "./WhoToFollowList/WhoToFollowListItem";
-import WhoToFollowList from "./WhoToFollowList";
+// import WhoToFollowList from "./WhoToFollowList";
 import ExploreScreen from "./ExploreScreen";
 
 const Build = () => {
@@ -12,7 +12,7 @@ const Build = () => {
             {/*<NavigationSidebar active="home"/>*/}
             {/*<WhoToFollowList/>*/}
             <ExploreScreen/>
-
+            <br/><br/>
             <Link to="/a6/hello">
                 Back
             </Link> |

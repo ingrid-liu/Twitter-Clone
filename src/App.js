@@ -1,6 +1,6 @@
 //import Library
 import React from "react";
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 //import Library in local vendors
 //1.bootstrap
 import './vendors/bootstrap/css/bootstrap.min.css';

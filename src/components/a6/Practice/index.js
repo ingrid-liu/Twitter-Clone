@@ -13,6 +13,7 @@ const Practice = () => {
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
+            <br/><br/>
             <Link to="/a6/hello">
                 Back
             </Link> |
