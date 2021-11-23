@@ -479,3 +479,20 @@ a {
   color: red;
   size: 20px;
 }
+
+
+/*Kowtow to my TA lord*/
+.wd-beg-TA-title {
+  position: absolute;
+  /*left: 600px;*/
+  right:60px;
+  bottom: 0;
+  font-size: 15px;
+}
+
+.wd-beg-TA-img {
+  position: absolute;
+  /*left: 1060px;*/
+  right:0;
+  bottom: 0;
+}
