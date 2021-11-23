@@ -2,13 +2,13 @@ import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import PostSummaryList from "../PostSummaryList";
 import PostList from "../PostList";
-import {Link} from "react-router-dom";
+import ExploreComponent from "../ExploreScreen/ExploreComponent";
 
 const HomeScreen = () => {
     return(
         <div className="container">
             <div className="row mt-2">
-                <div className="col-2 col-md-2 col-lg-1 col-xl-2">
+                    <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                     <NavigationSidebar active="home"/>
                 </div>
                 <div className="col-10 col-md-10 col-lg-7 col-xl-6"
@@ -19,17 +19,6 @@ const HomeScreen = () => {
                     <PostSummaryList/>
                 </div>
             </div>
-
-            <br/>
-            <Link to="/a6/hello">
-                Back
-            </Link> |
-            <Link to="/a7/practice">
-                Practice
-            </Link> |
-            <Link to="/a6/twitter">
-                Build
-            </Link>
         </div>
     );
 };

@@ -8,16 +8,14 @@ import ExploreScreen from "./ExploreScreen";
 const A6 = () => {
     return(
         <>
+            <p>from A7</p>
             <ExploreScreen/>
             <br/>
-            <Link to="/a6/hello">
+            <Link to="/a7/hello">
                 Back
             </Link> |
-            <Link to="/a6/practice">
+            <Link to="/a7/practice">
                 Practice
-            </Link> |
-            <Link to="/a7/twitter/home">
-                Challenge
             </Link>
         </>
     )

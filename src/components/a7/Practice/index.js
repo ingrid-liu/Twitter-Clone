@@ -8,19 +8,17 @@ import TodoList from "./Todo/TodoList";
 const Practice = () => {
     return(
         <>
+            <p>from A7</p>
             <TodoList/>
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
             <br/>
-            <Link to="/a6/hello">
+            <Link to="/a7/hello">
                 Back
             </Link> |
-            <Link to="/a6/twitter">
+            <Link to="/a7/twitter">
                 Build
-            </Link> |
-            <Link to="/a7/twitter/home">
-                Challenge
             </Link>
         </>
     )

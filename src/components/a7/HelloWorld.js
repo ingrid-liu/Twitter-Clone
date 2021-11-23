@@ -1,22 +1,23 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-const HelloWorld = () => {
+const HelloA7 = () => {
     return(
         <>
-            <h1>Hello World from A7</h1>
-            <Link to="/a6/practice">
+            <hr/>
+            <h2>A7</h2>
+            <Link to="/a7/practice">
                 Practice
             </Link> |
-            <Link to="/a6/build">
+            <Link to="/a7/twitter/explore">
                 Build
+            </Link> |
+            <Link to="/a7/twitter/home">
+                Challenge
             </Link>
 
         </>
     )
 };
 
-export default HelloWorld;
-// <a href="/a6/practice">
-//     Practice
-// </a> |
+export default HelloA7;

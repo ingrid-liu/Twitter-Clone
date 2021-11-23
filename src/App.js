@@ -9,18 +9,19 @@ import './vendors/bootstrap/bootstrap.min.css';
 //3.fontawesome
 import './vendors/fontawesome-pro/css/all.css';
 //import js component
-import HelloWorld from "./components/a6/HelloWorld";
+import HelloA6 from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import Build from "./components/a6/Build";
 
 import A6 from "./components/a6/HelloWorld";
-// import A7 from "./components/a7/HelloWorld";
+import A7 from "./components/a7/HelloWorld";
 // import A9 from "./components/a8/HelloWorld";
 
 // import logo from './logo.svg';
 import './App.css';
 import ExploreScreen from "./components/a6/Build/ExploreScreen";
 import HomeScreen from "./components/a6/Build/HomeScreen";
+import HelloA7 from "./components/a7/HelloWorld";
 
 // import {Provider} from "react-redux";
 
@@ -30,7 +31,7 @@ function App() {
       <div className="container">
           <BrowserRouter>
               {/* --------- A6 ------- */}
-              <HelloWorld/>
+              <HelloA6/>
               <Routes>
                   {/*<Route path="/hello" element={<HelloWorld/>} />*/}
                   <Route path="/a6" element={<A6/>} />
@@ -38,10 +39,22 @@ function App() {
                   <Route path="/a6/twitter" element={<Build/>}/>
                   <Route path="/a6/twitter/explore" element={<Build/>}/>
                   <Route path="/a6/twitter/home" element={<HomeScreen/>}/>
-
-
-
               </Routes>
+
+                  {/* --------- A7 ------- */}
+                  <HelloA7/>
+                  <Routes>
+                      {/*<Route path="/hello" element={<HelloWorld/>} />*/}
+                      <Route path="/a7" element={<A7/>} />
+                      <Route path="/a7/practice" element={<Practice/>}/>
+                      <Route path="/a7/twitter" element={<Build/>}/>
+                      <Route path="/a7/twitter/explore" element={<Build/>}/>
+                      <Route path="/a7/twitter/home" element={<HomeScreen/>}/>
+                  </Routes>
+
+
+
+
           </BrowserRouter>
       </div>
 
