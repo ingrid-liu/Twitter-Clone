@@ -5,14 +5,14 @@ import {Link} from "react-router-dom";
 // import WhoToFollowList from "./WhoToFollowList";
 import ExploreScreen from "./ExploreScreen";
 
-const Build = () => {
+const A6 = () => {
     return(
         <>
-            <h3>A6 Build</h3>
+            <h4>--- A6 Build: Twitter ---</h4>
             {/*<NavigationSidebar active="home"/>*/}
             {/*<WhoToFollowList/>*/}
             <ExploreScreen/>
-            <br/><br/>
+            <br/>
             <Link to="/a6/hello">
                 Back
             </Link> |
@@ -23,4 +23,4 @@ const Build = () => {
     )
 };
 
-export default Build;
+export default A6;
