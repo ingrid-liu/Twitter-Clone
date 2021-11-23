@@ -10,6 +10,7 @@ const PostSummaryItem = (
     }
     }) => {
     return(
+        <>
         <li className="list-group-item">
             <div className="row">
                 <div className="col-9 col-md-10">
@@ -24,7 +25,7 @@ const PostSummaryItem = (
                         </span>
                         <span className="text-muted"> - {post.time} </span>
                     </div>
-                    <div className="fw-bold">{post.title}</div>
+                    <p className="fw-bold">{post.title}</p>
                 </div>
                 <div className="col-3 col-md-2">
                     <img src={post.image}
@@ -32,7 +33,7 @@ const PostSummaryItem = (
                 </div>
             </div>
         </li>
-
+        </>
     );
 }
 

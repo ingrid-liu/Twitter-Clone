@@ -7,17 +7,27 @@ import HelloWorld from "./hello.js";
 import Todo from "./Navigation/Todo";
 import todos from "./Navigation/todos.json";
 import NavigationSidebar from "./components/a6/Build/NavigationSidebar";
+import HomeScreen from "./components/a6/Build/HomeScreen";
 //import NavigationExample from "./Navigation/NavigationExample";
-import WhoToFollowListItem from "../src/components/a6/Build/WhoToFollowList/WhoToFollowListItem";
+// import WhoToFollowListItem from "../src/components/a6/Build/WhoToFollowList/WhoToFollowListItem";
 import ExploreScreen from "./components/a6/Build/ExploreScreen";
+// import HomeScreen from "./components/a6/Build/HomeScreen";
+// import PostList from "./components/a6/Build/PostList";
+// import PostSummaryList from "./components/a6/Build/PostSummaryList";
 
 
 ReactDOM.render(
-    // <NavigationExample/>,
     <App/>,
-    // <NavigationSidebar/>,
+
+    // pass test of A6:
+    // <PostList/>,
     // <WhoToFollowListItem/>,
+    // <PostSummaryList/>,
+
+    // <NavigationSidebar active="explore"/>,
     // <ExploreScreen/>,
+    // <HomeScreen/>,
+
     document.getElementById('root')
 );
 

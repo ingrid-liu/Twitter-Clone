@@ -48,9 +48,7 @@ const PostItem = (post) => {
                </div>
                
                <div class="wd-icons wd-text-opacity-half">
-            
-
-                  
+                   
             </div>
         </li>
 

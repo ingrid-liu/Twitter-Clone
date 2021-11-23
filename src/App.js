@@ -19,6 +19,8 @@ import A6 from "./components/a6/HelloWorld";
 
 // import logo from './logo.svg';
 import './App.css';
+import ExploreScreen from "./components/a6/Build/ExploreScreen";
+import HomeScreen from "./components/a6/Build/HomeScreen";
 
 // import {Provider} from "react-redux";
 
@@ -27,12 +29,17 @@ function App() {
   return (
       <div className="container">
           <BrowserRouter>
+              {/* --------- A6 ------- */}
               <HelloWorld/>
               <Routes>
                   {/*<Route path="/hello" element={<HelloWorld/>} />*/}
                   <Route path="/a6" element={<A6/>} />
                   <Route path="/a6/practice" element={<Practice/>}/>
-                  <Route path="/a6/build" element={<Build/>}/>
+                  <Route path="/a6/twitter" element={<Build/>}/>
+                  <Route path="/a6/twitter/explore" element={<Build/>}/>
+                  <Route path="/a6/twitter/home" element={<HomeScreen/>}/>
+
+
 
               </Routes>
           </BrowserRouter>

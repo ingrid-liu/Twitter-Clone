@@ -8,9 +8,6 @@ import ExploreScreen from "./ExploreScreen";
 const A6 = () => {
     return(
         <>
-            <h4>--- A6 Build: Twitter ---</h4>
-            {/*<NavigationSidebar active="home"/>*/}
-            {/*<WhoToFollowList/>*/}
             <ExploreScreen/>
             <br/>
             <Link to="/a6/hello">

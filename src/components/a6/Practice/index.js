@@ -8,7 +8,6 @@ import TodoList from "./Todo/TodoList";
 const Practice = () => {
     return(
         <>
-            <h4>---- A6 Practice ----</h4>
             <TodoList/>
             <ConditionalOutput/>
             <Styles/>
@@ -17,7 +16,7 @@ const Practice = () => {
             <Link to="/a6/hello">
                 Back
             </Link> |
-            <Link to="/a6/build">
+            <Link to="/a6/twitter">
                 Build
             </Link>
         </>

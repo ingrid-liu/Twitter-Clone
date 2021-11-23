@@ -1,5 +1,5 @@
 import React from "react";
-// import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 const NavigationSidebar = ({active = 'explore'}) => {
@@ -11,61 +11,81 @@ const NavigationSidebar = ({active = 'explore'}) => {
         <>
             <div className="list-group">
 
-                <a className="list-group-item" href="/#">
-                    <i className="fab fa-twitter"></i></a>
+                <Link to="/a6/" className="list-group-item">
+                    <i className="fab fa-twitter"/>
+                </Link>
 
-                <a className={`list-group-item ${active === 'home' ? 'active' : ''}`} href="/#">
-                    <i className="fa fa-home " style={floatLeft}></i>
-                    <span className="wd-navigation-words d-inline d-none d-xl-block" style={floatLeft}>
-                        Home</span>
-                </a>
-                <a className={`list-group-item ${active === 'explore' ? 'active' : ''} `} href="/#">
-                    <i className="fa fa-hashtag " style={floatLeft}></i>
-                    <span className="wd-navigation-words d-inline d-none d-xl-block" style={floatLeft}>
-                        Explore</span>
-                </a>
-                <a className={`list-group-item ${active === 'notification' ? 'active' : ''}`} href="/#">
-                    <i className="fa fa-bell " style={floatLeft}></i>
-                    <span className="wd-navigation-words d-inline d-none d-xl-block" style={floatLeft}>
-                        Notification</span>
-                </a>
-                <a className={`list-group-item ${active === 'message' ? 'active' : ''}`} href="/#">
-                    <i className="fa fa-envelope -normal" style={floatLeft}></i>
-                    <span className="wd-navigation-words d-inline d-none d-xl-block" style={floatLeft}>
-                        Messages</span>
-                </a>
-                <a className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`} href="/#">
-                    <i className="fa fa-bookmark " style={floatLeft}></i>
-                    <span className="wd-navigation-words d-inline d-none d-xl-block" style={floatLeft}>
-                        Bookmarks</span>
-                </a>
-                <a className={`list-group-item ${active === 'lists' ? 'active' : ''}`} href="/#">
-                    <i className="fa fa-list " style={floatLeft}></i>
-                    <span className="wd-navigation-words d-inline d-none d-xl-block" style={floatLeft}>
-                        Lists</span>
-                </a>
+                <Link to="/a6/twitter/home" className={`list-group-item list-group-item-action ${active === 'home' ?  'active': ''}`}>
+                    <i className="fas fa-home wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  Home
+                </span>
+                </Link>
 
-                <a className={`list-group-item ${active === 'profile' ? 'active' : ''}`} href="/#">
-                    <span className="">
-                    <i className="fa fa-user wd-nav-icon-normal" style={floatLeft}></i></span>
-                    <span className="wd-navigation-words d-inline d-none d-xl-block" style={floatLeft}>
-                    Profile</span>
-                </a>
-                <a className={`list-group-item ${active === 'more' ? 'active' : ''}`} href="/#">
-                    <span className="fa-stack fa-1x wd-remove-left-margin wd-nav-icon-more" style={floatLeft}>
-                        <i className="fas fa-circle fa-stack-1x "></i>
-                        <i className="fas fa-ellipsis-h fa-stack-1x fa-inverse wd-fa-more-shrink"></i>
-                    </span>
-                    <span className="wd-navigation-words wd-remove-left-margin-extra d-inline d-none d-xl-block" style={floatLeft}>More</span>
-                </a>
+                <Link to="/a6/twitter/explore" className={`list-group-item list-group-item-action ${active === 'explore' ?  'active': ''}`}>
+                    <i className="fas fa-hashtag wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  Explore
+                </span>
+                </Link>
 
 
+                <Link to="/a6/notifications" className={`list-group-item list-group-item-action ${active === 'notifications' ?  'active': ''}`}>
+                    <i className="fas fa-bell wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  Notifications
+                </span>
+                </Link>
+
+
+                <Link to="/a6/messages" className={`list-group-item list-group-item-action ${active === 'messages' ?  'active': ''}`}>
+                    <i className="fas fa-envelope wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  Messages
+                </span>
+                </Link>
+
+
+                <Link to="/a6/bookmarks" className={`list-group-item list-group-item-action ${active === 'bookmarks' ?  'active': ''}`}>
+                    <i className="fas fa-bookmark wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  Bookmarks
+                </span>
+                </Link>
+
+
+                <Link to="/a6/lists" className={`list-group-item list-group-item-action ${active === 'lists' ?  'active': ''}`}>
+                    <i className="fas fa-list wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  Lists
+                </span>
+                </Link>
+
+
+                <Link to="/a6/profile" className={`list-group-item list-group-item-action ${active === 'profile' ?  'active': ''}`}>
+                    <i className="fas fa-user wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  Profile
+                </span>
+                </Link>
+
+
+
+                <Link to="/a6/more" className={`list-group-item list-group-item-action ${active === 'more' ?  'active': ''}`}>
+                    <i className="fas fa-info-circle wd-float me-2"/>
+                    <span className="d-none d-xl-inline">
+                  More
+                </span>
+                </Link>
+
+                {/**/}
 
             </div>
+
             <div className="d-grid mt-2">
-                <a href="/#"
-                   className="btn btn-primary btn-block rounded-pill">
-                    Tweet</a>
+                <Link to="/a6/tweet" className="btn btn-primary btn-block rounded-pill">
+                    Tweet
+                </Link>
             </div>
         </>
     );
