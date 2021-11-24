@@ -5,7 +5,7 @@ import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import TodoList from "./Todo/TodoList";
 
-const Practice = () => {
+const A6Practice = () => {
     return(
         <>
             <TodoList/>
@@ -13,17 +13,17 @@ const Practice = () => {
             <Styles/>
             <Classes/>
             <br/>
-            <Link to="/a6/hello">
-                Back
-            </Link> |
-            <Link to="/a6/twitter">
-                Build
-            </Link> |
-            <Link to="/a7/twitter/home">
-                Challenge
-            </Link>
+            {/*<Link to="/a6/hello">*/}
+            {/*    Back*/}
+            {/*</Link> |*/}
+            {/*<Link to="/a6/twitter/explore">*/}
+            {/*    Build*/}
+            {/*</Link> |*/}
+            {/*<Link to="/a7/twitter/home">*/}
+            {/*    Challenge*/}
+            {/*</Link>*/}
         </>
     )
 };
 
-export default Practice;
+export default A6Practice;

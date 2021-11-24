@@ -7,13 +7,12 @@ const ExploreComponent = () => {
             <div className="row">
 
                 <div className="col-11" style={{"position": "relative"}}>
-                    <i  className="fa fa-search position-absolute"
-                        style={{"left": "25px", "top": "11px"}}></i>
+                    <i  className="fa fa-search position-absolute" style={{"left": "25px", "top": "11px"}}/>
                     <input placeholder="Search Twitter" className="ps-5 form-control rounded-pill mb-2 col-11"/>
                 </div>
                 <div className="col-1">
                     <a href="/#">
-                        <i className="mt-1 fa fa-2x fa-cog float-end"></i>
+                        <i className="mt-1 fa fa-2x fa-cog float-end"/>
                     </a>
                 </div>
 

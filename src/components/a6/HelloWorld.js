@@ -14,6 +14,9 @@ const HelloA6 = () => {
 
             <Link to="/a6/twitter/home">
                 Challenge
+            </Link> |
+            <Link to="/a6/hello">
+                Collapse All
             </Link>
 
         </>

@@ -87,6 +87,19 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     Tweet
                 </Link>
             </div>
+
+            {/*<div className=" d-none d-xl-block">*/}
+            {/*    <button className="btn btn-primary  wd-tweet-button ">*/}
+            {/*        <a className="wd-tweet-button-link " href="#">Tweet</a>*/}
+            {/*    </button>*/}
+            {/*</div>*/}
+
+            {/*<div className=" d-xl-none">*/}
+            {/*    <a className="wd-tweet-button-link" href="#">*/}
+            {/*        <img className="wd-tweet-button-img " src={"../../../images/icon/tweet.png"}/>*/}
+            {/*    </a>*/}
+            {/*</div>*/}
+
         </>
     );
 }

@@ -5,22 +5,22 @@ import {Link} from "react-router-dom";
 // import WhoToFollowList from "./WhoToFollowList";
 import ExploreScreen from "./ExploreScreen";
 
-const A6 = () => {
+const A6Build = () => {
     return(
         <>
             <ExploreScreen/>
             <br/>
-            <Link to="/a6/hello">
-                Back
-            </Link> |
-            <Link to="/a6/practice">
-                Practice
-            </Link> |
-            <Link to="/a7/twitter/home">
-                Challenge
-            </Link>
+            {/*<Link to="/a6/hello">*/}
+            {/*    Back*/}
+            {/*</Link> |*/}
+            {/*<Link to="/a6/practice">*/}
+            {/*    Practice*/}
+            {/*</Link> |*/}
+            {/*<Link to="/a7/twitter/home">*/}
+            {/*    Challenge*/}
+            {/*</Link>*/}
         </>
     )
 };
 
-export default A6;
+export default A6Build;

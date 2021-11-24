@@ -5,20 +5,14 @@ import {Link} from "react-router-dom";
 // import WhoToFollowList from "./WhoToFollowList";
 import ExploreScreen from "./ExploreScreen";
 
-const A6 = () => {
+const A7 = () => {
     return(
         <>
             <p>from A7</p>
             <ExploreScreen/>
             <br/>
-            <Link to="/a7/hello">
-                Back
-            </Link> |
-            <Link to="/a7/practice">
-                Practice
-            </Link>
         </>
     )
 };
 
-export default A6;
+export default A7;
