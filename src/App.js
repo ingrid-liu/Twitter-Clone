@@ -8,17 +8,9 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 //3.fontawesome
 import './vendors/fontawesome-pro/css/all.css';
-//import js component
-import HelloWorld from "./components/a6/HelloWorld";
-import Practice from "./components/a6/Practice";
-import Build from "./components/a6/Build";
-
+//4. import react component
 import A6 from "./components/a6/HelloWorld";
-// import A7 from "./components/a7/HelloWorld";
-// import A9 from "./components/a8/HelloWorld";
-
-// import logo from './logo.svg';
-import './App.css';
+import HelloA6 from "./components/a6/HelloWorld";
 import A6Practice from "./components/a6/Practice";
 import A6ExploreScreen from "./components/a6/Build/ExploreScreen";
 import A6HomeScreen from "./components/a6/Build/HomeScreen";
@@ -27,7 +19,12 @@ import A7Practice from "./components/a7/Practice";
 import A7ExploreScreen from "./components/a7/Build/ExploreScreen";
 import A7HomeScreen from "./components/a7/Build/HomeScreen";
 import HelloA7 from "./components/a7/HelloWorld";
-import HelloA6 from "./components/a6/HelloWorld";
+
+
+// import logo from './logo.svg';
+import './App.css';
+
+
 
 // import {Provider} from "react-redux";
 
@@ -41,7 +38,7 @@ function App() {
               <HelloA6/>
               <Routes>
                   {/*<Route path="/hello" element={<HelloWorld/>} />*/}
-                  <Route path="/a6" element={<A6/>} />
+                  <Route path="/a6" element={<A6ExploreScreen/>} />
                   <Route path="/a6/practice" element={<A6Practice/>}/>
                   <Route path="/a6/twitter" element={<A6ExploreScreen/>}/>
                   <Route path="/a6/twitter/explore" element={<A6ExploreScreen/>}/>
@@ -49,7 +46,7 @@ function App() {
               </Routes>
               <HelloA7/>
               <Routes>
-                  <Route path="/a7" element={<A7/>} />
+                  <Route path="/a7" element={<A7ExploreScreen/>} />
                   <Route path="/a7/practice" element={<A7Practice/>}/>
                   <Route path="/a7/twitter" element={<A7ExploreScreen/>}/>
                   <Route path="/a7/twitter/explore" element={<A7ExploreScreen/>}/>
