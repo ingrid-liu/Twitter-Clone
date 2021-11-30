@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import PostSummaryList from "../PostSummaryList";
-import PostList from "../PostList";
+import TweetList from "../TweetList";
 import ExploreComponent from "../ExploreScreen/ExploreComponent";
 
 const A7HomeScreen = () => {
@@ -13,7 +13,7 @@ const A7HomeScreen = () => {
                     <NavigationSidebar active="home"/>
                 </div>
                 <div className="col-10 col-lg-6">
-                    <PostList/>
+                    <TweetList/>
                 </div>
                 <div className="col-4 d-none d-lg-block">
                     <PostSummaryList/>
