@@ -9,10 +9,10 @@ const HelloA7 = () => {
             <Link to="/a7/practice">
                 Practice
             </Link> |
-            <Link to="/a7/twitter/explore">
+            <Link to="/a7/twitter/home">
                 Build
             </Link> |
-            <Link to="/a7/twitter/home">
+            <Link to="/a7/twitter/profile">
                 Challenge
             </Link> |
             <Link to="/a7/hello">

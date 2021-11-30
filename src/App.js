@@ -23,38 +23,42 @@ import HelloA7 from "./components/a7/HelloWorld";
 
 // import logo from './logo.svg';
 import './App.css';
+import {createStore} from "redux";
+import who from "./reducers/who";
 
 
 
-// import {Provider} from "react-redux";
 
-
+import {Provider} from "react-redux";
+const store = createStore(who);
 
 
 function App() {
   return (
-      <div className="container">
-          <BrowserRouter>
-              <HelloA6/>
-              <Routes>
-                  {/*<Route path="/hello" element={<HelloWorld/>} />*/}
-                  <Route path="/a6" element={<A6ExploreScreen/>} />
-                  <Route path="/a6/practice" element={<A6Practice/>}/>
-                  <Route path="/a6/twitter" element={<A6ExploreScreen/>}/>
-                  <Route path="/a6/twitter/explore" element={<A6ExploreScreen/>}/>
-                  <Route path="/a6/twitter/home" element={<A6HomeScreen/>}/>
-              </Routes>
-              <HelloA7/>
-              <Routes>
-                  <Route path="/a7" element={<A7ExploreScreen/>} />
-                  <Route path="/a7/practice" element={<A7Practice/>}/>
-                  <Route path="/a7/twitter" element={<A7ExploreScreen/>}/>
-                  <Route path="/a7/twitter/explore" element={<A7ExploreScreen/>}/>
-                  <Route path="/a7/twitter/home" element={<A7HomeScreen/>}/>
+      <Provider store={store}>
+          <div className="container">
+              <BrowserRouter>
+                  <HelloA6/>
+                  <Routes>
+                      {/*<Route path="/hello" element={<HelloWorld/>} />*/}
+                      <Route path="/a6" element={<A6ExploreScreen/>} />
+                      <Route path="/a6/practice" element={<A6Practice/>}/>
+                      <Route path="/a6/twitter" element={<A6ExploreScreen/>}/>
+                      <Route path="/a6/twitter/explore" element={<A6ExploreScreen/>}/>
+                      <Route path="/a6/twitter/home" element={<A6HomeScreen/>}/>
+                  </Routes>
+                  <HelloA7/>
+                  <Routes>
+                      <Route path="/a7" element={<A7HomeScreen/>} />
+                      <Route path="/a7/practice" element={<A7Practice/>}/>
+                      <Route path="/a7/twitter" element={<A7HomeScreen/>}/>
+                      <Route path="/a7/twitter/home" element={<A7HomeScreen/>}/>
+                      <Route path="/a7/twitter/profile" element={<A7HomeScreen/>}/>
 
-              </Routes>
-          </BrowserRouter>
-      </div>
+                  </Routes>
+              </BrowserRouter>
+          </div>
+      </Provider>
 
   );
 }
