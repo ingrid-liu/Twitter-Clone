@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 // import NavigationSidebar from "./NavigationSidebar";
 // import WhoToFollowListItem from "./WhoToFollowList/WhoToFollowListItem";
 // import WhoToFollowList from "./WhoToFollowList";
-import ExploreScreen from "./ExploreScreen";
+import A6ExploreScreen from "./ExploreScreen";
 
 const A6Build = () => {
     return(
         <>
-            <ExploreScreen/>
+            <A6ExploreScreen/>
             <br/>
             {/*<Link to="/a6/hello">*/}
             {/*    Back*/}

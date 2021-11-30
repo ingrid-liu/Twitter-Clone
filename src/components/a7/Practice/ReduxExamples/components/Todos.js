@@ -76,7 +76,8 @@ const Todos = () => {
                                        updateTodoClickHandler(
                                            {...todo,
                                                done: event.target.checked})}
-                                   type="checkbox"/>
+                                   type="checkbox"
+                            />
 
                             {todo.do}
                             <button onClick={() =>
