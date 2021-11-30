@@ -16,7 +16,7 @@ const HelloA7 = () => {
                 Challenge
             </Link> |
             <Link to="/a7/hello">
-                Collapse All
+                Collapse A7
             </Link>
 
         </>
