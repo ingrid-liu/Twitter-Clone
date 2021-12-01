@@ -18,9 +18,9 @@ const tweets = (state = posts, action) => {
                 "avatar-image": "../../../images/avatar_elonmusk.jpeg",
                 "logo-image": "../../../images/avatar_elonmusk.jpeg",
                 "stats": {
-                    "comments": 123,
-                    "retweets": 234,
-                    "likes": 345
+                    "comments": 0,
+                    "retweets": 0,
+                    "likes": 0
                 },
             };
             return([
