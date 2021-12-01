@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Ingrid",
+    "lastName": "Liu",
+    "handle": "ingridliu",
+    "tweetsNum": 5196,
+    "profilePicture": "../../../images/avatar_ingrid.jpg",
+    "bannerPicture": "../../../images/profile_banner2.png",
+    "bio": "(๑•̀ㅂ•́)و✧ Delving coding for one day that I can have an Australian Shepherd mini dog \uD83D\uDC36",
+    "website": "https://github.com/summeringrid",
+    "location": "Bay Area",
+    "dateOfBirth": "6/1/1995",
+    "dateJoined": "12/2016",
+    "followingCount": 312,
+    "followersCount": 180,
+    "editSwitch" : false
+  }
+]

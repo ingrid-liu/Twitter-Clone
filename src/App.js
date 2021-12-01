@@ -20,17 +20,20 @@ import HelloA6 from "./components/a6/HelloWorld";
 import A6Practice from "./components/a6/Practice";
 import A6ExploreScreen from "./components/a6/Build/ExploreScreen";
 import A6HomeScreen from "./components/a6/Build/HomeScreen";
+
+import HelloA7 from "./components/a7/HelloWorld";
 import A7Practice from "./components/a7/Practice";
 import A7HomeScreen from "./components/a7/Build/HomeScreen";
-import HelloA7 from "./components/a7/HelloWorld";
+import A7ProfileScreen from "./components/a7/Build/ProfileScreen";
 
 //5.import reducers
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
+import profile from "./reducers/profile";
 
 
 // 6. combine reducers
-const reducer = combineReducers({tweets: tweets, who})
+const reducer = combineReducers({tweets: tweets, who, profile})
 const store = createStore(reducer);
 
 
@@ -54,7 +57,7 @@ function App() {
                       <Route path="/a7/practice" element={<A7Practice/>}/>
                       <Route path="/a7/twitter" element={<A7HomeScreen/>}/>
                       <Route path="/a7/twitter/home" element={<A7HomeScreen/>}/>
-                      <Route path="/a7/twitter/profile" element={<A7HomeScreen/>}/>
+                      <Route path="/a7/twitter/profile" element={<A7ProfileScreen/>}/>
 
                   </Routes>
               </BrowserRouter>
