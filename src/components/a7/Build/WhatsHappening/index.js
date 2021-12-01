@@ -1,55 +1,47 @@
-// // import stylesheet
-// import "./what.css";
-// // import lib
-// import React, {useState} from "react";
-// import {useDispatch} from "react-redux";
-//
-// const WhatsHappening = () => {
-//   const [whatsHappening, setWhatsHappening] = useState("");
-//
-//   // use dispatch
-//   const dispatch = useDispatch();
-//
-//   const tweetTxtAreaHandler = (event) => {
-//     setWhatsHappening(event.target.value);
-//   }
-//
-//   const tweetClickHandler = () => {
-//     console.log("pressed tweet button..");
-//     const action = {
-//       type: 'create-tweet',
-//       tweet: whatsHappening
-//     };
-//     dispatch(action);
-//   }
-//
-//
-//
-//   return (
-//     <div className="row">
-//       <div className="col-2">
-//         <img src="/images/elonMusk.jpg" alt="profile-image" className="wd-bookmark-usr-img"/>
-//       </div>
-//
-//       <div className="col-10 wd-whatshappening-bottom">
-//         <textarea className="row wd-whatsHappeningTextArea" placeholder="What's happening?" value={whatsHappening} onChange={tweetTxtAreaHandler}></textarea>
-//
-//           <span>
-//             <i className="far fa-image wd-whatshappening-icons"></i>
-//             <i className="fas fa-chart-line wd-whatshappening-icons"></i>
-//             <i className="far fa-smile wd-whatshappening-icons"></i>
-//             <i className="far fa-calendar wd-whatshappening-icons"></i>
-//           </span>
-//
-//           <button className="btn btn-primary rounded-pill wd-whatshappening-button" onClick={tweetClickHandler}>
-//             Tweet
-//           </button>
-//
-//       </div>
-//     </div>
-//   );
-// };
-//
-//
-//
-// export default WhatsHappening;
+import React, {useState} from "react";
+import {useDispatch} from "react-redux";
+
+const WhatsHappening = () => {
+    let [whatsHappening, setWhatsHappening] = useState('');
+    const dispatch = useDispatch();
+    const tweetClickHandler = () => {
+        dispatch({type: 'create-tweet',
+            tweet: whatsHappening
+        });
+    }
+    return(
+        <>
+            <table style={{marginBottom: '16px'}}>
+                <tr>
+                    <td style={{verticalAlign: 'top'}}>
+                        <img src={'../../../images/avatar_elonmusk.jpeg'}
+                             className="rounded-circle"
+                             style={{width: '48px', margin: '16px'}}/>
+                    </td>
+                    <td style={{width: "100%"}}>
+                        <textarea value={whatsHappening}
+                                  onChange={(event) => setWhatsHappening(event.target.value)}
+                                  className="form-control"
+                                  style={{width: "100%", color: "white",
+                                      padding: "0px",
+                                      paddingTop: "15px",
+                                      backgroundColor: "black"}}
+                                  placeholder="What's happening?"></textarea>
+                        <hr/>
+                        <span>
+                            <a href="#"><i className="far fa-image me-3"></i></a>
+                            <a href="#"><i className="far fa-analytics me-3"></i></a>
+                            <a href="#"><i className="far fa-smile me-3"></i></a>
+                            <a href="#"><i className="far fa-calendar me-3"></i></a>
+                        </span>
+                        <button onClick={tweetClickHandler} className="btn btn-primary fa-pull-right rounded-pill">
+                            Tweet
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </>
+    );
+}
+
+export default WhatsHappening;

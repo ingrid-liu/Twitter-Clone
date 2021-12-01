@@ -1,19 +1,9 @@
 import React from "react";
-import {Link, Route} from "react-router-dom";
 
-import {createStore} from "redux";
-import {Provider} from "react-redux";
+// I deal with my reducer combination work in App.js
 
-import A7ExploreScreen from "./ExploreScreen";
-// import A7HomeScreen from "./HomeScreen";
-// import A7ProfileScreen from "./ProfileScree";
 
-// import all reducers
-import who from "../../../reducers/who.js"
 import A7HomeScreen from "./HomeScreen";
-
-// create the store from the reducer
-const store = createStore(who);
 
 const A7Build = () => {
     return(

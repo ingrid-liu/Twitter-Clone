@@ -1,6 +1,9 @@
 //import Library
 import React from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Provider} from "react-redux";
+import {combineReducers,createStore} from "redux";
+
 //import Library in local vendors
 //1.bootstrap
 import './vendors/bootstrap/css/bootstrap.min.css';
@@ -8,29 +11,27 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 //3.fontawesome
 import './vendors/fontawesome-pro/css/all.css';
+
+// import logo from './logo.svg';
+import './App.css';
+
 //4. import react component
-import A6 from "./components/a6/HelloWorld";
 import HelloA6 from "./components/a6/HelloWorld";
 import A6Practice from "./components/a6/Practice";
 import A6ExploreScreen from "./components/a6/Build/ExploreScreen";
 import A6HomeScreen from "./components/a6/Build/HomeScreen";
-import A7 from "./components/a7/Build";
 import A7Practice from "./components/a7/Practice";
-import A7ExploreScreen from "./components/a7/Build/ExploreScreen";
 import A7HomeScreen from "./components/a7/Build/HomeScreen";
 import HelloA7 from "./components/a7/HelloWorld";
 
-
-// import logo from './logo.svg';
-import './App.css';
-import {createStore} from "redux";
+//5.import reducers
 import who from "./reducers/who";
+import tweets from "./reducers/tweets";
 
 
-
-
-import {Provider} from "react-redux";
-const store = createStore(who);
+// 6. combine reducers
+const reducer = combineReducers({tweets: tweets, who})
+const store = createStore(reducer);
 
 
 function App() {

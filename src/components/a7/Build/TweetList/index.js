@@ -1,37 +1,27 @@
 import React from "react";
-import tweets from "./tweets.json";
+// import tweets from "../../../../reducers/data/tweets.json";
+import {useSelector} from "react-redux";
 import TweetListItem from "./TweetListItem";
-
-
-// import {useSelector} from "react-redux";
 // import WhatsHappening from "../WhatsHappening";
 
 
 // [Consumer Component] get state.tweets from store in Build/index.js
 // const selectAllTweets = (state) => state.tweets.tweets;
+const selectAllTweets = (state) => state.tweets;
 
 
 const TweetList = () => {
-    // const tweets = useSelector(selectAllTweets);
+    // Retrieve the tweets from the state in the store
+    const tweets = useSelector(selectAllTweets);
     // console.log(tweets);
     return(
             <ul className="list-group">
                 {
-                    tweets.map(tweet =>
-                        <TweetListItem tweet={tweet}/>
-                    )
+                    tweets.map((tweet) => {
+                        return <TweetListItem tweet={tweet}/>
+                    })
                 }
             </ul>
-
-        // <ul className="list-group">
-        // {
-        //     tweets.map(tweet =>
-        //         <TweetListItem tweet={tweet}/>
-        //     )
-        // }
-        // </ul>
-
-
     );
 }
 
