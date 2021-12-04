@@ -3,7 +3,6 @@ import {useSelector} from "react-redux";
 import ProfileEditor from "../ProfileEditor"
 import {Link} from "react-router-dom";
 // import profile from "../../../../reducers/profile";
-import "./profile.css";
 
 
 const userInfo = (state) => state.profile;
@@ -17,13 +16,11 @@ const Profile = ({setEdit}) => {
     return (
         <>
             {/*profile header*/}
-
-
             <span>{profile.firstName}</span>
             <div className="row">
                 <div className="col-1">
                     <div style={{marginTop:'13px'}}>
-                        <i className="fas fa-arrow-left"></i>
+                        <i className="fas fa-arrow-left"/>
                     </div>
                 </div>
                 <div className="col-11">
@@ -38,10 +35,12 @@ const Profile = ({setEdit}) => {
             </div>
             <div>
                 <img
-                    src="../../../images/profile_banner2.png"
+                    src={profile.bannerPicture}
                     height="200px" width="100%" style={{ objectFit: 'cover' }}/>
 
             </div>
+
+            {/*profile user info*/}
             <div className="row">
                 <div className="col ms-2" style={{position:'relative'}}>
 
@@ -52,8 +51,6 @@ const Profile = ({setEdit}) => {
                         width="120px"
                         style={{ position: 'relative',  border: 'black  solid 2px', marginTop: "-55px"}}
                     />
-
-
                     <div >
                         <span style={{ fontSize: '24px', fontWeight: "bold", color:"white"}}>
                             {profile.name}
@@ -63,8 +60,6 @@ const Profile = ({setEdit}) => {
                             @{profile.handle}
                         </span>
                     </div>
-
-
                 </div>
 
                 <div className="col">
@@ -76,21 +71,22 @@ const Profile = ({setEdit}) => {
 
                 </div>
             </div>
+
             <div className="ms-2" style={{color: 'white', position: 'relative', top: '9px'}}>
                 <div>
                     {profile.bio}
                 </div>
                 <div className="row" style={{color: 'darkgray', position: 'relative', top: '9px'}}>
                     <div className="col-3 ">
-                        <i className="fas fa-map-marker-alt"></i>
+                        <i className="fas fa-map-marker-alt"/>
                         <span className="p-2">{profile.location}</span>
                     </div>
                     <div className="col-4">
-                        <i className="fas fa-birthday-cake"></i>
+                        <i className="fas fa-birthday-cake"/>
                         <span className="p-2">Born {profile.dateOfBirth}</span>
                     </div>
                     <div className="col-4">
-                        <i className="fas fa-calendar-alt"></i>
+                        <i className="fas fa-calendar-alt"/>
                         <span className="p-2">Joined {profile.dateJoined}</span>
                     </div>
                 </div>
