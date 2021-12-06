@@ -9,14 +9,14 @@ const HelloA6 = () => {
                 Practice
             </Link> |
             <Link to="/a6/twitter/explore">
-                Build
+                &nbsp;Build(ExploreScreen)
             </Link> |
 
             <Link to="/a6/twitter/home">
-                Challenge
+                &nbsp;Challenge(HomeScreen)
             </Link> |
             <Link to="/a6/hello">
-                Collapse A6
+                &nbsp;Collapse A6
             </Link>
 
         </>
