@@ -9,14 +9,20 @@
 //
 // const A7ProfileEdit = () => {
 //     const profile = useSelector(userInfo);
-//
+//     const dispatch = useDispatch()
 //     // create local state variable initialized
 //     let [name, setName] = useState({newName: profile.name})
 //     let [info, setInfo] = useState({bio: profile.bio})
 //     let [location, setLocation] = useState({location: profile.location})
 //     let [personalURL, setPersonalURL] = useState({web : profile.website})
 //     let [birth, setBirth] = useState({birthday: profile.dateOfBirth});
-//     const dispatch = useDispatch()
+//
+//     // let [name, setName] = useState(profile.name)
+//     // let [info, setInfo] = useState(profile.bio)
+//     // let [location, setLocation] = useState(profile.location)
+//     // let [personalURL, setPersonalURL] = useState(profile.website)
+//     // let [birth, setBirth] = useState( profile.dateOfBirth);
+//
 //
 //
 //     // handle keystroke: changes in input field (modify local state: useState while typing)
@@ -166,12 +172,15 @@
 import React, {useState} from "react";
 // import TextField from "@mui/material/TextField";
 
-import "./editProfile.css";
+import "./ProfileEdit.css";
 import {useSelector, useDispatch} from "react-redux";
 
 
 const A7ProfileEdit = ({setEdit}) => {
     const profile = useSelector(state => state.profile);
+
+    // dispatch
+    const dispatch = useDispatch();
 
     // create local state variable initialized
     const profileInfoDefault = {
@@ -184,15 +193,13 @@ const A7ProfileEdit = ({setEdit}) => {
     };
     const [profileInfo, setProfileInfo] = useState(profileInfoDefault);
 
-    // dispatch
-    const dispatch = useDispatch();
-
 
     // create action object (use dispatch to manage global state)
     const modifyProfileHandler = (event) => {
-        const changedValue = event.target.value;
         const changedName = event.target.name;
-        // console.log(changedValue, changedName);
+        const changedValue = event.target.value;
+
+        console.log(changedName, changedValue);
 
         setProfileInfo(prevValue => {
             switch(changedName){
@@ -230,8 +237,8 @@ const A7ProfileEdit = ({setEdit}) => {
 
 
     const saveChangesHandler = () => {
-        //console.log(profileInfo);
-        console.log("pressed save button!");
+        console.log(profileInfo);
+        console.log("Click Save!");
         const modifyProfileAction = {
             type: "modify-profile",
             newProfile: profileInfo

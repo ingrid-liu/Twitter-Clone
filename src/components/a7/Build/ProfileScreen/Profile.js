@@ -181,14 +181,14 @@ const Profile = ({setEdit}) => {
         </span>
 
 
-                {/*footer*/}
-                <div className="wd-profile-footer">
-          <span>
-            {profile.followingCount} <span className="wd-lightgray">Following</span>
-          </span>
-                    <span className="wd-padding-left-20">
-          {profile.followersCount} <span className="wd-lightgray">Followers</span>
-        </span>
+        {/*footer*/}
+        <div className="wd-profile-footer">
+            <span>
+                {profile.followingCount} <span className="wd-lightgray">Following</span>
+            </span>
+            <span className="wd-padding-left-20">
+                {profile.followersCount} <span className="wd-lightgray">Followers</span>
+            </span>
                 </div>
 
             </div>

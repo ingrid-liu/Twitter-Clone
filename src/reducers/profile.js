@@ -1,6 +1,6 @@
 import userInfo from "./data/profile"
-// todo Question: Why I can't put my user info into a Json file?
-
+// // todo Question: Why I can't put my user info into a Json file?
+//
 // const profile = (state = userInfo, action) => {
 //   switch (action.type){
 //     case 'fetch-all-profile':
@@ -40,19 +40,19 @@ import userInfo from "./data/profile"
 const profile = (state = userInfo, action) => {
   switch (action.type){
     case 'get-profile':
-      return (action.userInfo)
+      return (action.profile)
 
     case "modify-profile":
-      const newProfile = action.userInfo;
-      // console.log(`modifed profile is sent to reducer: ${newProfile}`);
+      const newProfile = action.profile;
+      console.log(`modified profile is sent to reducer: ${newProfile}`);
       const modifiedProfile = {
         ...state,
         name: newProfile.name,
         bio: newProfile.bio,
         location: newProfile.location,
         website: newProfile.website,
-        profilePicture: newProfile.profilePicture,
-        bannerPicture: newProfile.bannerPicture
+        // profilePicture: newProfile.profilePicture,
+        // bannerPicture: newProfile.bannerPicture
       };
       // console.log(`modified profile: ${modifiedProfile}`);
       return modifiedProfile;

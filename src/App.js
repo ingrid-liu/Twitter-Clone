@@ -32,7 +32,7 @@ import A7ProfileEdit from "./components/a7/Build/ProfileEdit";
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
-import testReducer from "./reducers/tests";
+// import testReducer from "./reducers/tests";
 
 
 
@@ -41,7 +41,7 @@ const mainReducer = combineReducers({
     tweets: tweets,
     who,
     profile: profile,
-    testReducer
+    // testReducer
 })
 const store = createStore(mainReducer);
 

@@ -19,10 +19,11 @@ const A7ProfileScreen = () => {
                 <NavigationSidebar active={"profile"}/>
             </div>
             <div className="col-10 col-lg-6">
+                {/*when setEdit is false: profile page; when edit is true: edit page*/}
                 {!edit && <Profile setEdit={setEdit}/>}
                 {edit && <A7ProfileEdit setEdit={setEdit}/>}
                 {/*<Profile/>*/}
-                {<Test/>}
+                {/*{<Test/>}*/}
 
             </div>
 
