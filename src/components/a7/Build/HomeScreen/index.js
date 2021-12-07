@@ -20,6 +20,8 @@ const A7HomeScreen = () => {
                     <PostSummaryList/>
                 </div>
             </div>
+
+
         </div>
     );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import NavigationSidebar from "../NavigationSidebar";
 import WhoToFollowList from "../WhoToFollowList";
 import ExploreComponent from "./ExploreComponent.js";
+import PostSummaryList from "../PostSummaryList";
 
 const A7ExploreScreen = () => {
     return(
@@ -15,7 +16,7 @@ const A7ExploreScreen = () => {
                     <ExploreComponent/>
                 </div>
                 <div className="col-4 d-none d-lg-block">
-                    <WhoToFollowList/>
+                    <PostSummaryList/>
                 </div>
             </div>
         </div>
