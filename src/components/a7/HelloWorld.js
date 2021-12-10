@@ -15,7 +15,7 @@ const HelloA7 = () => {
             <Link to="/a7/twitter/profile">
                 &nbsp;Challenge (ProfileScreen)
             </Link> |
-            <Link to="/a7/hello">
+            <Link to="/">
                 &nbsp;Collapse A7
             </Link>
 
