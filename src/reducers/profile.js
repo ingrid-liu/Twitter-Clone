@@ -51,8 +51,9 @@ const profile = (state = userInfo, action) => {
         bio: newProfile.bio,
         location: newProfile.location,
         website: newProfile.website,
-        // profilePicture: newProfile.profilePicture,
-        // bannerPicture: newProfile.bannerPicture
+        dateOfBirth: newProfile.dateOfBirth,
+        profilePicture: newProfile.profilePicture,
+        bannerPicture: newProfile.bannerPicture
       };
       // console.log(`modified profile: ${modifiedProfile}`);
       return modifiedProfile;

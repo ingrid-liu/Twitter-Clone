@@ -4,16 +4,12 @@ const MovieApiClient = () => {
 
     const [movie, setMovie] = useState({title: "", rating: 2.5});
 
-    // will render the component once
-    // Essentially get all
     useEffect(() =>
             fetch('http://localhost:4000/api/movies')
                 .then(response => response.json())
                 .then(movies => setMovies(movies))
         , []);
 
-    // delete in front end, currently we are getting the full udpated data
-    // from the server
     const deleteMovie = (movie) => {
         fetch(`http://localhost:4000/api/movies/${movie._id}`,
             {method: "DELETE"})
@@ -60,15 +56,13 @@ const MovieApiClient = () => {
             />
             <button
                 onClick={createMovieClickHandler}
-                className = "btn btn-success"
-            >
+                className = "btn btn-success ms-2">
                 Create
             </button>
 
             <button
                 onClick={saveMovie}
-                className = "btn btn-primary float-end ms-2"
-            >
+                className = "btn btn-primary float-end ms-2">
                 Save
             </button>
 
@@ -80,20 +74,15 @@ const MovieApiClient = () => {
                             {movie.title} {movie.rating}
                             <button
                                 onClick = {() => setMovie(movie)}
-                                className = "btn btn-primary float-end ms-2"
-                            >
+                                className = "btn btn-primary float-end ms-2">
                                 Edit
                             </button>
 
-
                             <button
                                 onClick={()=>{deleteMovie(movie)}}
-                                className="btn btn-danger float-end"
-                            >
+                                className="btn btn-danger float-end">
                                 Delete
                             </button>
-
-
                         </li>
                     )
                 }
