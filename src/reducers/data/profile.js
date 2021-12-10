@@ -1,7 +1,7 @@
 
 const userInfo =   {
-    name: "Ingrid Liu",
-    handle: "ingridliu",
+    name: "Ingrid",
+    handle: "summeringrid",
     tweetsNum: '5,196',
     profilePicture: "../../../images/avatar_ingrid.png",
     bannerPicture: "../../../images/profile_banner2.png",

@@ -1,0 +1,30 @@
+.wd-whatsHappeningTextArea{
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  border-style: hidden;
+  border-bottom: 1px solid rgba(211,211,211,0.4);
+  outline: none;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+
+.wd-whatshappening-bottom{
+  position: relative;
+}
+
+.wd-whatshappening-icons{
+  color: #1167b1;
+  font-size: 20px;
+  margin: 20px 15px 20px 0px;
+
+}
+
+.wd-whatshappening-button{
+  position: absolute;
+  width: 100px;
+  right: 25px;
+  bottom: 10px;
+}

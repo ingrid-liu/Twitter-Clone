@@ -28,10 +28,16 @@ import A7ProfileScreen from "./components/a7/Build/ProfileScreen";
 import A7ExploreScreen from "./components/a7/Build/ExploreScreen";
 import A7ProfileEdit from "./components/a7/Build/ProfileEdit";
 
+import HelloA8 from "./components/a8/HelloWorld";
+import A8Practice from "./components/a8/Practice";
+
+
+
 //5.import reducers
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
+
 // import testReducer from "./reducers/tests";
 
 
@@ -68,11 +74,21 @@ function App() {
                       <Route path="/a7/twitter/home" element={<A7HomeScreen/>}/>
                       <Route path="/a7/twitter/profile" element={<A7ProfileScreen/>}/>
                       <Route path="/a7/twitter/profile/edit" element={<A7ProfileEdit/>}/>
-
                       <Route path="/a7/twitter/explore" element={<A7ExploreScreen/>}/>
-
-
                   </Routes>
+
+                  <HelloA8/>
+                  <Routes>
+                      <Route path="/a8" element={<A7HomeScreen/>} />
+                      <Route path="/a8/practice" element={<A8Practice/>}/>
+                      <Route path="/a8/twitter" element={<A7HomeScreen/>}/>
+                      <Route path="/a8/twitter/home" element={<A7HomeScreen/>}/>
+                      <Route path="/a8/twitter/profile" element={<A7ProfileScreen/>}/>
+                      <Route path="/a8/twitter/profile/edit" element={<A7ProfileEdit/>}/>
+                      <Route path="/a8/twitter/explore" element={<A7ExploreScreen/>}/>
+                  </Routes>
+
+
               </BrowserRouter>
           </div>
       </Provider>
