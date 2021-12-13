@@ -5,9 +5,10 @@ import TweetList from "../TweetList";
 import ExploreComponent from "../ExploreScreen/ExploreComponent";
 import WhatsHappening from "../WhatsHappening";
 
-const A7HomeScreen = () => {
+const A8HomeScreen = () => {
     return(
         <div className="container">
+            <p>This is from a8</p>
             <div className="row mt-2">
                 <div className="col-2 ">
                     <NavigationSidebar active="home"/>
@@ -25,4 +26,4 @@ const A7HomeScreen = () => {
         </div>
     );
 };
-export default A7HomeScreen;
+export default A8HomeScreen;

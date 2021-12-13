@@ -8,6 +8,15 @@ const WhatsHappening = () => {
         dispatch({type: 'create-tweet',
             tweet: whatsHappening
         });
+
+
+        // const action = {
+        //     type: 'create-tweet',
+        //     tweet: whatsHappening
+        // };
+        // dispatch(action);
+
+
     }
     return(
         <>

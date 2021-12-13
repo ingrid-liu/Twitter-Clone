@@ -30,6 +30,7 @@ import A7ProfileEdit from "./components/a7/Build/ProfileEdit";
 
 import HelloA8 from "./components/a8/HelloWorld";
 import A8Practice from "./components/a8/Practice";
+import A8HomeScreen from "./components/a8/Build/HomeScreen";
 
 
 
@@ -79,10 +80,11 @@ function App() {
 
                   <HelloA8/>
                   <Routes>
-                      <Route path="/a8" element={<A7HomeScreen/>} />
+                      <Route path="/a8" element={<A8HomeScreen/>} />
                       <Route path="/a8/practice" element={<A8Practice/>}/>
-                      <Route path="/a8/twitter" element={<A7HomeScreen/>}/>
-                      <Route path="/a8/twitter/home" element={<A7HomeScreen/>}/>
+                      <Route path="/a8/twitter" element={<A8HomeScreen/>}/>
+                      <Route path="/a8/twitter/home" element={<A8HomeScreen/>}/>
+                      {/*following three links just for display, not updated A8's*/}
                       <Route path="/a8/twitter/profile" element={<A7ProfileScreen/>}/>
                       <Route path="/a8/twitter/profile/edit" element={<A7ProfileEdit/>}/>
                       <Route path="/a8/twitter/explore" element={<A7ExploreScreen/>}/>
@@ -97,70 +99,3 @@ function App() {
 }
 
 export default App;
-// test
-// <BrowserRouter>
-//     <div className="container">
-//         <HelloWorld/>
-//         <Practice/>
-//         <Build/>
-//
-//     </div>
-// </BrowserRouter>
-
-// assignment provided code: doesn't work on latest version (can't sync on Netlify)
-// <BrowserRouter>
-//     <div className="container">
-//         <Route path="/a6/hello">
-//             <HelloWorld/>
-//         </Route>
-//         <Route path="/a6/practice">
-//             <Practice/>
-//         </Route>
-//         <Route path="/a6/build">
-//             <Build/>
-//         </Route>
-//
-//     </div>
-// </BrowserRouter>
-
-
-//worked but not required version
-// <BrowserRouter>
-//     <Routes>
-//         <Route path="/a6/hello" exact={true} element={<HelloWorld />} />
-//         <Route path="/a6/practice" element={<Practice />} />
-//         <Route path="/a6/build" element={<Build />} />
-//
-//     </Routes>
-// </BrowserRouter>
-
-
-// latest tying work but not functional version
-// <BrowserRouter>
-//     <div className="container">
-//
-//         <Link to="/a6/practice">A6</Link> |
-//         <Link to="/a7/practice">A7</Link> |
-//         <Link to="/a8/practice">A8</Link>
-//
-//         {/*<Route path="/a9">*/}
-//         {/*    <A9/>*/}
-//         {/*</Route>*/}
-//
-//         {/*<Route path="/a6">*/}
-//         {/*    <A6/>*/}
-//         {/*</Route>*/}
-//
-//         {/*<Route path="/a7">*/}
-//         {/*    <A7/>*/}
-//         {/*</Route>*/}
-//
-//
-//         {/*<Route path={["/", "/a7", "/a7/practice"]} exact={true}>*/}
-//         {/*    <Practice/>*/}
-//         {/*</Route>*/}
-//         {/*<Route path="/a7/twitter">*/}
-//         {/*    <Build/>*/}
-//         {/*</Route>*/}
-//     </div>
-// </BrowserRouter>
