@@ -34,19 +34,21 @@ const tweets = (state = posts, action) => {
                     "likes": 0
                 },
             };
-            // return([
-            //     {
-            //         ...tweet,
-            //         "tweet": action.tweet
-            //     },
-            //     ...state
-            // ]);
-            return ({
-                tweets: [
-                    tweet,
-                    ...state.tweets,
-                ]
-            });
+            return([
+                {
+                    ...tweet,
+                    "tweet": action.tweet
+                },
+                ...state
+            ]);
+            // Professor's version:
+
+            // return ({
+            //     tweets: [
+            //         tweet,
+            //         ...state.tweets,
+            //     ]
+            // });
 
         case 'like-tweet':
             return state.map(tweet => {
