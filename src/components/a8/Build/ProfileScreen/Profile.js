@@ -1,12 +1,17 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {getCurrentProfile} from "../../../../services/profileService";
 // import {Link} from "react-router-dom";
 
 
 const userInfo = (state) => state.profile;
 
 const Profile = ({setEdit}) => {
-    const profile = useSelector(userInfo);
+    let profile = useSelector(userInfo);
+
+    const dispatch = useDispatch();
+    useEffect(() => getCurrentProfile(dispatch), []);
+
     const editProfileHandler = () => {
         return setEdit(true);
     }

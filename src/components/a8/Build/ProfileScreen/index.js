@@ -10,7 +10,7 @@ import Test from "../ReducerTester";
 import ExploreComponent from "../ExploreScreen/ExploreComponent";
 
 
-const A7ProfileScreen = () => {
+const A8ProfileScreen = () => {
     const [edit, setEdit] = useState(false);
     return (
         // <div className="row mt-2">
@@ -48,6 +48,6 @@ const A7ProfileScreen = () => {
 }
 
 
-export default A7ProfileScreen;
+export default A8ProfileScreen;
 
 

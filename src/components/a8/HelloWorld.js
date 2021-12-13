@@ -12,6 +12,9 @@ const HelloA8 = () => {
             <Link to="/a8/twitter/home">
                 &nbsp;Build (HomeScreen)
             </Link> |
+            <Link to="/a8/twitter/profile">
+                &nbsp;Challenge (ProfileScreen)
+            </Link> |
             <Link to="/">
                 &nbsp;Collapse A8
             </Link>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import {updateCurrentProfile} from "../../../../services/profileService";
+
 // import NavigationSideBar from '../NavigationSidebar/index'
 // import { Link } from 'react-router-dom'
 
@@ -8,7 +10,7 @@ import { useSelector, useDispatch } from 'react-redux'
 const userInfo = (state) => state.profile;
 
 const A7ProfileEdit = ({setEdit}) => {
-    const profile = useSelector(userInfo);
+    let profile = useSelector(userInfo);
     const dispatch = useDispatch()
 
     ///////////////////// original
@@ -127,29 +129,35 @@ const A7ProfileEdit = ({setEdit}) => {
     }
 
 
-    // const saveChangesHandler = () => {
-    //     console.log(profileInfo);
-    //     console.log("Click Save!");
-    //     const modifyProfileAction = {
-    //         type: "modify-profile",
-    //         newProfile: profileInfo
-    //     };
-    //     dispatch(modifyProfileAction);
-    //
-    //     // modify state, and pass state to parent component
-    //     return setEdit(false);
-    // }
-
-    const saveChangesHandler = (event) => {
-        const modifiedProfile = event.target.value;
-        const newProfile = {
-            newProfile : modifiedProfile
+    const saveChangesHandler = () => {
+        console.log(profileInfo);
+        console.log("Click Save!");
+        // I should comment down the following previous reducer way
+        // but it keeps asking the type
+        const modifyProfileAction = {
+            type: "modify-profile",
+            newProfile: profileInfo
         };
-        setProfileInfo(newProfile);
+        dispatch(modifyProfileAction);
+
+        updateCurrentProfile(dispatch, profileInfo);
+
+
+        // modify state, and pass state to parent component
         return setEdit(false);
     }
 
-
+    // const saveChangesHandler = (event) => {
+    //     console.log("pressed save button!");
+    //
+    //     const modifiedProfile = event.target.value;
+    //     const newProfile = {
+    //         newProfile : modifiedProfile
+    //     };
+    //     setProfileInfo(newProfile);
+    //
+    //     return setEdit(false);
+    // }
 
     const closeEditHandler = () => {
         return setEdit(false);

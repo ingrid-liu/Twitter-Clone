@@ -18,6 +18,7 @@ const tweets = (state = posts, action) => {
             return state.filter(tweet => tweet._id !== action.tweet._id);
 
         case 'create-tweet':
+            // original [works great for my A7]
             const tweet = {
                 _id: (new Date()).getTime() + '',
                 "topic": "Web Development",
@@ -41,11 +42,22 @@ const tweets = (state = posts, action) => {
                 },
                 ...state
             ]);
+
+
             // Professor's version:
 
             // return ({
             //     tweets: [
             //         tweet,
+            //         ...state.tweets,
+            //     ]
+            // });
+
+            // From Piazza [If I use this version, it affects my A7!]
+            // case 'create-tweet':
+            // return ({
+            //     tweets: [
+            //         action.tweet,
             //         ...state.tweets,
             //     ]
             // });

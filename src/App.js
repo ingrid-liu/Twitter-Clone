@@ -31,6 +31,7 @@ import A7ProfileEdit from "./components/a7/Build/ProfileEdit";
 import HelloA8 from "./components/a8/HelloWorld";
 import A8Practice from "./components/a8/Practice";
 import A8HomeScreen from "./components/a8/Build/HomeScreen";
+import A8ProfileScreen from "./components/a8/Build/ProfileScreen";
 
 
 
@@ -84,8 +85,7 @@ function App() {
                       <Route path="/a8/practice" element={<A8Practice/>}/>
                       <Route path="/a8/twitter" element={<A8HomeScreen/>}/>
                       <Route path="/a8/twitter/home" element={<A8HomeScreen/>}/>
-                      {/*following three links just for display, not updated A8's*/}
-                      <Route path="/a8/twitter/profile" element={<A7ProfileScreen/>}/>
+                      <Route path="/a8/twitter/profile" element={<A8ProfileScreen/>}/>
                       <Route path="/a8/twitter/profile/edit" element={<A7ProfileEdit/>}/>
                       <Route path="/a8/twitter/explore" element={<A7ExploreScreen/>}/>
                   </Routes>
