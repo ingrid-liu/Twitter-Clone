@@ -5,8 +5,8 @@ import {fetchAllTweets} from "../../../../services/tweetService";
 
 
 // [Consumer Component] get state.tweets from store in Build/index.js
-const selectAllTweets = (state) => state.tweets.tweets;          // given in assignment
-// const selectAllTweets = (state) => state.tweets;
+// const selectAllTweets = (state) => state.tweets.tweets;          // given in assignment
+const selectAllTweets = (state) => state.tweets;
 
 
 const TweetList = () => {

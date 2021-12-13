@@ -4,9 +4,13 @@ import posts from './data/tweets.json';
 const tweets = (state = posts, action) => {
     switch (action.type) {
         case 'fetch-all-tweets':
-            return({
-                tweets: action.tweets
-            })
+            // professor provided code
+            // return({
+            //     tweets: action.tweets
+            // })
+
+            // workable attempt provided on Piazza
+            return(action.tweets);
             break;
 
 
