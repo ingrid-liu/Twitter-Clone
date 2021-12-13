@@ -9,7 +9,7 @@ import {updateCurrentProfile} from "../../../../services/profileService";
 
 const userInfo = (state) => state.profile;
 
-const A8ProfileEdit = ({setEdit}) => {
+const A7ProfileEdit = ({setEdit}) => {
     let profile = useSelector(userInfo);
     const dispatch = useDispatch()
 
@@ -358,7 +358,7 @@ const A8ProfileEdit = ({setEdit}) => {
     // </>
     )
 }
-export default A8ProfileEdit
+export default A7ProfileEdit
 
 
 

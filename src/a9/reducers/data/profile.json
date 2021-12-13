@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Jose Annunziato",
+    "handle": "jannunzi",
+    "tweetsNum": 5196,
+    "profilePicture": "../../../images/profile_prof_avatar.jpeg",
+    "bannerPicture": "../../../images/profile_prof_bg.jpeg",
+    "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retweets and likes are not endorsements.",
+    "website": "https://johnguerra.co/img/johnguerra_cv.pdf",
+    "location": "Boston, MA",
+    "dateOfBirth": "1968-07-07",
+    "dateJoined": "April 2009",
+    "followingCount": 312,
+    "followersCount": 180,
+    "editSwitch" : false
+  }
+]

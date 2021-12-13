@@ -32,13 +32,18 @@ import HelloA8 from "./components/a8/HelloWorld";
 import A8Practice from "./components/a8/Practice";
 import A8HomeScreen from "./components/a8/Build/HomeScreen";
 import A8ProfileScreen from "./components/a8/Build/ProfileScreen";
+import A8ProfileEdit from "./components/a8/Build/ProfileEdit";
 
+import A9 from "./a9";
+import A9Practice from "./a9/Practice";
+import A9HomeScreen from "./a9/Build/HomeScreen";
 
 
 //5.import reducers
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
+
 
 // import testReducer from "./reducers/tests";
 
@@ -85,6 +90,17 @@ function App() {
                       <Route path="/a8/practice" element={<A8Practice/>}/>
                       <Route path="/a8/twitter" element={<A8HomeScreen/>}/>
                       <Route path="/a8/twitter/home" element={<A8HomeScreen/>}/>
+                      <Route path="/a8/twitter/profile" element={<A8ProfileScreen/>}/>
+                      <Route path="/a8/twitter/profile/edit" element={<A8ProfileEdit/>}/>
+                      <Route path="/a8/twitter/explore" element={<A7ExploreScreen/>}/>
+                  </Routes>
+
+                  <A9/>
+                  <Routes>
+                      <Route path="/a9" element={<A9HomeScreen/>} />
+                      <Route path="/a9/practice" element={<A9Practice/>}/>
+                      <Route path="/a9/twitter" element={<A9HomeScreen/>}/>
+                      <Route path="/a9/twitter/home" element={<A9HomeScreen/>}/>
                       <Route path="/a8/twitter/profile" element={<A8ProfileScreen/>}/>
                       <Route path="/a8/twitter/profile/edit" element={<A7ProfileEdit/>}/>
                       <Route path="/a8/twitter/explore" element={<A7ExploreScreen/>}/>
