@@ -3,14 +3,14 @@ import React from "react";
 // I deal with my reducer combination work in App.js
 
 
-import A7HomeScreen from "./HomeScreen";
+import A9HomeScreen from "./HomeScreen";
 
-const A7Build = () => {
+const A9Build = () => {
     return(
         // version I
         <>
-            <p>from A7 Build</p>
-            <A7HomeScreen/>
+            <p>from A9 Build</p>
+            <A9HomeScreen/>
             <br/>
         </>
 
@@ -40,7 +40,7 @@ const A7Build = () => {
     );
 };
 
-export default A7Build;
+export default A9Build;
 
 // import tweets from "../../../reducers/tweets.js"
 // import profile from "../../../reducers/profile.js";

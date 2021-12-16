@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {getCurrentProfile} from "../../../../services/profileService";
+import {getCurrentProfile} from "../../../services/profileService";
 // import {Link} from "react-router-dom";
 
 
@@ -18,6 +18,7 @@ const Profile = ({setEdit}) => {
 
     return (
         <>
+
             {/*profile header*/}
             <span>{profile.firstName}</span>
             <div className="row">

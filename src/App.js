@@ -37,12 +37,16 @@ import A8ProfileEdit from "./components/a8/Build/ProfileEdit";
 import A9 from "./a9";
 import A9Practice from "./a9/Practice";
 import A9HomeScreen from "./a9/Build/HomeScreen";
+import A9ProfileScreen from "./a9/Build/ProfileScreen";
+import A9ExploreScreen from "./a9/Build/ExploreScreen";
+import A9ProfileEdit from "./a9/Build/ProfileEdit";
 
 
 //5.import reducers
 import who from "./reducers/who";
 import tweets from "./reducers/tweets";
 import profile from "./reducers/profile";
+
 
 
 // import testReducer from "./reducers/tests";
@@ -101,9 +105,9 @@ function App() {
                       <Route path="/a9/practice" element={<A9Practice/>}/>
                       <Route path="/a9/twitter" element={<A9HomeScreen/>}/>
                       <Route path="/a9/twitter/home" element={<A9HomeScreen/>}/>
-                      <Route path="/a8/twitter/profile" element={<A8ProfileScreen/>}/>
-                      <Route path="/a8/twitter/profile/edit" element={<A7ProfileEdit/>}/>
-                      <Route path="/a8/twitter/explore" element={<A7ExploreScreen/>}/>
+                      <Route path="/a9/twitter/profile" element={<A9ProfileScreen/>}/>
+                      <Route path="/a9/twitter/profile/edit" element={<A9ProfileEdit/>}/>
+                      <Route path="/a9/twitter/explore" element={<A9ExploreScreen/>}/>
                   </Routes>
 
 

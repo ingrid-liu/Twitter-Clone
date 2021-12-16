@@ -2,15 +2,12 @@ import React, {useState} from "react";
 import Profile from "./Profile";
 // import EditProfile from "./EditProfile";
 import NavigationSidebar from "../NavigationSidebar";
-import WhatsHappening from "../WhatsHappening";
 import TweetList from "../TweetList";
 import PostSummaryList from "../PostSummaryList";
 import A7ProfileEdit from "../ProfileEdit";
-import Test from "../ReducerTester";
-import ExploreComponent from "../ExploreScreen/ExploreComponent";
 
 
-const A8ProfileScreen = () => {
+const A9ProfileScreen = () => {
     const [edit, setEdit] = useState(false);
     return (
         // <div className="row mt-2">
@@ -29,6 +26,7 @@ const A8ProfileScreen = () => {
         //     </div>
 
             <div className="row mt-2">
+                <p>This is from a9</p>
                 <div className="col-2 ">
                     <NavigationSidebar active={"profile"}/>
                 </div>
@@ -48,6 +46,6 @@ const A8ProfileScreen = () => {
 }
 
 
-export default A8ProfileScreen;
+export default A9ProfileScreen;
 
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import {updateCurrentProfile} from "../../../../services/profileService";
+import {updateCurrentProfile} from "../../../services/profileService";
 
 // import NavigationSideBar from '../NavigationSidebar/index'
 // import { Link } from 'react-router-dom'
@@ -9,7 +9,7 @@ import {updateCurrentProfile} from "../../../../services/profileService";
 
 const userInfo = (state) => state.profile;
 
-const A7ProfileEdit = ({setEdit}) => {
+const A9ProfileEdit = ({setEdit}) => {
     let profile = useSelector(userInfo);
     const dispatch = useDispatch()
 
@@ -358,7 +358,7 @@ const A7ProfileEdit = ({setEdit}) => {
     // </>
     )
 }
-export default A7ProfileEdit
+export default A9ProfileEdit
 
 
 

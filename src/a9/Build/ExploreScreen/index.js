@@ -4,7 +4,7 @@ import WhoToFollowList from "../WhoToFollowList";
 import ExploreComponent from "./ExploreComponent.js";
 import PostSummaryList from "../PostSummaryList";
 
-const A7ExploreScreen = () => {
+const A9ExploreScreen = () => {
     return(
         <div className="container">
             <p>ExplorePage from A7</p>
@@ -22,4 +22,4 @@ const A7ExploreScreen = () => {
         </div>
     );
 };
-export default A7ExploreScreen;
+export default A9ExploreScreen;

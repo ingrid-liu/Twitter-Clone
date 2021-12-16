@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useSelector} from "react-redux";
-import tests from "../../../../reducers/tests";
+import tests from "../../../reducers/tests";
 
 // const test = (state) => state.test;
 const Test = ({editing}) => {
