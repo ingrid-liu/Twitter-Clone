@@ -5,9 +5,9 @@ import NavigationSidebar from "../NavigationSidebar";
 import WhatsHappening from "../WhatsHappening";
 import TweetList from "../TweetList";
 import PostSummaryList from "../PostSummaryList";
-import A7ProfileEdit from "../ProfileEdit";
 import Test from "../ReducerTester";
 import ExploreComponent from "../ExploreScreen/ExploreComponent";
+import A8ProfileEdit from "../ProfileEdit";
 
 
 const A8ProfileScreen = () => {
@@ -35,7 +35,7 @@ const A8ProfileScreen = () => {
                 <div className="col-10 col-lg-6">
                     {/*<Profile/>*/}
                     {!edit && <Profile setEdit={setEdit}/>}
-                    {edit && <A7ProfileEdit setEdit={setEdit}/>}
+                    {edit && <A8ProfileEdit setEdit={setEdit}/>}
                     <TweetList/>
                 </div>
                 <div className="col-4 d-none d-lg-block">

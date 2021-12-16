@@ -14,7 +14,6 @@ const Profile = ({setEdit}) => {
     return (
         <>
             {/*profile header*/}
-            <span>{profile.firstName}</span>
             <div className="row">
                 <div className="col-1">
                     <div style={{marginTop:'13px'}}>

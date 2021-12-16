@@ -1,7 +1,9 @@
-import React, {useEffect} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import React, {useEffect, useState} from "react";
+import service from '../../services/tweetService'
 import TweetListItem from "./TweetListItem";
-import {fetchAllTweets} from "../../../services/tweetService";
+
+import {useDispatch, useSelector} from "react-redux";
+import {findAllTweets} from "./service";
 
 
 // [Consumer Component] get state.tweets from store in Build/index.js
@@ -15,7 +17,8 @@ const TweetList = () => {
     // console.log(tweets);
 
     const dispatch = useDispatch();
-    useEffect(() => fetchAllTweets(dispatch), [])
+    useEffect(() => findAllTweets(dispatch), [])
+    console.log('tweets from TweetList page:', tweets)
 
     return (
         <ul className="list-group">
@@ -38,3 +41,36 @@ const TweetList = () => {
 };
 
 export default TweetList;
+
+
+
+// const TweetList = () => {
+//     const [tweets, setTweets] = useState([]);
+//     const [tweet, setTweet] = useState({title: ""});
+//
+//
+//     useEffect(() =>
+//         service.findAllTweets()
+//             .then(movies => setTweets(tweets)),[]);
+//
+//     const findTweetById = (tweet) =>
+//         service.findTweetById(tweet._id)
+//             .then(movie => setTweet(tweet));
+//
+//     console.log('tweets from TweetList page:', tweets)
+//     return (
+//         <ul className="list-group">
+//
+//             {
+//
+//                 tweets.map(tweet =>
+//                     <TweetListItem tweet={tweet}/>
+//                 )
+//
+//
+//             }
+//         </ul>
+//     )
+//
+// }
+// export default TweetList;

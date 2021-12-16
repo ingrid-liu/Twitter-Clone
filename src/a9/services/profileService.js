@@ -1,49 +1,27 @@
-// const profileAPI = 'http://localhost:4000/api/profile';
-const profileAPI = 'https://node-on-heroku-ingrid.herokuapp.com/api/profile';
+// const URL = 'http://localhost:4000/api/profile';
+// const URL = 'https://node-on-heroku-ingrid.herokuapp.com/api/profile';
 
-export const getCurrentProfile = (dispatch) =>
-    fetch(profileAPI)
-        .then(response => response.json())
-        .then(profile =>
-            dispatch({
-                type: 'fetch-all-profile',
-                profile
-            })
-        );
+const URL = 'http://localhost:4000/rest/profile';
 
-// export const updateCurrentProfile = (dispatch, newProfile) => {
-//     console.log(newProfile);
-//
-//     fetch(profileAPI, {
-//         method: 'POST',
-//         body: JSON.stringify(newProfile),
-//         headers: {
-//             'content-type': 'application/json',
-//             'accept': 'application/json'
-//         }
-//     })
-//         .then(response => {
-//             return response.clone().json()
-//         })
-//         .then(newProfile =>
-//             dispatch({
-//                 newProfile
-//             }))
-// };
+const getCurrentProfile = (dispatch) =>
+    fetch(URL)
+        .then(response => response.json());
 
-export const updateCurrentProfile = (dispatch, newProfile) => {
-    console.log(newProfile);
-    fetch(profileAPI, {
-        // method: "PUT",
-        method: "POST",
-        body: JSON.stringify(newProfile),
+const updateCurrentProfile = (dispatch, profile) => {
+    console.log(profile);
+
+    fetch(URL, {
+        method: 'PUT',
+        body: JSON.stringify(profile),
         headers: {
-            "content-type": "application/json"
+            'content-type': 'application/json'
         }
-    })
-        .then(response => dispatch({
-                type: "modify-profile",
-            newProfile
-            })
-        );
+    }).then(response => response.json());
 }
+
+export default {
+    getCurrentProfile, updateCurrentProfile
+
+};
+
+

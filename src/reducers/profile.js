@@ -39,16 +39,16 @@ import userInfo from "./data/profile"
 
 const profile = (state = userInfo, action) => {
   switch (action.type){
-    case 'get-profile':
-      return (action.profile)
+    case 'fetch-all-profile':
+      return action.profile
 
-    case "modify-profile":
+    case "save1":
       const newProfile = action.profile;
-      console.log(`modified profile is sent to reducer: ${newProfile}`);
       const modifiedProfile = {
         ...state,
         name: newProfile.name,
         bio: newProfile.bio,
+        handle: newProfile.handle,
         location: newProfile.location,
         website: newProfile.website,
         dateOfBirth: newProfile.dateOfBirth,

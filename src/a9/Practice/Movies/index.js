@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import service, {findMovieById} from './service';
+import service from './service';
 
 const Movies = () => {
     const [movies, setMovies] = useState([]);

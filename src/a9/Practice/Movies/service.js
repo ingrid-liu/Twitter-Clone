@@ -2,7 +2,7 @@
 const URL = 'http://localhost:4000/rest/movies';
 
 // declare function to retrieve data from database
-export const findAllMovies = () =>
+const findAllMovies = () =>
     // send HTTP GET to URL
     fetch(URL)
         .then(response => response.json());
@@ -23,7 +23,7 @@ const deleteMovie = (id) =>
 
 
 // implement function to create a new movie in the database
-export const createMovie = (movie) =>
+const createMovie = (movie) =>
     fetch(URL, {
         method: 'POST',
         body: JSON.stringify(movie),
@@ -32,11 +32,11 @@ export const createMovie = (movie) =>
         }
     }).then(response => response.json());
 
-export const findMovieById = (id) =>
+const findMovieById = (id) =>
     fetch(`${URL}/${id}`)
         .then(response => response.json());
 
-export const updateMovie = (movie) =>
+const updateMovie = (movie) =>
     fetch(`${URL}/${movie._id}`, {
         method: 'PUT',
         body: JSON.stringify(movie),

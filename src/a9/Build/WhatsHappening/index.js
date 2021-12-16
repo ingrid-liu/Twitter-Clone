@@ -1,7 +1,10 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+// import {useDispatch, useSelector} from "react-redux";
+// import {createTweet, fetchAllTweets} from "../TweetList/service";
+import service, {createTweet} from "../../services/tweetService"
 import {useDispatch} from "react-redux";
-import {postNewTweet, fetchAllTweets} from "../../services/tweetService";
 
+// findAllTweets, deleteTweet, createTweet,likeTweet
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
@@ -13,7 +16,7 @@ const WhatsHappening = () => {
        // };
        // dispatch(action);
 
-        postNewTweet(dispatch, {
+        createTweet(dispatch, {
             tweet: whatsHappening
         });
 
@@ -51,6 +54,8 @@ const WhatsHappening = () => {
                     </td>
                 </tr>
             </table>
+
+
         </>
     );
 }
