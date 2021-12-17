@@ -2,6 +2,8 @@ import {Link} from "react-router-dom";
 import APIExamples from "./APIExamples";
 import Movies from "./Movies";
 
+
+
 const A9Practice = () => {
     return(
         <div>
@@ -9,6 +11,7 @@ const A9Practice = () => {
             <Link to="/a9/twitter">Twitter</Link>
             {/*<APIExamples/>*/}
             <Movies/>
+
             {/*<ReduxExamples/>*/}
         </div>
     )

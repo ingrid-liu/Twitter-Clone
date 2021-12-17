@@ -13,67 +13,6 @@ const A9ProfileEdit = ({setEdit}) => {
     let profile = useSelector(userInfo);
     const dispatch = useDispatch()
 
-    ///////////////////// original
-
-
-    // // create local state variable initialized
-    // let [name, setName] = useState({newName: profile.name})
-    // let [info, setInfo] = useState({bio: profile.bio})
-    // let [location, setLocation] = useState({location: profile.location})
-    // let [personalURL, setPersonalURL] = useState({web : profile.website})
-    // let [birth, setBirth] = useState({birthday: profile.dateOfBirth});
-    //
-    // // let [name, setName] = useState(profile.name)
-    // // let [info, setInfo] = useState(profile.bio)
-    // // let [location, setLocation] = useState(profile.location)
-    // // let [personalURL, setPersonalURL] = useState(profile.website)
-    // // let [birth, setBirth] = useState( profile.dateOfBirth);
-    //
-    //
-    //
-    // // handle keystroke: changes in input field (modify local state: useState while typing)
-    // const nameChangeHandler = (event) => {
-    //     const name = event.target.value;
-    //     const newName = {
-    //         newName : name
-    //     };
-    //     setName(newName);
-    // }
-    // const bioChangeHandler = (event) => {
-    //     const bio = event.target.value;
-    //     const newInfo = {
-    //         bio : bio
-    //     };
-    //     setInfo(newInfo);
-    // }
-    //
-    // const locationChangeHandler = (event) => {
-    //     const location = event.target.value;
-    //     const newLocation = {
-    //         location : location
-    //     };
-    //     setLocation(newLocation);
-    // }
-    //
-    // const websiteChangeHandler = (event) => {
-    //     const web = event.target.value;
-    //     const newWeb = {
-    //         web : web
-    //     };
-    //     setPersonalURL(newWeb);
-    // }
-    //
-    // const birthChangeHandler = (e) => {
-    //     const birthday = e.target.value;
-    //     const newBirth = {birthday : birthday}
-    //     setBirth(newBirth);
-    // }
-    //
-    // const saveClickHandler = () => {
-    //     dispatch({type: 'save', info, location, personalURL, name, birth})
-    // }
-
-
     // create local state variable initialized
     const profileInfoDefault = {
         name: profile.name,

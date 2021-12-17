@@ -12,9 +12,10 @@ const Profile = ({setEdit}) => {
     const dispatch = useDispatch();
     useEffect(() => getCurrentProfile(dispatch), []);
 
-    const editProfileHandler = () => {
+    const modifyProfileHandler = () => {
         return setEdit(true);
     }
+    console.log("profile from ProfileScreen:",profile)
 
     return (
         <>
@@ -67,7 +68,7 @@ const Profile = ({setEdit}) => {
 
                 <div className="col">
                     {/*<Link to="/a7/twitter/profile/edit">*/}
-                        <button className="btn btn-dar rounded-pill border-dark float-end mt-2 text-white float-right" onClick={editProfileHandler}>
+                        <button className="btn btn-dar rounded-pill border-dark float-end mt-2 text-white float-right" onClick={modifyProfileHandler}>
                             Edit Profile
                         </button>
                     {/*</Link>*/}
