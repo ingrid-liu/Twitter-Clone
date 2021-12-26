@@ -6,9 +6,8 @@ Get the resource code:
 git clone https://github.com/summeringrid/web-dev.git
 ```
 
-![screen shot](https://github.com/summeringrid/web-dev/public/images/ExploreScreen.gif)
 
-
+<img src = "public/images/ExploreScreen.gif" width="650" >
 <img src = "public/images/ProfileEditorScreen.gif" width="650" >
 
 
