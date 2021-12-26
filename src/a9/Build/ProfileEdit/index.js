@@ -2,11 +2,6 @@ import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {updateCurrentProfile} from "../../../services/profileService";
 
-// import NavigationSideBar from '../NavigationSidebar/index'
-// import { Link } from 'react-router-dom'
-
-// import profile from '../../../../reducers/profile'
-
 const userInfo = (state) => state.profile;
 
 const A9ProfileEdit = ({setEdit}) => {
@@ -85,18 +80,6 @@ const A9ProfileEdit = ({setEdit}) => {
         // modify state, and pass state to parent component
         return setEdit(false);
     }
-
-    // const saveChangesHandler = (event) => {
-    //     console.log("pressed save button!");
-    //
-    //     const modifiedProfile = event.target.value;
-    //     const newProfile = {
-    //         newProfile : modifiedProfile
-    //     };
-    //     setProfileInfo(newProfile);
-    //
-    //     return setEdit(false);
-    // }
 
     const closeEditHandler = () => {
         return setEdit(false);
@@ -196,105 +179,6 @@ const A9ProfileEdit = ({setEdit}) => {
             <br></br>
 
         </>
-
-
-
-
-        //////original return part of nong
-    // <>
-    //     <div className="row mt-2">
-    //         <div className="col-2 col-md-2 col-lg-1 col-xl-2" style={{ 'position': 'relative' }}>
-    //             <NavigationSideBar active={'profile'}/>
-    //         </div>
-    //         <div className="col-10 col-md-10 col-lg-11 col-xl-10">
-    //             <div className="row">
-    //                 <div className="col-1 d-flex align-items-center justify-content-center">
-    //
-    //                     <Link to="/a7/twitter/profile">
-    //                         <i className="fas fa-times"></i>
-    //                     </Link>
-    //
-    //                 </div>
-    //                 <div className="col-10">
-    //                     <div style={{ fontSize: '20px' }}>
-    //                         Edit Profile
-    //                     </div>
-    //
-    //                 </div>
-    //                 <div className="col-1">
-    //                     <Link to="/a7/twitter/profile">
-    //                         <button className="btn btn-light rounded-pill bg-white me-2 float-end"
-    //                                 onClick={saveClickHandler}>
-    //                             <span className="fw-bold text-black">Save</span>
-    //                         </button>
-    //                     </Link>
-    //                 </div>
-    //             </div>
-    //             <div>
-    //                 <img
-    //                     src={profile.bannerPicture}
-    //                     height="200px" width="100%" style={{ objectFit: 'cover' }}/>
-    //
-    //             </div>
-    //             <div className="ms-2">
-    //                 <div>
-    //                     <img
-    //                         src={profile.profilePicture}
-    //                         className="rounded-circle"
-    //                         height="120px"
-    //                         width="120px"
-    //                         style={{ position: 'relative', border: 'black solid 2px', marginTop: '-55px' }}
-    //                         alt="profile picture"
-    //                     />
-    //                 </div>
-    //
-    //                 <div className="mt-2">
-    //                     <label for="name">Name</label>
-    //                     <textarea className="bg-black text-white " id="name" style={{width:"100%"}}
-    //                               value = {name.newName} onChange={nameChangeHandler}>
-    //                             {profile.name}
-    //                         </textarea>
-    //                 </div>
-    //                 <div className="mt-2 ">
-    //                     <label for="bio">Bio</label>
-    //                     <textarea className="bg-black text-white" name='bio' style={{width:"100%"}}
-    //                               value={info.bio} onChange={bioChangeHandler}>
-    //                             {profile.bio}
-    //                         </textarea>
-    //                 </div>
-    //                 <div className="mt-2">
-    //                     <label for="location">Location</label>
-    //                     <textarea className="bg-black text-white"  name="location" style={{width:"100%"}}
-    //                               value={location.location} onChange={locationChangeHandler}>
-    //                             {profile.location}
-    //                         </textarea>
-    //                 </div>
-    //                 <div className="mt-2">
-    //                     <label for="website">Website</label>
-    //                     <textarea className="bg-black text-white" name="website" style={{width:"100%"}}
-    //                               value={personalURL.page} onChange={websiteChangeHandler}>
-    //                             {profile.website}
-    //                         </textarea>
-    //                 </div>
-    //                 <div>
-    //                     <div>
-    //                         <span>Birth date - </span>
-    //                         <label for="birthday" className="text-primary">Edit</label>
-    //                     </div>
-    //                     <div>
-    //
-    //                         <input id="birthday" type="date" className="bg-light text-white"
-    //                                value={birth.birthday}  onChange = {birthChangeHandler}
-    //
-    //                         />
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //
-    //         </div>
-    //     </div>
-    //
-    // </>
     )
 }
 export default A9ProfileEdit
