@@ -1,23 +1,23 @@
 # Twitter Clone
-repo for web dev course
+This is a repo for a web dev course. It creates a Twitter Clone in JavaScript with ReactJs/NodeJs and MongoDB/Mongoose, etc.
+
+
+### `Explore Screen`
+
+<img src = "public/images/ExploreScreen.gif" width="650" >
+
+### `ProfileEditor Screen`
+<img src = "public/images/ProfileEditorScreen.gif" width="650" >
+
+
+
 
 Get the resource code:
 ```bash
 git clone https://github.com/summeringrid/web-dev.git
 ```
 
-
-<img src = "public/images/ExploreScreen.gif" width="650" >
-<img src = "public/images/ProfileEditorScreen.gif" width="650" >
-
-
-
-
-
-
-
-
-
+======= The followings are the default React Project Intro =========
 
 # Getting Started with Create React App
 
