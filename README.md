@@ -17,6 +17,11 @@ Get the resource code:
 git clone https://github.com/summeringrid/web-dev.git
 ```
 
+& and server side code:
+```bash
+git clone https://github.com/summeringrid/web-dev-node.git
+```
+
 ======= The followings are the default React Project Intro =========
 
 # Getting Started with Create React App
