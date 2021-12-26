@@ -1,3 +1,25 @@
+# Twitter Clone
+repo for web dev course
+
+Get the resource code:
+```bash
+git clone https://github.com/summeringrid/web-dev.git
+```
+
+![screen shot](https://github.com/summeringrid/web-dev/public/images/ExploreScreen.gif)
+
+
+<img src = "public/images/ProfileEditorScreen.gif" width="650" >
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
