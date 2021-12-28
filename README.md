@@ -1,5 +1,5 @@
 # Twitter Clone
-This is a repo for a web dev course. It creates a Twitter Clone in JavaScript with ReactJs/NodeJs and MongoDB/Mongoose, etc.
+This is a repo for a web dev course. It creates a Twitter Clone in JavaScript with ReactJs/NodeJs and MongoDB, etc.
 
 
 ### `Explore Screen`
@@ -17,7 +17,7 @@ Get the resource code:
 git clone https://github.com/summeringrid/web-dev.git
 ```
 
-& and server side code:
+& the server side code:
 ```bash
 git clone https://github.com/summeringrid/web-dev-node.git
 ```
